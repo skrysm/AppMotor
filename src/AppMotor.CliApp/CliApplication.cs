@@ -26,8 +26,6 @@ namespace AppMotor.CliApp;
 /// </summary>
 public abstract class CliApplication
 {
-    private static bool s_tlsSettingsApplied;
-
     /// <summary>
     /// The exit code to use when an unhandled exception led to the termination
     /// of the process.
@@ -59,18 +57,6 @@ public abstract class CliApplication
     /// this property.</para>
     /// </summary>
     protected abstract CliApplicationExecutor MainExecutor { get; }
-
-    /// <summary>
-    /// Constructor.
-    /// </summary>
-    protected CliApplication()
-    {
-        if (!s_tlsSettingsApplied)
-        {
-            TlsSettings.ApplyToCurrentProcess();
-            s_tlsSettingsApplied = true;
-        }
-    }
 
     #region Static Run Methods
 
