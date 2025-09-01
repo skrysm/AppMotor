@@ -15,7 +15,7 @@ namespace AppMotor.Core.Events;
 /// </summary>
 public sealed class Event<TEventArgs>
 {
-    private readonly object _eventHandlersLock = new();
+    private readonly Lock _eventHandlersLock = new();
 
     private ImmutableArray<EventHandlerRegistration> _eventHandlers = [];
 

@@ -9,7 +9,7 @@ namespace AppMotor.Core.Events;
 /// </summary>
 public sealed class OneTimeEvent
 {
-    private readonly object _eventRaiseLock = new();
+    private readonly Lock _eventRaiseLock = new();
 
     private readonly EventSource _eventSource = new();
 

@@ -13,7 +13,7 @@ namespace AppMotor.TestCore.Networking;
 /// </summary>
 public static class ServerPortProvider
 {
-    private static readonly object s_lock = new();
+    private static readonly Lock s_lock = new();
 
     private static int s_nextPort = 1234;
 

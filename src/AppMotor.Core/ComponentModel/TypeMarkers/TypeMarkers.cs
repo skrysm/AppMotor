@@ -54,7 +54,7 @@ public static class TypeMarkers
 
     private sealed class TypeMarkerCollection
     {
-        private readonly object _updateLock = new();
+        private readonly Lock _updateLock = new();
 
         /// <summary>
         /// The underlying set. Note this set is managed as "copy-on-write". This way we

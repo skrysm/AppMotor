@@ -22,7 +22,7 @@ public abstract class TerminalWriterBase : ITerminalWriter
     /// <inheritdoc />
     public bool EnableColors { get; set; } = true;
 
-    private readonly object _lock = new();
+    private readonly Lock _lock = new();
 
     /// <summary>
     /// Constructor.

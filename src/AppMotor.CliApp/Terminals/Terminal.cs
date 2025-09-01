@@ -513,7 +513,7 @@ public static class Terminal
             /// affect both <see cref="Console.Out"/> and(!) <see cref="Console.Error"/>. With this lock we make sure that only
             /// one of the streams is written to at the same time.
             /// </summary>
-            private static readonly object s_consoleColorLock = new();
+            private static readonly Lock s_consoleColorLock = new();
 
             private readonly ConsoleTerminalWriter _consoleTerminalWriter;
 
