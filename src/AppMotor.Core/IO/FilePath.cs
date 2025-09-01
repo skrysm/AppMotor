@@ -342,13 +342,13 @@ public readonly struct FilePath : IEquatable<FilePath>
         return (fileSystem ?? RealFileSystem.Instance).File.AppendAllTextAsync(this.Value, contents, encoding, cancellationToken);
     }
 
-    /// <inheritdoc cref="File.WriteAllBytes"/>
+    /// <inheritdoc cref="File.WriteAllBytes(string,byte[])"/>
     public void WriteAllBytes(byte[] bytes, IFileSystem? fileSystem = null)
     {
         (fileSystem ?? RealFileSystem.Instance).File.WriteAllBytes(this.Value, bytes);
     }
 
-    /// <inheritdoc cref="File.WriteAllBytesAsync"/>
+    /// <inheritdoc cref="File.WriteAllBytesAsync(string,byte[],System.Threading.CancellationToken)"/>
     public Task WriteAllBytesAsync(byte[] bytes, IFileSystem? fileSystem = null, CancellationToken cancellationToken = default)
     {
         return (fileSystem ?? RealFileSystem.Instance).File.WriteAllBytesAsync(this.Value, bytes, cancellationToken);
