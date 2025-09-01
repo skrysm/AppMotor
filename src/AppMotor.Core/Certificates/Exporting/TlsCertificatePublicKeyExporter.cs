@@ -32,7 +32,7 @@ public sealed class TlsCertificatePublicKeyExporter
     {
         return new(() =>
             {
-                using var tempCert = new X509Certificate2(this._certificate.UnderlyingCertificate.Export(X509ContentType.Cert));
+                using var tempCert = X509CertificateLoader.LoadCertificate(this._certificate.UnderlyingCertificate.Export(X509ContentType.Cert));
                 return tempCert.Export(X509ContentType.Pfx);
             }
         );
