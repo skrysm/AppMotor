@@ -11,7 +11,7 @@ namespace AppMotor.TestCore.Extensions;
 /// Contains extension methods for <see cref="Task"/> to throw a <see cref="TimeoutException"/>
 /// if a task didn't finish in time.
 /// <see cref="Should"/>ly extensions for tasks that should finish within a certain amount of time.
-/// Basically replaces <see cref="Should.CompleteIn(Action,TimeSpan,Func{string?}?)"/> so that
+/// Basically replaces <see cref="Should.CompleteIn(Action,TimeSpan,string?)"/> so that
 /// it works (reliably) with XUnit's parallelized test execution.
 /// </summary>
 /// <remarks>
@@ -22,7 +22,7 @@ namespace AppMotor.TestCore.Extensions;
 /// code this could be very bad. So, to not encourage this style, this class remains for tests only.
 /// </remarks>
 /// <remarks>
-/// Shouldly has <see cref="Should.CompleteIn(Action,TimeSpan,Func{string?}?)"/> that does something
+/// Shouldly has <see cref="Should.CompleteIn(Action,TimeSpan,string?)"/> that does something
 /// similar. However, this method leads to deadlocks with XUnit's parallel test execution (if the processor
 /// count is low like in free CI systems).
 /// </remarks>
@@ -40,7 +40,7 @@ public static class TaskTimeoutExtensions
 
     /// <summary>
     /// Throws a <see cref="TimeoutException"/> if the <paramref name="task"/> did not finish
-    /// within the the specified <paramref name="timeout"/>.
+    /// within the specified <paramref name="timeout"/>.
     /// </summary>
     [PublicAPI]
     public static async Task OrTimeoutAfter(this Task task, TimeSpan timeout)
@@ -55,7 +55,7 @@ public static class TaskTimeoutExtensions
 
     /// <summary>
     /// Throws a <see cref="TimeoutException"/> if the <paramref name="task"/> did not finish
-    /// within the the specified <paramref name="timeout"/>.
+    /// within the specified <paramref name="timeout"/>.
     /// </summary>
     [PublicAPI]
     public static async Task<T> OrTimeoutAfter<T>(this Task<T> task, TimeSpan timeout)
