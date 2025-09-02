@@ -3,7 +3,7 @@
 
 using System.Numerics;
 
-using AppMotor.Core.ComponentModel;
+using AppMotor.Core.ObjectModel;
 using AppMotor.Core.Logging;
 
 using Shouldly;

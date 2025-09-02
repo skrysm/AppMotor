@@ -1,7 +1,7 @@
 ﻿// SPDX-License-Identifier: MIT
 // Copyright AppMotor Framework (https://github.com/skrysm/AppMotor)
 
-namespace AppMotor.Core.ComponentModel;
+namespace AppMotor.Core.ObjectModel;
 
 /// <summary>
 /// Represents a type marker; that is a way of marking certain .NET <see cref="Type"/>s in a

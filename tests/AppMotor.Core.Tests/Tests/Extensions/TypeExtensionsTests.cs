@@ -5,7 +5,7 @@ using System.Collections;
 using System.Numerics;
 using System.Reflection;
 
-using AppMotor.Core.ComponentModel;
+using AppMotor.Core.ObjectModel;
 using AppMotor.Core.Extensions;
 
 using JetBrains.Annotations;

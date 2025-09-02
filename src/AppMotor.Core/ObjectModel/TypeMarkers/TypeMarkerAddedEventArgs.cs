@@ -3,7 +3,7 @@
 
 using AppMotor.Core.Utils;
 
-namespace AppMotor.Core.ComponentModel;
+namespace AppMotor.Core.ObjectModel;
 
 /// <summary>
 /// Used by <see cref="TypeMarkers.TypeMarkerAdded"/>.

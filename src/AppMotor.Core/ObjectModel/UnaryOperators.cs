@@ -3,7 +3,7 @@
 
 using AppMotor.Core.Extensions;
 
-namespace AppMotor.Core.ComponentModel;
+namespace AppMotor.Core.ObjectModel;
 
 /// <summary>
 /// The various unary (i.e. one parameter/operand) operators that can be custom implemented in C#.

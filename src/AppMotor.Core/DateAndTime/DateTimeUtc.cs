@@ -7,7 +7,7 @@ using System.Globalization;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
-using AppMotor.Core.ComponentModel;
+using AppMotor.Core.ObjectModel;
 using AppMotor.Core.Extensions;
 
 using JetBrains.Annotations;

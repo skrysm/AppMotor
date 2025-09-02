@@ -1,7 +1,7 @@
 ﻿// SPDX-License-Identifier: MIT
 // Copyright AppMotor Framework (https://github.com/skrysm/AppMotor)
 
-using AppMotor.Core.ComponentModel;
+using AppMotor.Core.ObjectModel;
 
 namespace AppMotor.Core.Logging;
 

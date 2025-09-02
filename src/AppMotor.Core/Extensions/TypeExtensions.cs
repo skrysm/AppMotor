@@ -6,7 +6,7 @@ using System.Numerics;
 using System.Reflection;
 using System.Runtime.CompilerServices;
 
-using AppMotor.Core.ComponentModel;
+using AppMotor.Core.ObjectModel;
 using AppMotor.Core.Utils;
 
 using JetBrains.Annotations;

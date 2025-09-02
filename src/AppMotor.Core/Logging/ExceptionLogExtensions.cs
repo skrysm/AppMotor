@@ -4,7 +4,7 @@
 using System.Collections.Immutable;
 using System.Reflection;
 
-using AppMotor.Core.ComponentModel;
+using AppMotor.Core.ObjectModel;
 using AppMotor.Core.Utils;
 
 using JetBrains.Annotations;
