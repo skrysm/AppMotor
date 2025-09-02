@@ -7,8 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\AppMotor.HttpServer\AppMotor.HttpServer.csproj" />
-    <ProjectReference Include="..\..\src\AppMotor.TestCore\AppMotor.TestCore.csproj" />
+    <ProjectReference Include="..\..\src\HttpServerKit\AppMotor.HttpServerKit.csproj" />
+    <ProjectReference Include="..\..\src\TestKit\AppMotor.TestKit.csproj" />
   </ItemGroup>
 
 </Project>

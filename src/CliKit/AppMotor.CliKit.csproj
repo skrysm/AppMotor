@@ -34,7 +34,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\AppMotor.Core\AppMotor.Core.csproj" />
+    <ProjectReference Include="..\CoreKit\AppMotor.CoreKit.csproj" />
   </ItemGroup>
 
   <ItemGroup>

@@ -13,8 +13,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\AppMotor.CliApp\AppMotor.CliApp.csproj" />
-    <ProjectReference Include="..\..\src\AppMotor.TestCore\AppMotor.TestCore.csproj" />
+    <ProjectReference Include="..\..\src\CliKit\AppMotor.CliKit.csproj" />
+    <ProjectReference Include="..\..\src\TestKit\AppMotor.TestKit.csproj" />
   </ItemGroup>
 
   <ItemGroup>

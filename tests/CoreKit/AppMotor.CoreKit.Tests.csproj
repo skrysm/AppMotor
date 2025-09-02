@@ -12,8 +12,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\AppMotor.Core\AppMotor.Core.csproj" />
-    <ProjectReference Include="..\..\src\AppMotor.TestCore\AppMotor.TestCore.csproj" />
+    <ProjectReference Include="..\..\src\CoreKit\AppMotor.CoreKit.csproj" />
+    <ProjectReference Include="..\..\src\TestKit\AppMotor.TestKit.csproj" />
   </ItemGroup>
 
   <ItemGroup>

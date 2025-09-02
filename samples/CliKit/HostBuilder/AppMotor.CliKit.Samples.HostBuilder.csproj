@@ -19,7 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\AppMotor.CliApp\AppMotor.CliApp.csproj" />
+    <ProjectReference Include="..\..\..\src\CliKit\AppMotor.CliKit.csproj" />
   </ItemGroup>
 
 </Project>

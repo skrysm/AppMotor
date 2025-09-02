@@ -7,7 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\AppMotor.HttpServer\AppMotor.HttpServer.csproj" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="9.0.8" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\src\HttpServerKit\AppMotor.HttpServerKit.csproj" />
   </ItemGroup>
 
 </Project>
