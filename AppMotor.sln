@@ -79,6 +79,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NetStandardCompat", "NetSta
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppMotor.NetStandardCompat", "src\AppMotor.NetStandardCompat\AppMotor.NetStandardCompat.csproj", "{5F4F04CF-6FEF-4670-A881-F9F0F4E8B2A2}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+	ProjectSection(SolutionItems) = preProject
+		samples\LICENSE-SAMPLES.txt = samples\LICENSE-SAMPLES.txt
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -169,6 +174,7 @@ Global
 		{8A9084C9-9812-4024-BB76-76A43615BF52} = {625969C5-2EAE-4A6F-B879-3EC7FCA63F56}
 		{FAD59A4C-6CFA-4D71-B7DC-480A126C1392} = {6A287989-1384-4140-AFC8-8CA4B1F52D41}
 		{5F4F04CF-6FEF-4670-A881-F9F0F4E8B2A2} = {06FC077C-5DB3-4C0F-A990-7891BD576153}
+		{02EA681E-C7D8-13C7-8484-4AC65E1B71E8} = {D449EFC6-4D96-4FF2-B01F-A4748B50D9C3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FF64C9CC-C599-47C6-892D-FB620795361C}
