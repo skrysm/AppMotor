@@ -328,7 +328,7 @@ public readonly struct NamedValidator
     }
 
     /// <summary>
-    /// Validates that the the given string is neither <c>null</c> nor empty.
+    /// Validates that the given string is neither <c>null</c> nor empty.
     /// </summary>
     [PublicAPI]
     [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -346,7 +346,7 @@ public readonly struct NamedValidator
     }
 
     /// <summary>
-    /// Validates that the the given string is neither <c>null</c> nor empty nor only white space characters.
+    /// Validates that the given string is neither <c>null</c> nor empty nor only white space characters.
     /// </summary>
     [PublicAPI]
     [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -371,7 +371,7 @@ public readonly struct NamedValidator
     }
 
     /// <summary>
-    /// Validates that the the given collection is neither <c>null</c> nor empty.
+    /// Validates that the given collection is neither <c>null</c> nor empty.
     /// </summary>
     [PublicAPI]
     [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -414,7 +414,7 @@ public readonly struct NamedValidator
 /// Contains extension methods that use <see cref="Validate"/>.
 /// </summary>
 /// <remarks>
-/// These methods are not defined directly in <see cref="Validate"/> so that the don't appear in
+/// These methods are not defined directly in <see cref="Validate"/> so that they don't appear in
 /// the code completion list of <see cref="Validate"/>.
 /// </remarks>
 public static class ValidationExtensionMethods
