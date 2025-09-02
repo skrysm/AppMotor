@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31919.166
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_Solution Items", "_Solution Items", "{D449EFC6-4D96-4FF2-B01F-A4748B50D9C3}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_SolutionItems", "_SolutionItems", "{D449EFC6-4D96-4FF2-B01F-A4748B50D9C3}"
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
+		src\Common.props = src\Common.props
 		Directory.Build.props = Directory.Build.props
 		Directory.Build.targets = Directory.Build.targets
+		samples\LICENSE-SAMPLES.txt = samples\LICENSE-SAMPLES.txt
 		LICENSE.txt = LICENSE.txt
 		README.md = README.md
 	EndProjectSection
@@ -49,11 +51,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppMotor.HttpServer.MvcSamp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppMotor.CliApp.HostBuilder.Sample", "samples\AppMotor.CliApp.HostBuilder.Sample\AppMotor.CliApp.HostBuilder.Sample.csproj", "{3CE0C1D8-870B-49A9-86E9-FF61B82A99F1}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{AC7F8FF0-BAB9-4F25-B51A-06EC1721643E}"
-	ProjectSection(SolutionItems) = preProject
-		src\Common.props = src\Common.props
-	EndProjectSection
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppMotor.TestCore", "src\AppMotor.TestCore\AppMotor.TestCore.csproj", "{AB89C96D-65A1-4753-A686-F6DB5B26423D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CliApp", "CliApp", "{199CEEF6-083D-4216-87BF-24630D8C6DEE}"
@@ -67,11 +64,6 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppMotor.HttpServer.WebApiSample", "samples\AppMotor.HttpServer.WebApiSample\AppMotor.HttpServer.WebApiSample.csproj", "{FAD59A4C-6CFA-4D71-B7DC-480A126C1392}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppMotor.NetStandardCompat", "src\AppMotor.NetStandardCompat\AppMotor.NetStandardCompat.csproj", "{5F4F04CF-6FEF-4670-A881-F9F0F4E8B2A2}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
-	ProjectSection(SolutionItems) = preProject
-		samples\LICENSE-SAMPLES.txt = samples\LICENSE-SAMPLES.txt
-	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Samples", "Samples", "{60F6BE59-003B-4E38-AF94-C7A91AADC34B}"
 EndProject
@@ -156,13 +148,11 @@ Global
 		{C0EBEF12-DFB0-4078-BE78-7030F00756AA} = {53BC202C-B82F-4672-9870-0FDF1788AAE4}
 		{DF00176B-0C36-4F74-826C-687236B1A7C6} = {95655C2B-7841-4B20-BA71-827B8E8127DA}
 		{3CE0C1D8-870B-49A9-86E9-FF61B82A99F1} = {199CEEF6-083D-4216-87BF-24630D8C6DEE}
-		{AC7F8FF0-BAB9-4F25-B51A-06EC1721643E} = {D449EFC6-4D96-4FF2-B01F-A4748B50D9C3}
 		{199CEEF6-083D-4216-87BF-24630D8C6DEE} = {60F6BE59-003B-4E38-AF94-C7A91AADC34B}
 		{95655C2B-7841-4B20-BA71-827B8E8127DA} = {60F6BE59-003B-4E38-AF94-C7A91AADC34B}
 		{D8624985-4035-4989-BCA5-6224337C8B84} = {199CEEF6-083D-4216-87BF-24630D8C6DEE}
 		{8A9084C9-9812-4024-BB76-76A43615BF52} = {199CEEF6-083D-4216-87BF-24630D8C6DEE}
 		{FAD59A4C-6CFA-4D71-B7DC-480A126C1392} = {95655C2B-7841-4B20-BA71-827B8E8127DA}
-		{02EA681E-C7D8-13C7-8484-4AC65E1B71E8} = {D449EFC6-4D96-4FF2-B01F-A4748B50D9C3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FF64C9CC-C599-47C6-892D-FB620795361C}
