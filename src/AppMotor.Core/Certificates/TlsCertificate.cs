@@ -46,7 +46,7 @@ public sealed class TlsCertificate : Disposable
     public X500DistinguishedName SubjectName => this.UnderlyingCertificate.SubjectName;
 
     /// <summary>
-    /// The so called "subject alternative names" (SAN); these are basically the names for which the
+    /// The so-called "subject alternative names" (SAN); these are basically the names for which the
     /// certificate is valid. If this array is empty, then this certificate has no SANs specified.
     /// </summary>
     /// <remarks>
@@ -76,7 +76,7 @@ public sealed class TlsCertificate : Disposable
     /// If the private key is not exportable, it is actually "protected" only on Windows.
     /// <see cref="X509Certificate2"/> does not provide export protection on any other
     /// operating system (like Linux). "Export protection" means that an application can
-    /// use the private key but it's hidden in a way that it's not possible for the application
+    /// use the private key, but it's hidden in a way that it's not possible for the application
     /// to export it.
     /// </remarks>
     /// <seealso cref="HasPrivateKey"/>
@@ -99,7 +99,7 @@ public sealed class TlsCertificate : Disposable
 
     /// <summary>
     /// The thumbprint of this certificate. This property returns the thumbprint as upper-case hexadecimal string
-    /// (e.g. "3A164F12B1D0E208B3FBD94014634A0EBFD0B63B").
+    /// (e.g. "3A164F12B1D0E208B3FBD94014634A0EB8D0B63B").
     /// </summary>
     [PublicAPI]
     public string Thumbprint => this.UnderlyingCertificate.Thumbprint;
@@ -152,7 +152,7 @@ public sealed class TlsCertificate : Disposable
 
         // NOTE: We don't throw an exception here if "allowPrivateKeyExport" is "true" but
         //   the certificate has no private key. Users may not know beforehand whether a
-        //   byte blob has a private key or not. Instead we just throw when the user tries
+        //   byte blob has a private key or not. Instead, we just throw when the user tries
         //   to export the private key.
         this.IsPrivateKeyExportAllowed = allowPrivateKeyExport;
 
@@ -177,7 +177,7 @@ public sealed class TlsCertificate : Disposable
     }
 
     /// <summary>
-    /// Creates a self signed certificate for the specified hostname.
+    /// Creates a self-signed certificate for the specified hostname.
     /// </summary>
     /// <param name="hostname">the host name for the certificate</param>
     /// <param name="certificateLifetime">for how long this certificate is to be valid.</param>
