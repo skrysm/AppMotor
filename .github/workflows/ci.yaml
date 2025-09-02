@@ -70,7 +70,7 @@ jobs:
 
       # See: https://github.com/marketplace/actions/checkout
       - name: Clone Git repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           lfs: true
           submodules: true
@@ -220,7 +220,7 @@ jobs:
 
       # See: https://github.com/marketplace/actions/checkout
       - name: Clone Git repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           lfs: true
           submodules: false # not needed
