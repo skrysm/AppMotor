@@ -5,7 +5,6 @@ using System.Diagnostics.CodeAnalysis;
 using System.Security.Authentication;
 
 using AppMotor.Core.Certificates;
-using AppMotor.Core.Utils;
 
 namespace AppMotor.Core.Net.Http;
 
@@ -32,7 +31,10 @@ public static class HttpClientFactory
         try
         {
             // Enable strict TLS protocol version
-            handler.SslProtocols = tlsProtocolsToUse ?? TlsSettings.EnabledTlsProtocols;
+            if (tlsProtocolsToUse is not null)
+            {
+                handler.SslProtocols = tlsProtocolsToUse.Value;
+            }
 
             if (serverCertificate is not null)
             {

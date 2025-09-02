@@ -12,7 +12,7 @@ namespace AppMotor.CliApp.TestUtils;
 
 internal sealed class TestApplicationHelper
 {
-    private readonly object _exceptionLock = new();
+    private readonly Lock _exceptionLock = new();
 
     private readonly TestTerminal _testTerminal = new();
 

@@ -264,14 +264,7 @@ public abstract class TlsCertificateSource
                 storageFlags |= X509KeyStorageFlags.Exportable;
             }
 
-            if (password.IsEmpty)
-            {
-                return new(this._encodedCertificate.Span, password: null, storageFlags);
-            }
-            else
-            {
-                return new(this._encodedCertificate.Span, password: password, storageFlags);
-            }
+            return X509CertificateLoader.LoadPkcs12(this._encodedCertificate.Span, password, storageFlags);
         }
 
         /// <inheritdoc />

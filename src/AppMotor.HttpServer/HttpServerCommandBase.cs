@@ -8,7 +8,6 @@ using AppMotor.CliApp.CommandLine;
 using AppMotor.Core.Certificates;
 using AppMotor.Core.Exceptions;
 using AppMotor.Core.Net;
-using AppMotor.Core.Utils;
 using AppMotor.HttpServer.Startups;
 
 using JetBrains.Annotations;
@@ -74,11 +73,6 @@ public abstract class HttpServerCommandBase : ServiceHostCliCommand
     {
         var logger = options.ApplicationServices.GetRequiredService<ILogger<HttpServerCommandBase>>();
 
-        options.ConfigureHttpsDefaults(configureOptions =>
-        {
-            configureOptions.SslProtocols = TlsSettings.EnabledTlsProtocols;
-        });
-
         foreach (var serverPort in GetServerPorts(options.ApplicationServices))
         {
             Action<ListenOptions> configure;
@@ -105,7 +99,7 @@ public abstract class HttpServerCommandBase : ServiceHostCliCommand
 
                     byte[] exportedCertificateBytes = ((X509Certificate2)originalCertificate).Export(X509ContentType.Pkcs12);
 #pragma warning disable CA2000 // Dispose objects before losing scope
-                    var reimportedCertificate = new X509Certificate2(exportedCertificateBytes, password: (string?)null, X509KeyStorageFlags.Exportable);
+                    var reimportedCertificate = X509CertificateLoader.LoadPkcs12(exportedCertificateBytes, password: null, X509KeyStorageFlags.Exportable);
                     certificate = new TlsCertificate(reimportedCertificate, allowPrivateKeyExport: true);
 #pragma warning restore CA2000 // Dispose objects before losing scope
 
