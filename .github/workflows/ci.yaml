@@ -70,7 +70,7 @@ jobs:
 
       # See: https://github.com/marketplace/actions/checkout
       - name: Clone Git repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           lfs: true
           submodules: true
@@ -79,7 +79,7 @@ jobs:
       # See: https://github.com/marketplace/actions/short-sha
       - name: Determine Git short commit hash
         id: short-sha
-        uses: benjlevesque/short-sha@v3.0
+        uses: benjlevesque/short-sha@599815c8ee942a9616c92bcfb4f947a3b670ab0b # version 3.0
 
       # See: https://github.com/marketplace/actions/setup-net-core-sdk
       - name: Setup .NET build environment
@@ -168,7 +168,7 @@ jobs:
       # See: https://github.com/marketplace/actions/test-reporter
       - name: Create test report
         # For pinned versions, see: https://blog.gitguardian.com/github-actions-security-cheat-sheet/#use-specific-action-version-tags
-        uses: dorny/test-reporter@31a54ee7ebcacc03a09ea97a7e5465a47b84aea5 # version 1.9.1
+        uses: dorny/test-reporter@dc3a92680fcc15842eef52e8c4606ea7ce6bd3f3 # version 2.1.1
         with:
           # NOTE: We add the 'github.run_number' to the name so that we can easier identify the
           #   test report if they pile up due to bug https://github.com/dorny/test-reporter/issues/67.
@@ -220,7 +220,7 @@ jobs:
 
       # See: https://github.com/marketplace/actions/checkout
       - name: Clone Git repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           lfs: true
           submodules: false # not needed
@@ -234,7 +234,7 @@ jobs:
       # See: https://github.com/retypeapp/action-build
       - name: Build HTML files
         # For pinned versions, see: https://blog.gitguardian.com/github-actions-security-cheat-sheet/#use-specific-action-version-tags
-        uses: retypeapp/action-build@0f5c1e55453d13ec21ac8c441c9ebce6b2c4b0b0 # version 3.6.0
+        uses: retypeapp/action-build@c6b1e770fa9194e384f1adf970afead0db550858 # version 3.11.0
 
       # See: https://github.com/retypeapp/action-github-pages
       - name: Publish HTML files to GitHub Pages
