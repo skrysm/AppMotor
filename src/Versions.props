@@ -1,0 +1,16 @@
+﻿<!--
+  Contains the versions for all projects.
+-->
+<Project>
+
+  <!-- See also: https://docs.microsoft.com/en-us/nuget/create-packages/prerelease-packages -->
+  <PropertyGroup Label="Versions">
+    <AppMotorCoreVersion>8.0.0</AppMotorCoreVersion>
+    <AppMotorCliAppVersion>8.0.0</AppMotorCliAppVersion>
+    <AppMotorHttpServerVersion>8.0.0</AppMotorHttpServerVersion>
+    <AppMotorTestCoreVersion>8.0.0</AppMotorTestCoreVersion>
+
+    <AppMotorNetStandardCompatVersion>0.2.0</AppMotorNetStandardCompatVersion>
+  </PropertyGroup>
+
+</Project>

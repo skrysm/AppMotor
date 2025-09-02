@@ -12,6 +12,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_SolutionItems", "_Solution
 		samples\LICENSE-SAMPLES.txt = samples\LICENSE-SAMPLES.txt
 		LICENSE.txt = LICENSE.txt
 		README.md = README.md
+		src\Versions.props = src\Versions.props
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_ProjectCommons", "_ProjectCommons", "{BA1E9B9F-AD3B-41A4-B9AC-490A101FD762}"
