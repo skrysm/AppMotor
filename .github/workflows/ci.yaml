@@ -79,7 +79,7 @@ jobs:
       # See: https://github.com/marketplace/actions/short-sha
       - name: Determine Git short commit hash
         id: short-sha
-        uses: benjlevesque/short-sha@v3.0
+        uses: benjlevesque/short-sha@599815c8ee942a9616c92bcfb4f947a3b670ab0b # version 3.0
 
       # See: https://github.com/marketplace/actions/setup-net-core-sdk
       - name: Setup .NET build environment
