@@ -126,17 +126,11 @@ public abstract class TlsCertificateSource
     /// </summary>
     internal X509Certificate2 CreateUnderlyingCertificate(bool allowPrivateKeyExport, ReadOnlySpan<char> password)
     {
-        var storageFlags = X509KeyStorageFlags.DefaultKeySet;
-        if (allowPrivateKeyExport)
-        {
-            storageFlags |= X509KeyStorageFlags.Exportable;
-        }
-
         X509Certificate2? primaryCert = null;
 
         try
         {
-            primaryCert = CreatePrimaryUnderlyingCertificate(storageFlags, password);
+            primaryCert = CreatePrimaryUnderlyingCertificate(password, allowPrivateKeyExport);
             if (!this.HasSeparatePrivateKeySource)
             {
                 return primaryCert;
@@ -173,8 +167,13 @@ public abstract class TlsCertificateSource
     /// Loads the certificate from the "primary" source. The primary source can either
     /// be only the public key or the public and the private key combined.
     /// </summary>
+    /// <param name="password">The password for an encrypted private key. Only used for .pfx
+    /// encoded certificates (PKCS#12) that contain a private key. Not used for PEM encoded certificates.</param>
+    /// <param name="allowPrivateKeyExport">Whether exporting the private key of the certificate
+    /// is allowed. See <see cref="TlsCertificate.IsPrivateKeyExportAllowed"/> for more details.
+    /// Only used for .pfx files (PKCS#12).</param>
     /// <seealso cref="HasSeparatePrivateKeySource"/>
-    protected abstract X509Certificate2 CreatePrimaryUnderlyingCertificate(X509KeyStorageFlags storageFlags, ReadOnlySpan<char> password);
+    protected abstract X509Certificate2 CreatePrimaryUnderlyingCertificate(ReadOnlySpan<char> password, bool allowPrivateKeyExport);
 
     /// <summary>
     /// Imports the private key into the specified RSA instance. Note that this
@@ -184,7 +183,7 @@ public abstract class TlsCertificateSource
 
     private sealed class PemCertificateSource : TlsCertificateSource
     {
-        private readonly ReadOnlyMemory<byte> _pemEncodedCertificate;
+        private readonly string _pemEncodedCertificate;
 
         private readonly string? _separatePemEncodedPrivateKey;
 
@@ -193,25 +192,22 @@ public abstract class TlsCertificateSource
 
         public PemCertificateSource(string pemEncodedCertificate, string? separatePemEncodedPrivateKey)
         {
-            this._pemEncodedCertificate = Encoding.ASCII.GetBytes(pemEncodedCertificate);
+            this._pemEncodedCertificate = pemEncodedCertificate;
             this._separatePemEncodedPrivateKey = separatePemEncodedPrivateKey;
         }
 
         public PemCertificateSource(ReadOnlyMemory<byte> pemEncodedCertificate, ReadOnlyMemory<byte>? separatePemEncodedPrivateKey)
         {
-            this._pemEncodedCertificate = pemEncodedCertificate;
+            this._pemEncodedCertificate = Encoding.ASCII.GetString(pemEncodedCertificate.Span);
             this._separatePemEncodedPrivateKey = separatePemEncodedPrivateKey is not null
                 ? Encoding.ASCII.GetString(separatePemEncodedPrivateKey.Value.Span)
                 : null;
         }
 
         /// <inheritdoc />
-        protected override X509Certificate2 CreatePrimaryUnderlyingCertificate(
-                X509KeyStorageFlags storageFlags,
-                ReadOnlySpan<char> password
-            )
+        protected override X509Certificate2 CreatePrimaryUnderlyingCertificate(ReadOnlySpan<char> password, bool allowPrivateKeyExport)
         {
-            return new(this._pemEncodedCertificate.Span, null, storageFlags);
+            return X509Certificate2.CreateFromPem(this._pemEncodedCertificate);
         }
 
         /// <inheritdoc />
@@ -260,11 +256,14 @@ public abstract class TlsCertificateSource
         }
 
         /// <inheritdoc />
-        protected override X509Certificate2 CreatePrimaryUnderlyingCertificate(
-                X509KeyStorageFlags storageFlags,
-                ReadOnlySpan<char> password
-            )
+        protected override X509Certificate2 CreatePrimaryUnderlyingCertificate(ReadOnlySpan<char> password, bool allowPrivateKeyExport)
         {
+            var storageFlags = X509KeyStorageFlags.DefaultKeySet;
+            if (allowPrivateKeyExport)
+            {
+                storageFlags |= X509KeyStorageFlags.Exportable;
+            }
+
             if (password.IsEmpty)
             {
                 return new(this._encodedCertificate.Span, password: null, storageFlags);
