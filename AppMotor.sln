@@ -32,39 +32,39 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_ProjectCommons", "_Project
 		_ProjectCommons\StyleGuide.globalconfig = _ProjectCommons\StyleGuide.globalconfig
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppMotor.Core", "src\AppMotor.Core\AppMotor.Core.csproj", "{D747CB44-E0A8-42C7-8B0E-717780B152AC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppMotor.CoreKit", "src\CoreKit\AppMotor.CoreKit.csproj", "{D747CB44-E0A8-42C7-8B0E-717780B152AC}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppMotor.Core.Tests", "tests\AppMotor.Core.Tests\AppMotor.Core.Tests.csproj", "{D4A0207A-F541-4154-853F-8FFEB75110DC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppMotor.CoreKit.Tests", "tests\CoreKit\AppMotor.CoreKit.Tests.csproj", "{D4A0207A-F541-4154-853F-8FFEB75110DC}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppMotor.CliApp", "src\AppMotor.CliApp\AppMotor.CliApp.csproj", "{B745EBD8-4A38-439C-BD45-08382A723C38}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppMotor.CliKit", "src\CliKit\AppMotor.CliKit.csproj", "{B745EBD8-4A38-439C-BD45-08382A723C38}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppMotor.CliApp.Tests", "tests\AppMotor.CliApp.Tests\AppMotor.CliApp.Tests.csproj", "{F4EAF0C1-51E2-40BD-8A54-627D8D958428}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppMotor.CliKit.Tests", "tests\CliKit\AppMotor.CliKit.Tests.csproj", "{F4EAF0C1-51E2-40BD-8A54-627D8D958428}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppMotor.CliApp.Samples.AppWithVerbs", "samples\AppMotor.CliApp.Samples.AppWithVerbs\AppMotor.CliApp.Samples.AppWithVerbs.csproj", "{40B23696-445C-42B2-85AA-5ED5A3EF428B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppMotor.CliKit.Samples.AppWithVerbs", "samples\CliKit\AppWithVerbs\AppMotor.CliKit.Samples.AppWithVerbs.csproj", "{40B23696-445C-42B2-85AA-5ED5A3EF428B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppMotor.CliApp.Samples.AppWithParams", "samples\AppMotor.CliApp.Samples.AppWithParams\AppMotor.CliApp.Samples.AppWithParams.csproj", "{33259BEB-A97E-4869-B1F2-9B668C2A00B9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppMotor.CliKit.Samples.AppWithParams", "samples\CliKit\AppWithParams\AppMotor.CliKit.Samples.AppWithParams.csproj", "{33259BEB-A97E-4869-B1F2-9B668C2A00B9}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppMotor.HttpServer", "src\AppMotor.HttpServer\AppMotor.HttpServer.csproj", "{C3E155CE-B854-4DB1-B1E2-42FF9CBBC18A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppMotor.HttpServerKit", "src\HttpServerKit\AppMotor.HttpServerKit.csproj", "{C3E155CE-B854-4DB1-B1E2-42FF9CBBC18A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppMotor.HttpServer.Tests", "tests\AppMotor.HttpServer.Tests\AppMotor.HttpServer.Tests.csproj", "{C0EBEF12-DFB0-4078-BE78-7030F00756AA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppMotor.HttpServerKit.Tests", "tests\HttpServerKit\AppMotor.HttpServerKit.Tests.csproj", "{C0EBEF12-DFB0-4078-BE78-7030F00756AA}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppMotor.HttpServer.MvcSample", "samples\AppMotor.HttpServer.MvcSample\AppMotor.HttpServer.MvcSample.csproj", "{DF00176B-0C36-4F74-826C-687236B1A7C6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppMotor.HttpServerKit.Samples.Mvc", "samples\HttpServerKit\Mvc\AppMotor.HttpServerKit.Samples.Mvc.csproj", "{DF00176B-0C36-4F74-826C-687236B1A7C6}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppMotor.CliApp.HostBuilder.Sample", "samples\AppMotor.CliApp.HostBuilder.Sample\AppMotor.CliApp.HostBuilder.Sample.csproj", "{3CE0C1D8-870B-49A9-86E9-FF61B82A99F1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppMotor.CliKit.Samples.HostBuilder", "samples\CliKit\HostBuilder\AppMotor.CliKit.Samples.HostBuilder.csproj", "{3CE0C1D8-870B-49A9-86E9-FF61B82A99F1}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppMotor.TestCore", "src\AppMotor.TestCore\AppMotor.TestCore.csproj", "{AB89C96D-65A1-4753-A686-F6DB5B26423D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppMotor.TestKit", "src\TestKit\AppMotor.TestKit.csproj", "{AB89C96D-65A1-4753-A686-F6DB5B26423D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CliApp", "CliApp", "{199CEEF6-083D-4216-87BF-24630D8C6DEE}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HttpServer", "HttpServer", "{95655C2B-7841-4B20-BA71-827B8E8127DA}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppMotor.CliApp.TerminalColorsSample", "samples\AppMotor.CliApp.TerminalColorsSample\AppMotor.CliApp.TerminalColorsSample.csproj", "{D8624985-4035-4989-BCA5-6224337C8B84}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppMotor.CliKit.Samples.TerminalColors", "samples\CliKit\TerminalColors\AppMotor.CliKit.Samples.TerminalColors.csproj", "{D8624985-4035-4989-BCA5-6224337C8B84}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppMotor.CliApp.ProgressBarSample", "samples\AppMotor.CliApp.ProgressBarSample\AppMotor.CliApp.ProgressBarSample.csproj", "{8A9084C9-9812-4024-BB76-76A43615BF52}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppMotor.CliKit.Samples.ProgressBar", "samples\CliKit\ProgressBar\AppMotor.CliKit.Samples.ProgressBar.csproj", "{8A9084C9-9812-4024-BB76-76A43615BF52}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppMotor.HttpServer.WebApiSample", "samples\AppMotor.HttpServer.WebApiSample\AppMotor.HttpServer.WebApiSample.csproj", "{FAD59A4C-6CFA-4D71-B7DC-480A126C1392}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppMotor.HttpServer.Samples.WebApi", "samples\HttpServerKit\WebApi\AppMotor.HttpServerKit.Samples.WebApi.csproj", "{FAD59A4C-6CFA-4D71-B7DC-480A126C1392}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppMotor.NetStandardCompat", "src\AppMotor.NetStandardCompat\AppMotor.NetStandardCompat.csproj", "{5F4F04CF-6FEF-4670-A881-F9F0F4E8B2A2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppMotor.NetStandardCompatKit", "src\NetStandardCompatKit\AppMotor.NetStandardCompatKit.csproj", "{5F4F04CF-6FEF-4670-A881-F9F0F4E8B2A2}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Samples", "Samples", "{60F6BE59-003B-4E38-AF94-C7A91AADC34B}"
 EndProject

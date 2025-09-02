@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="$(ProjectCommonsDirectory)Project.Tests.props" />
+
+  <PropertyGroup>
+    <RootNamespace>AppMotor.CliKit</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Mustache.MSBuild" Version="0.3.3">
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\CliKit\AppMotor.CliKit.csproj" />
+    <ProjectReference Include="..\..\src\TestKit\AppMotor.TestKit.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Tests\CliApplicationExecutorTests.cs">
+      <DependentUpon>CliApplicationExecutorTests.cs.mustache</DependentUpon>
+    </Compile>
+    <None Update="Tests\CliApplicationExecutorTests.cs.json">
+      <DependentUpon>CliApplicationExecutorTests.cs.mustache</DependentUpon>
+    </None>
+    <Compile Update="Tests\CommandLine\CliCommandExecutorTests.cs">
+      <DependentUpon>CliCommandExecutorTests.cs.mustache</DependentUpon>
+    </Compile>
+    <None Update="Tests\CommandLine\CliCommandExecutorTests.cs.json">
+      <DependentUpon>CliCommandExecutorTests.cs.mustache</DependentUpon>
+    </None>
+  </ItemGroup>
+
+</Project>

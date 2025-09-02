@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="$(ProjectCommonsDirectory)Project.Code.props" />
+  <Import Project="$(ProjectCommonsDirectory)Project.NuGetPackage.props" />
+  <Import Project="../Common.props" />
+  <Import Project="../Versions.props" />
+
+  <PropertyGroup>
+    <Version>$(AppMotorTestCoreVersion)</Version>
+
+    <Description>Sharable test helper APIs.</Description>
+
+    <!-- This allows a developer to temporarily disable the requirements for documentation more easily during development. -->
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="9.0.8" />
+    <PackageReference Include="Shouldly" Version="4.3.0" />
+    <PackageReference Include="xunit.abstractions" Version="2.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CliKit\AppMotor.CliKit.csproj" />
+    <ProjectReference Include="..\CoreKit\AppMotor.CoreKit.csproj" />
+  </ItemGroup>
+
+</Project>

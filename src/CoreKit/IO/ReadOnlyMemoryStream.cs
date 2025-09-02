@@ -1,0 +1,43 @@
+﻿// SPDX-License-Identifier: MIT
+// Copyright AppMotor Framework (https://github.com/skrysm/AppMotor)
+
+using JetBrains.Annotations;
+
+namespace AppMotor.CoreKit.IO;
+
+/// <summary>
+/// Represents a read-only version of <see cref="MemoryStream"/>.
+/// </summary>
+[PublicAPI]
+public class ReadOnlyMemoryStream : ReadOnlyStream
+{
+    /// <summary>
+    /// Constructor.
+    /// </summary>
+    /// <param name="buffer">The buffer to wrap in this read-only stream</param>
+    public ReadOnlyMemoryStream(ArraySegment<byte> buffer)
+        : base(CreateMemoryStreamFromArraySegment(buffer))
+    {
+    }
+
+    [MustUseReturnValue]
+    private static MemoryStream CreateMemoryStreamFromArraySegment(ArraySegment<byte> buffer)
+    {
+        if (buffer.Array is null)
+        {
+            if (buffer is { Offset: 0, Count: 0 })
+            {
+                return new MemoryStream([], 0, 0, writable: false);
+            }
+            else
+            {
+                // Judging from the code of ArraySegment, this should never happen.
+                throw new ArgumentException("The array segment contains no array.", nameof(buffer));
+            }
+        }
+        else
+        {
+            return new MemoryStream(buffer.Array, buffer.Offset, buffer.Count, writable: false);
+        }
+    }
+}
