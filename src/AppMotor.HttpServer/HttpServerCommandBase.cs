@@ -28,7 +28,7 @@ namespace AppMotor.HttpServer;
 ///
 /// <para>You may want to override <see cref="CliCommand.ConfigureServices"/> to register
 /// your own services with the dependency injection system. You can also override <see cref="CreateStartupClass"/>
-/// to use another startup class than the default <see cref="MvcStartup"/> class.</para>
+/// to use a startup class other than the default <see cref="MvcStartup"/> class.</para>
 /// </summary>
 /// <remarks>
 /// See also: https://docs.microsoft.com/en-us/aspnet/core/fundamentals/host/generic-host

@@ -21,9 +21,7 @@ public static class HttpClientFactory
     /// <param name="serverCertificate">The server's TLS certificate; if <c>null</c> (and HTTPS is used), it'll
     /// be downloaded from the server and checked against the system CAs. This parameter is useful when
     /// using self-signed certificates.</param>
-    /// <param name="tlsProtocolsToUse">The TLS protocols to use; if <c>null</c>, <see cref="TlsSettings.EnabledTlsProtocols"/>
-    /// will be used (which is the recommended way)</param>
-    /// <returns></returns>
+    /// <param name="tlsProtocolsToUse">The TLS protocols to use; if <c>null</c>, the default will be used.</param>
     [SuppressMessage("Reliability", "CA2000:Dispose objects before losing scope", Justification = "Bug")] // BUG: https://github.com/dotnet/roslyn-analyzers/issues/4636
     public static HttpClient CreateHttpClient(
             TlsCertificate? serverCertificate = null,

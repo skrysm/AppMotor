@@ -250,7 +250,7 @@ public abstract class CliApplication
     /// <summary>
     /// Runs this application.
     /// </summary>
-    /// <param name="cancellationToken">A cancellation token to be used to cancel/stop long running
+    /// <param name="cancellationToken">A cancellation token to be used to cancel/stop long-running
     /// applications (e.g. server applications).</param>
     /// <returns>The exit code to use.</returns>
     [MustUseReturnValue]
@@ -263,7 +263,7 @@ public abstract class CliApplication
     /// Runs this application.
     /// </summary>
     /// <param name="args">The args arrays from the main method</param>
-    /// <param name="cancellationToken">A cancellation token to be used to cancel/stop long running
+    /// <param name="cancellationToken">A cancellation token to be used to cancel/stop long-running
     /// applications (e.g. server applications).</param>
     /// <returns>The exit code to use.</returns>
     [MustUseReturnValue]
@@ -285,7 +285,7 @@ public abstract class CliApplication
     /// <summary>
     /// Runs this application.
     /// </summary>
-    /// <param name="cancellationToken">A cancellation token to be used to cancel/stop long running
+    /// <param name="cancellationToken">A cancellation token to be used to cancel/stop long-running
     /// applications (e.g. server applications).</param>
     /// <returns>The exit code to use.</returns>
     [MustUseReturnValue]
@@ -298,7 +298,7 @@ public abstract class CliApplication
     /// Runs this application.
     /// </summary>
     /// <param name="args">The args arrays from the main method</param>
-    /// <param name="cancellationToken">A cancellation token to be used to cancel/stop long running
+    /// <param name="cancellationToken">A cancellation token to be used to cancel/stop long-running
     /// applications (e.g. server applications).</param>
     /// <returns>The exit code to use.</returns>
     [MustUseReturnValue]
