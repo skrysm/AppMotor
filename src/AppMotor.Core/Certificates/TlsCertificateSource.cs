@@ -232,7 +232,7 @@ public abstract class TlsCertificateSource
                     var pemFile = new PemFileInfo(this._separatePemEncodedPrivateKey);
                     if (pemFile.Blocks.Length == 1 && pemFile.Blocks[0].BlockType.Equals("RSA PRIVATE KEY", StringComparison.OrdinalIgnoreCase))
                     {
-                        throw new NotSupportedException("PEM files in the PKCS#1 format are not supported. Only the PKCS#8 format is supported.");
+                        throw new NotSupportedException("PEM files in PKCS#1 format are not supported. Only PKCS#8 format is supported.");
                     }
 
                     throw;
