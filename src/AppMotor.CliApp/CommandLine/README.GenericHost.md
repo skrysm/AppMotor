@@ -1,13 +1,13 @@
-# Generic Host Integration
+﻿# Generic Host Integration
 
 All `CliCommand`s provide integration with .NET's [Generic Host](https://learn.microsoft.com/en-us/dotnet/core/extensions/generic-host) functionality. Through this integration you get:
 
 * A [dependency injection (DI) framework](https://learn.microsoft.com/en-us/dotnet/core/extensions/dependency-injection)
 * A [logging framework](https://learn.microsoft.com/en-us/dotnet/core/extensions/logging?tabs=command-line) (via DI and `ILogger<T>`)
-* A [configuration system](https://github.com/skrysmanski/dotnet-docs/blob/main/README.Configuration.md)
+* A [configuration system](https://manski.net/articles/csharp-dotnet/configuration-system)
 * A lifetime of "hosted services" - that automatically starts and stops all registered server classes.
 
-*Side note:* To better understand how `IHostBuilder` work, see [Generic Host - demystified](https://github.com/skrysmanski/dotnet-docs/blob/main/README.GenericHost.md).
+*Side note:* To better understand how `IHostBuilder` work, see [Generic Host - demystified](https://manski.net/articles/csharp-dotnet/generichost).
 
 ## How to use the Generic Host
 

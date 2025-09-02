@@ -17,7 +17,7 @@ namespace AppMotor.Core.Utils;
 /// and <see cref="ValueException"/>s.
 /// </summary>
 /// <remarks>
-/// For details on the design of this class, see: https://github.com/skrysmanski/AppMotor/issues/11
+/// For details on the design of this class, see: https://github.com/skrysm/AppMotor/issues/11
 /// </remarks>
 public static class Validate
 {

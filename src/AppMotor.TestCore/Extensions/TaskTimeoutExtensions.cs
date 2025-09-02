@@ -35,7 +35,7 @@ public static class TaskTimeoutExtensions
     //   information). Unfortunately, we can't actually use synchronous methods here because this
     //   leads to deadlocks with XUnit's parallel test execution.
     //
-    //   See also: https://github.com/skrysmanski/AppMotor/pull/31
+    //   See also: https://github.com/skrysm/AppMotor/pull/31
     //
 
     /// <summary>
