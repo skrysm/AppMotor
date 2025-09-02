@@ -1,5 +1,5 @@
 ﻿// SPDX-License-Identifier: MIT
-// Copyright AppMotor Framework (https://github.com/skrysmanski/AppMotor)
+// Copyright AppMotor Framework (https://github.com/skrysm/AppMotor)
 
 using AppMotor.Core.Events;
 using AppMotor.Core.Utils;
