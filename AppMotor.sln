@@ -51,7 +51,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppMotor.CliApp.HostBuilder
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{AC7F8FF0-BAB9-4F25-B51A-06EC1721643E}"
 	ProjectSection(SolutionItems) = preProject
-		src\.editorconfig = src\.editorconfig
 		src\Common.props = src\Common.props
 	EndProjectSection
 EndProject
