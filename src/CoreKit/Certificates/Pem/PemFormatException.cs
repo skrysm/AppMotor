@@ -1,7 +1,7 @@
 ﻿// SPDX-License-Identifier: MIT
 // Copyright AppMotor Framework (https://github.com/skrysm/AppMotor)
 
-namespace AppMotor.Core.Certificates.Pem;
+namespace AppMotor.CoreKit.Certificates.Pem;
 
 /// <summary>
 /// Exception thrown for format errors in PEM files.

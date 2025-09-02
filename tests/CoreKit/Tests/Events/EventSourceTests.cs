@@ -1,13 +1,13 @@
 ﻿// SPDX-License-Identifier: MIT
 // Copyright AppMotor Framework (https://github.com/skrysm/AppMotor)
 
-using AppMotor.Core.Events;
+using AppMotor.CoreKit.Events;
 
 using Shouldly;
 
 using Xunit;
 
-namespace AppMotor.Core.Tests.Events;
+namespace AppMotor.CoreKit.Tests.Events;
 
 public sealed class EventSourceTests
 {

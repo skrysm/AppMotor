@@ -1,14 +1,14 @@
 ﻿// SPDX-License-Identifier: MIT
 // Copyright AppMotor Framework (https://github.com/skrysm/AppMotor)
 
-using AppMotor.CliApp.CommandLine.Utils;
-using AppMotor.TestCore.Utils;
+using AppMotor.CliKit.CommandLine.Utils;
+using AppMotor.TestKit.Utils;
 
 using JetBrains.Annotations;
 
 using Shouldly;
 
-namespace AppMotor.CliApp.TestUtils;
+namespace AppMotor.CliKit.TestUtils;
 
 internal sealed class TestApplicationHelper
 {

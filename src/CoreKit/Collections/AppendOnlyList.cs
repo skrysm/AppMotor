@@ -3,15 +3,15 @@
 
 using System.Collections;
 
-using AppMotor.Core.ObjectModel;
-using AppMotor.Core.Exceptions;
-using AppMotor.Core.Utils;
+using AppMotor.CoreKit.Exceptions;
+using AppMotor.CoreKit.ObjectModel;
+using AppMotor.CoreKit.Utils;
 
 using JetBrains.Annotations;
 
 using ExcludeFromCodeCoverageAttribute = System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverageAttribute;
 
-namespace AppMotor.Core.Collections;
+namespace AppMotor.CoreKit.Collections;
 
 /// <summary>
 /// Represents a list that can only be appended to (but not removed from or changed in any other way).

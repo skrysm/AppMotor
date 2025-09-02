@@ -6,7 +6,7 @@ using System.Text.RegularExpressions;
 
 using JetBrains.Annotations;
 
-namespace AppMotor.Core.Certificates.Pem;
+namespace AppMotor.CoreKit.Certificates.Pem;
 
 /// <summary>
 /// Provides information about the blocks in a PEM file. Get the information

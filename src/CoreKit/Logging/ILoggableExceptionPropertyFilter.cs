@@ -5,7 +5,7 @@ using System.Reflection;
 
 using JetBrains.Annotations;
 
-namespace AppMotor.Core.Logging;
+namespace AppMotor.CoreKit.Logging;
 
 /// <summary>
 /// Filter for <see cref="ExceptionLogExtensions.GetLoggablePropertyValues"/> and

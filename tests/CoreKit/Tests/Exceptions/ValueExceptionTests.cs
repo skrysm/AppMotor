@@ -1,14 +1,14 @@
 ﻿// SPDX-License-Identifier: MIT
 // Copyright AppMotor Framework (https://github.com/skrysm/AppMotor)
 
-using AppMotor.Core.Exceptions;
-using AppMotor.Core.Utils;
+using AppMotor.CoreKit.Exceptions;
+using AppMotor.CoreKit.Utils;
 
 using Shouldly;
 
 using Xunit;
 
-namespace AppMotor.Core.Tests.Exceptions;
+namespace AppMotor.CoreKit.Tests.Exceptions;
 
 public sealed class ValueExceptionTests
 {

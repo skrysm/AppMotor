@@ -1,7 +1,7 @@
 ﻿// SPDX-License-Identifier: MIT
 // Copyright AppMotor Framework (https://github.com/skrysm/AppMotor)
 
-namespace AppMotor.Core.Exceptions;
+namespace AppMotor.CoreKit.Exceptions;
 
 /// <summary>
 /// <see cref="ArgumentException"/> version of <see cref="CollectionIsReadOnlyException"/>.

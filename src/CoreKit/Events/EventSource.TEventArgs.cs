@@ -3,7 +3,7 @@
 
 using System.Diagnostics.CodeAnalysis;
 
-namespace AppMotor.Core.Events;
+namespace AppMotor.CoreKit.Events;
 
 /// <summary>
 /// <para>This class represents a different approach the events and is meant as replacement for C#'s built-in <c>event</c>s. The differences to

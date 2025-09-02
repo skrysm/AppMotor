@@ -4,12 +4,12 @@
 using System.Buffers;
 using System.Text;
 
-using AppMotor.Core.Extensions;
-using AppMotor.Core.IO;
+using AppMotor.CoreKit.Extensions;
+using AppMotor.CoreKit.IO;
 
 using JetBrains.Annotations;
 
-namespace AppMotor.Core.Utils;
+namespace AppMotor.CoreKit.Utils;
 
 /// <summary>
 /// Represents a Base32 encoding (as defined by RFC 4648) with a customizable symbol list.

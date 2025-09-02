@@ -3,7 +3,7 @@
   <Import Project="$(ProjectCommonsDirectory)Project.Tests.props" />
 
   <PropertyGroup>
-    <RootNamespace>AppMotor.CliApp.HttpServer</RootNamespace>
+    <RootNamespace>AppMotor.HttpServerKit</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>

@@ -1,7 +1,7 @@
 ﻿// SPDX-License-Identifier: MIT
 // Copyright AppMotor Framework (https://github.com/skrysm/AppMotor)
 
-namespace AppMotor.Core.DateAndTime;
+namespace AppMotor.CoreKit.DateAndTime;
 
 /// <summary>
 /// The default implementation of <see cref="IDateTimeProvider"/>. All properties

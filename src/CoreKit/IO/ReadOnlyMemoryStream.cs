@@ -3,7 +3,7 @@
 
 using JetBrains.Annotations;
 
-namespace AppMotor.Core.IO;
+namespace AppMotor.CoreKit.IO;
 
 /// <summary>
 /// Represents a read-only version of <see cref="MemoryStream"/>.

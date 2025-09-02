@@ -6,7 +6,7 @@ using Microsoft.Extensions.Logging;
 
 using Xunit.Abstractions;
 
-namespace AppMotor.TestCore.Logging;
+namespace AppMotor.TestKit.Logging;
 
 /// <summary>
 /// XUnit logging extension methods for .NET's host builder.

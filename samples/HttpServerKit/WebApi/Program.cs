@@ -1,7 +1,7 @@
-﻿using AppMotor.CliApp.Terminals;
-using AppMotor.HttpServer;
-using AppMotor.HttpServer.Startups;
-using AppMotor.HttpServer.WebApiSample.Db;
+﻿using AppMotor.CliKit.Terminals;
+using AppMotor.HttpServerKit;
+using AppMotor.HttpServerKit.Samples.WebApi.Db;
+using AppMotor.HttpServerKit.Startups;
 
 using Microsoft.EntityFrameworkCore;
 

@@ -6,7 +6,7 @@ using System.Text.RegularExpressions;
 
 using JetBrains.Annotations;
 
-namespace AppMotor.Core.Logging;
+namespace AppMotor.CoreKit.Logging;
 
 /// <summary>
 /// Cleans up stack traces to make them easier to read.

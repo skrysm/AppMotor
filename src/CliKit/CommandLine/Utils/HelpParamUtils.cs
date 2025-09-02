@@ -1,11 +1,11 @@
 ﻿// SPDX-License-Identifier: MIT
 // Copyright AppMotor Framework (https://github.com/skrysm/AppMotor)
 
-using AppMotor.Core.Utils;
+using AppMotor.CoreKit.Utils;
 
 using JetBrains.Annotations;
 
-namespace AppMotor.CliApp.CommandLine.Utils;
+namespace AppMotor.CliKit.CommandLine.Utils;
 
 /// <summary>
 /// Provides utility methods for the help parameter/command.

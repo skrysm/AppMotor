@@ -6,7 +6,7 @@ using System.Diagnostics.CodeAnalysis;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
-namespace AppMotor.CliApp.CommandLine;
+namespace AppMotor.CliKit.CommandLine;
 
 /// <summary>
 /// <para>A command that just runs one or more servers.</para>

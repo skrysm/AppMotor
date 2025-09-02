@@ -3,7 +3,7 @@
 
 using System.Collections;
 
-namespace AppMotor.Core.TestUtils;
+namespace AppMotor.CoreKit.TestUtils;
 
 internal static class EnumeratorTestHelper
 {

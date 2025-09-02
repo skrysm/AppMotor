@@ -3,14 +3,14 @@
 
 using System.Collections.ObjectModel;
 
-using AppMotor.Core.Exceptions;
-using AppMotor.Core.Utils;
+using AppMotor.CoreKit.Exceptions;
+using AppMotor.CoreKit.Utils;
 
 using Shouldly;
 
 using Xunit;
 
-namespace AppMotor.Core.Tests.Utils;
+namespace AppMotor.CoreKit.Tests.Utils;
 
 // ReSharper disable NotResolvedInText
 public sealed class ValidateTests

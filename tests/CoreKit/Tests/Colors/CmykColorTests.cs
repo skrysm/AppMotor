@@ -3,16 +3,16 @@
 
 using System.Drawing;
 
-using AppMotor.Core.Colors;
-using AppMotor.Core.Extensions;
-using AppMotor.TestCore;
-using AppMotor.TestCore.TestData;
+using AppMotor.CoreKit.Colors;
+using AppMotor.CoreKit.Extensions;
+using AppMotor.TestKit;
+using AppMotor.TestKit.TestData;
 
 using Shouldly;
 
 using Xunit;
 
-namespace AppMotor.Core.Tests.Colors;
+namespace AppMotor.CoreKit.Tests.Colors;
 
 /// <summary>
 /// Tests for <see cref="CmykColor"/>.

@@ -3,15 +3,15 @@
 
 using System.Drawing;
 
-using AppMotor.Core.Colors;
-using AppMotor.TestCore;
+using AppMotor.CoreKit.Colors;
+using AppMotor.TestKit;
 
 using Shouldly;
 
 using Xunit;
 using Xunit.Abstractions;
 
-namespace AppMotor.Core.Tests.Colors;
+namespace AppMotor.CoreKit.Tests.Colors;
 
 public sealed class HexColorTests : TestBase
 {

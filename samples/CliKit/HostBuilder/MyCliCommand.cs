@@ -1,9 +1,9 @@
-﻿using AppMotor.CliApp.CommandLine;
+﻿using AppMotor.CliKit.CommandLine;
 
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
-namespace AppMotor.CliApp.HostBuilder.Sample;
+namespace AppMotor.CliKit.Samples.HostBuilder;
 
 internal sealed class MyCliCommand : CliCommand
 {

@@ -3,14 +3,14 @@
 
 using System.Drawing;
 
-using AppMotor.CliApp.Terminals.Formatting;
-using AppMotor.Core.Colors;
+using AppMotor.CliKit.Terminals.Formatting;
+using AppMotor.CoreKit.Colors;
 
 using Shouldly;
 
 using Xunit;
 
-namespace AppMotor.CliApp.Tests.Terminals.Formatting;
+namespace AppMotor.CliKit.Tests.Terminals.Formatting;
 
 /// <summary>
 /// Tests for <see cref="TermText"/> and related tests for <see cref="AnsiTextFormatter"/>.

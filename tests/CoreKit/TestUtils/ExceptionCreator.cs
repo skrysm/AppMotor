@@ -1,11 +1,11 @@
 ﻿// SPDX-License-Identifier: MIT
 // Copyright AppMotor Framework (https://github.com/skrysm/AppMotor)
 
-using AppMotor.Core.Exceptions;
+using AppMotor.CoreKit.Exceptions;
 
 using Shouldly;
 
-namespace AppMotor.Core.TestUtils;
+namespace AppMotor.CoreKit.TestUtils;
 
 internal sealed class ExceptionCreator<TException> where TException : Exception
 {

@@ -3,9 +3,9 @@
 
 using System.Collections.Concurrent;
 
-using AppMotor.CliApp.Logging.Formatters;
-using AppMotor.CliApp.Terminals;
-using AppMotor.Core.Utils;
+using AppMotor.CliKit.Logging.Formatters;
+using AppMotor.CliKit.Terminals;
+using AppMotor.CoreKit.Utils;
 
 using JetBrains.Annotations;
 
@@ -13,7 +13,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Logging.Console;
 using Microsoft.Extensions.Options;
 
-namespace AppMotor.CliApp.Logging;
+namespace AppMotor.CliKit.Logging;
 
 /// <summary>
 /// Creates <see cref="TerminalLogger"/> instances. Register this provider via <see cref="TerminalLoggerExtensions.AddTerminalLogger"/>.

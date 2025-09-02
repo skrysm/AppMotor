@@ -5,7 +5,7 @@ using System.Collections;
 
 using Xunit.Abstractions;
 
-namespace AppMotor.TestCore.TestData;
+namespace AppMotor.TestKit.TestData;
 
 /// <summary>
 /// Base class to test data providers for xUnit. To use a test data class, attribute

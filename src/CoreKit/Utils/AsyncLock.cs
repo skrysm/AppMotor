@@ -3,7 +3,7 @@
 
 using JetBrains.Annotations;
 
-namespace AppMotor.Core.Utils;
+namespace AppMotor.CoreKit.Utils;
 
 /// <summary>
 /// Like using <c>lock</c> but can be used with <c>async</c> statements. Use one of the <c>AcquireAsync</c> methods

@@ -1,10 +1,10 @@
 ﻿// SPDX-License-Identifier: MIT
 // Copyright AppMotor Framework (https://github.com/skrysm/AppMotor)
 
-using AppMotor.Core.Events;
-using AppMotor.Core.Utils;
+using AppMotor.CoreKit.Events;
+using AppMotor.CoreKit.Utils;
 
-namespace AppMotor.CliApp.CommandLine;
+namespace AppMotor.CliKit.CommandLine;
 
 /// <summary>
 /// Implementation of <see cref="IServiceHostLifetimeEvents"/>.

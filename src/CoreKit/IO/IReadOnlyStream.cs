@@ -3,7 +3,7 @@
 
 using JetBrains.Annotations;
 
-namespace AppMotor.Core.IO;
+namespace AppMotor.CoreKit.IO;
 
 /// <summary>
 /// Represents a <see cref="Stream"/> that can only be read (but not written).

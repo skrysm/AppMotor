@@ -1,11 +1,11 @@
 ﻿// SPDX-License-Identifier: MIT
 // Copyright AppMotor Framework (https://github.com/skrysm/AppMotor)
 
-using AppMotor.Core.IO;
+using AppMotor.CoreKit.IO;
 
 using JetBrains.Annotations;
 
-namespace AppMotor.Core.Utils;
+namespace AppMotor.CoreKit.Utils;
 
 /// <summary>
 /// Represents an RFC 4648 encoding - i.e. Base16, Base32, or Base64.

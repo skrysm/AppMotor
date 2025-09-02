@@ -1,10 +1,10 @@
-﻿using AppMotor.HttpServer.WebApiSample.Models;
+﻿using AppMotor.HttpServerKit.Samples.WebApi.Models;
 
 using JetBrains.Annotations;
 
 using Microsoft.EntityFrameworkCore;
 
-namespace AppMotor.HttpServer.WebApiSample.Db;
+namespace AppMotor.HttpServerKit.Samples.WebApi.Db;
 
 public class TodoContext : DbContext
 {

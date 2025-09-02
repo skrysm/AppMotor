@@ -3,9 +3,9 @@
 
 using System.Globalization;
 
-using AppMotor.CliApp.Terminals.Formatting;
-using AppMotor.Core.Extensions;
-using AppMotor.Core.Utils;
+using AppMotor.CliKit.Terminals.Formatting;
+using AppMotor.CoreKit.Extensions;
+using AppMotor.CoreKit.Utils;
 
 using JetBrains.Annotations;
 
@@ -14,7 +14,7 @@ using Microsoft.Extensions.Logging.Abstractions;
 using Microsoft.Extensions.Logging.Console;
 using Microsoft.Extensions.Options;
 
-namespace AppMotor.CliApp.Logging.Formatters;
+namespace AppMotor.CliKit.Logging.Formatters;
 
 /// <summary>
 /// Abstract base class for implementations of <see cref="ITerminalLogEntryFormatter"/>.

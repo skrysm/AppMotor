@@ -3,7 +3,7 @@
 
 using JetBrains.Annotations;
 
-namespace AppMotor.Core.Colors;
+namespace AppMotor.CoreKit.Colors;
 
 /// <summary>
 /// Represents a color in the CMY (cyan, magenta, yellow) color model.

@@ -3,7 +3,7 @@
 
 using JetBrains.Annotations;
 
-namespace AppMotor.Core.Exceptions;
+namespace AppMotor.CoreKit.Exceptions;
 
 /// <summary>
 /// This exception is for places that code should never reach (because of the logical control flow)

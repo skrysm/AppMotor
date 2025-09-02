@@ -5,7 +5,7 @@ using JetBrains.Annotations;
 
 using Xunit.Abstractions;
 
-namespace AppMotor.TestCore.Extensions;
+namespace AppMotor.TestKit.Extensions;
 
 /// <summary>
 /// Extension methods for <see cref="ITestOutputHelper"/>

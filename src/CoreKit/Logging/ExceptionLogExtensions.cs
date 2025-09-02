@@ -4,12 +4,12 @@
 using System.Collections.Immutable;
 using System.Reflection;
 
-using AppMotor.Core.ObjectModel;
-using AppMotor.Core.Utils;
+using AppMotor.CoreKit.ObjectModel;
+using AppMotor.CoreKit.Utils;
 
 using JetBrains.Annotations;
 
-namespace AppMotor.Core.Logging;
+namespace AppMotor.CoreKit.Logging;
 
 /// <summary>
 /// Extension methods related to logging of exceptions.

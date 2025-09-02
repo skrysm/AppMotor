@@ -6,7 +6,7 @@ using System.Globalization;
 
 using JetBrains.Annotations;
 
-namespace AppMotor.Core.ObjectModel;
+namespace AppMotor.CoreKit.ObjectModel;
 
 /// <summary>
 /// A <see cref="TypeConverter"/> that converts from and to <c>string</c>.

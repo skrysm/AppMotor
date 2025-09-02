@@ -3,10 +3,10 @@
 
 using System.Globalization;
 
-using AppMotor.Core.DateAndTime;
-using AppMotor.Core.Extensions;
-using AppMotor.TestCore;
-using AppMotor.TestCore.Shouldly;
+using AppMotor.CoreKit.DateAndTime;
+using AppMotor.CoreKit.Extensions;
+using AppMotor.TestKit;
+using AppMotor.TestKit.Shouldly;
 
 using Newtonsoft.Json;
 
@@ -16,7 +16,7 @@ using Xunit;
 
 using JsonSerializer = System.Text.Json.JsonSerializer;
 
-namespace AppMotor.Core.Tests.DateAndTime;
+namespace AppMotor.CoreKit.Tests.DateAndTime;
 
 /// <summary>
 /// Tests for <see cref="DateTimeUtc"/>.

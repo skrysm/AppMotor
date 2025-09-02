@@ -1,7 +1,7 @@
 ﻿// SPDX-License-Identifier: MIT
 // Copyright AppMotor Framework (https://github.com/skrysm/AppMotor)
 
-namespace AppMotor.CliApp.Terminals;
+namespace AppMotor.CliKit.Terminals;
 
 /// <summary>
 /// Represents a terminal/console without any "fancy" functionality; i.e. it supports reading and writing but

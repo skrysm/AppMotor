@@ -1,10 +1,10 @@
 ﻿using System.Diagnostics;
 
-using AppMotor.HttpServer.MvcSample.Models;
+using AppMotor.HttpServerKit.Samples.Mvc.Models;
 
 using Microsoft.AspNetCore.Mvc;
 
-namespace AppMotor.HttpServer.MvcSample.Controllers;
+namespace AppMotor.HttpServerKit.Samples.Mvc.Controllers;
 
 public class HomeController : Controller
 {

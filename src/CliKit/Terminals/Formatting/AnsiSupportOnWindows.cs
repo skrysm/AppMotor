@@ -4,7 +4,7 @@
 using System.Diagnostics.CodeAnalysis;
 using System.Runtime.InteropServices;
 
-namespace AppMotor.CliApp.Terminals.Formatting;
+namespace AppMotor.CliKit.Terminals.Formatting;
 
 /// <summary>
 /// Takes care about ANSI escape sequence support on Windows - see <see cref="Enable"/>.

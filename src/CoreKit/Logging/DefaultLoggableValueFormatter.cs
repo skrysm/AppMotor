@@ -4,10 +4,10 @@
 using System.Globalization;
 using System.Security;
 
-using AppMotor.Core.ObjectModel;
-using AppMotor.Core.Utils;
+using AppMotor.CoreKit.ObjectModel;
+using AppMotor.CoreKit.Utils;
 
-namespace AppMotor.Core.Logging;
+namespace AppMotor.CoreKit.Logging;
 
 /// <summary>
 /// Like <see cref="DefaultValueFormatter"/> - just for the purpose of logging. Unlike <see cref="DefaultValueFormatter"/>,

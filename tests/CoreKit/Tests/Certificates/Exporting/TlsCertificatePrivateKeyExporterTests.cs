@@ -3,13 +3,13 @@
 
 using System.Security.Cryptography.X509Certificates;
 
-using AppMotor.Core.Certificates;
+using AppMotor.CoreKit.Certificates;
 
 using Shouldly;
 
 using Xunit;
 
-namespace AppMotor.Core.Tests.Certificates.Exporting;
+namespace AppMotor.CoreKit.Tests.Certificates.Exporting;
 
 public sealed class TlsCertificatePrivateKeyExporterTests : TlsCertificateExporterTestBase
 {

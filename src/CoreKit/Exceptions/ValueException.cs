@@ -1,11 +1,11 @@
 ﻿// SPDX-License-Identifier: MIT
 // Copyright AppMotor Framework (https://github.com/skrysm/AppMotor)
 
-using AppMotor.Core.Utils;
+using AppMotor.CoreKit.Utils;
 
 using JetBrains.Annotations;
 
-namespace AppMotor.Core.Exceptions;
+namespace AppMotor.CoreKit.Exceptions;
 
 /// <summary>
 /// Equivalent to <see cref="ArgumentException"/> - just for values that are not arguments/parameters.

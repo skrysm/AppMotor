@@ -1,15 +1,15 @@
 ﻿// SPDX-License-Identifier: MIT
 // Copyright AppMotor Framework (https://github.com/skrysm/AppMotor)
 
-using AppMotor.CliApp.Logging;
-using AppMotor.CliApp.Terminals;
-using AppMotor.Core.DateAndTime;
+using AppMotor.CliKit.Logging;
+using AppMotor.CliKit.Terminals;
+using AppMotor.CoreKit.DateAndTime;
 
 using Shouldly;
 
 using Xunit;
 
-namespace AppMotor.CliApp.Tests.Logging;
+namespace AppMotor.CliKit.Tests.Logging;
 
 /// <summary>
 /// Tests for <see cref="TerminalLogOutputProcessor"/>.

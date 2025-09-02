@@ -1,7 +1,7 @@
 ﻿// SPDX-License-Identifier: MIT
 // Copyright AppMotor Framework (https://github.com/skrysm/AppMotor)
 
-namespace AppMotor.Core.Events;
+namespace AppMotor.CoreKit.Events;
 
 /// <summary>
 /// The public API surface of an <see cref="OneTimeEventSource"/> (accessible via <see cref="OneTimeEventSource.Event"/>).

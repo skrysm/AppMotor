@@ -1,11 +1,11 @@
 ﻿// SPDX-License-Identifier: MIT
 // Copyright AppMotor Framework (https://github.com/skrysm/AppMotor)
 
-using AppMotor.Core.Globalization;
+using AppMotor.CoreKit.Globalization;
 
 using JetBrains.Annotations;
 
-namespace AppMotor.Core.Utils;
+namespace AppMotor.CoreKit.Utils;
 
 /// <summary>
 /// Default implementation of <see cref="IValueFormatter"/>. Supports <see cref="IConvertible"/>

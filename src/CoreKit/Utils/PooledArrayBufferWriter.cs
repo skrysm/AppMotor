@@ -3,7 +3,7 @@
 
 using System.Buffers;
 
-namespace AppMotor.Core.Utils;
+namespace AppMotor.CoreKit.Utils;
 
 /// <summary>
 /// A <see cref="IBufferWriter{T}"/> that uses <see cref="ArrayPool{T}.Shared"/> to rent its buffer.

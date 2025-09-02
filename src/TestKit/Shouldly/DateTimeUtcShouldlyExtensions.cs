@@ -1,13 +1,13 @@
 ﻿// SPDX-License-Identifier: MIT
 // Copyright AppMotor Framework (https://github.com/skrysm/AppMotor)
 
-using AppMotor.Core.DateAndTime;
+using AppMotor.CoreKit.DateAndTime;
 
 using JetBrains.Annotations;
 
 using Shouldly;
 
-namespace AppMotor.TestCore.Shouldly;
+namespace AppMotor.TestKit.Shouldly;
 
 /// <summary>
 /// <see cref="Should"/>ly extensions for <see cref="DateTimeUtc"/>.

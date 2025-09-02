@@ -1,11 +1,11 @@
 ﻿// SPDX-License-Identifier: MIT
 // Copyright AppMotor Framework (https://github.com/skrysm/AppMotor)
 
-using AppMotor.Core.Colors;
+using AppMotor.CoreKit.Colors;
 
 using JetBrains.Annotations;
 
-namespace AppMotor.CliApp.Terminals.Formatting;
+namespace AppMotor.CliKit.Terminals.Formatting;
 
 /// <summary>
 /// Creates colored text for console applications.

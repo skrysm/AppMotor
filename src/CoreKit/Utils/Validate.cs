@@ -4,13 +4,13 @@
 using System.Diagnostics.CodeAnalysis;
 using System.Runtime.CompilerServices;
 
-using AppMotor.Core.Exceptions;
+using AppMotor.CoreKit.Exceptions;
 
 using JetBrains.Annotations;
 
 using NotNullOnExitAttribute = System.Diagnostics.CodeAnalysis.NotNullAttribute;
 
-namespace AppMotor.Core.Utils;
+namespace AppMotor.CoreKit.Utils;
 
 /// <summary>
 /// Provides various validation methods for parameters and values in general. Raises <see cref="ArgumentException"/>s

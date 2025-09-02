@@ -1,14 +1,14 @@
 ﻿// SPDX-License-Identifier: MIT
 // Copyright AppMotor Framework (https://github.com/skrysm/AppMotor)
 
-using AppMotor.CliApp.Logging.Formatters;
-using AppMotor.CliApp.Terminals;
+using AppMotor.CliKit.Logging.Formatters;
+using AppMotor.CliKit.Terminals;
 
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Logging.Abstractions;
 using Microsoft.Extensions.Logging.Console;
 
-namespace AppMotor.CliApp.Logging;
+namespace AppMotor.CliKit.Logging;
 
 /// <summary>
 /// <see cref="ILogger"/> implementation that writes to a <see cref="ITerminalOutput"/> instance

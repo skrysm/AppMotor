@@ -3,8 +3,8 @@
 
 using System.Text;
 
-using AppMotor.CliApp.Terminals;
-using AppMotor.CliApp.Terminals.Formatting;
+using AppMotor.CliKit.Terminals;
+using AppMotor.CliKit.Terminals.Formatting;
 
 using JetBrains.Annotations;
 
@@ -15,7 +15,7 @@ using Shouldly;
 
 using Xunit;
 
-namespace AppMotor.CliApp.Tests.Terminals;
+namespace AppMotor.CliKit.Tests.Terminals;
 
 /// <summary>
 /// Tests for <see cref="TerminalWriterBase"/>.

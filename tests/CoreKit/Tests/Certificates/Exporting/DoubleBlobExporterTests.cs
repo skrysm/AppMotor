@@ -4,7 +4,7 @@
 using System.IO.Abstractions.TestingHelpers;
 using System.Security.Cryptography;
 
-using AppMotor.Core.Certificates.Exporting;
+using AppMotor.CoreKit.Certificates.Exporting;
 
 using JetBrains.Annotations;
 
@@ -12,7 +12,7 @@ using Shouldly;
 
 using Xunit;
 
-namespace AppMotor.Core.Tests.Certificates.Exporting;
+namespace AppMotor.CoreKit.Tests.Certificates.Exporting;
 
 public sealed class DoubleBlobExporterTests
 {

@@ -1,7 +1,7 @@
 ﻿// SPDX-License-Identifier: MIT
 // Copyright AppMotor Framework (https://github.com/skrysm/AppMotor)
 
-using AppMotor.CliApp.Logging.Formatters;
+using AppMotor.CliKit.Logging.Formatters;
 
 using JetBrains.Annotations;
 
@@ -12,7 +12,7 @@ using Microsoft.Extensions.Logging.Configuration;
 using Microsoft.Extensions.Logging.Console;
 using Microsoft.Extensions.Options;
 
-namespace AppMotor.CliApp.Logging;
+namespace AppMotor.CliKit.Logging;
 
 /// <summary>
 /// Appplication build extensions for <see cref="TerminalLogger"/>.

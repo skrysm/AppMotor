@@ -3,11 +3,11 @@
 
 using System.Diagnostics;
 
-using AppMotor.Core.Colors;
+using AppMotor.CoreKit.Colors;
 
 using JetBrains.Annotations;
 
-namespace AppMotor.CliApp.Terminals.Formatting;
+namespace AppMotor.CliKit.Terminals.Formatting;
 
 /// <summary>
 /// Contains a certain ANSI style (certain color, underlined, ...) and allows you to create strings that are styled in this

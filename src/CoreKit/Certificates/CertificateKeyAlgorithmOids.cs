@@ -3,7 +3,7 @@
 
 using JetBrains.Annotations;
 
-namespace AppMotor.Core.Certificates;
+namespace AppMotor.CoreKit.Certificates;
 
 /// <summary>
 /// Contains the OIDs for various certificate key algorithms.

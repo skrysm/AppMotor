@@ -1,15 +1,15 @@
 ﻿// SPDX-License-Identifier: MIT
 // Copyright AppMotor Framework (https://github.com/skrysm/AppMotor)
 
-using AppMotor.Core.TestUtils;
-using AppMotor.Core.Threading;
-using AppMotor.TestCore;
+using AppMotor.CoreKit.TestUtils;
+using AppMotor.CoreKit.Threading;
+using AppMotor.TestKit;
 
 using Shouldly;
 
 using Xunit;
 
-namespace AppMotor.Core.Tests.Threading;
+namespace AppMotor.CoreKit.Tests.Threading;
 
 public sealed class TaskListTests
 {

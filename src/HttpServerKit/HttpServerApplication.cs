@@ -3,9 +3,9 @@
 
 using System.Reflection;
 
-using AppMotor.CliApp.CommandLine;
-using AppMotor.Core.Net;
-using AppMotor.HttpServer.Startups;
+using AppMotor.CliKit.CommandLine;
+using AppMotor.CoreKit.Net;
+using AppMotor.HttpServerKit.Startups;
 
 using JetBrains.Annotations;
 
@@ -13,7 +13,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
-namespace AppMotor.HttpServer;
+namespace AppMotor.HttpServerKit;
 
 /// <summary>
 /// A very simple HTTP server reachable only on a single HTTP port. Enables ASP.NET Core MVC (with Razor views).

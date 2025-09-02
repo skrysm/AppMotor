@@ -7,7 +7,7 @@ using System.Text.RegularExpressions;
 
 using JetBrains.Annotations;
 
-namespace AppMotor.Core.Utils;
+namespace AppMotor.CoreKit.Utils;
 
 /// <summary>
 /// Provides a type's name in C# syntax.

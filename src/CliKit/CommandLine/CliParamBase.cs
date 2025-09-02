@@ -6,12 +6,12 @@ using System.CommandLine;
 using System.CommandLine.Parsing;
 using System.ComponentModel;
 
-using AppMotor.CliApp.CommandLine.Utils;
-using AppMotor.Core.Utils;
+using AppMotor.CliKit.CommandLine.Utils;
+using AppMotor.CoreKit.Utils;
 
 using JetBrains.Annotations;
 
-namespace AppMotor.CliApp.CommandLine;
+namespace AppMotor.CliKit.CommandLine;
 
 /// <summary>
 /// Non-generic base class for <see cref="CliParam{T}"/>.

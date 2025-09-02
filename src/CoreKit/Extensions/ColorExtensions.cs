@@ -3,11 +3,11 @@
 
 using System.Drawing;
 
-using AppMotor.Core.Colors;
+using AppMotor.CoreKit.Colors;
 
 using JetBrains.Annotations;
 
-namespace AppMotor.Core.Extensions;
+namespace AppMotor.CoreKit.Extensions;
 
 /// <summary>
 /// Extension methods for <see cref="Color"/> and <see cref="RgbColor"/>.

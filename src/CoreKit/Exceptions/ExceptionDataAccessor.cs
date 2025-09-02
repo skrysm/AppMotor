@@ -4,11 +4,11 @@
 using System.Collections;
 using System.Diagnostics.CodeAnalysis;
 
-using AppMotor.Core.Extensions;
+using AppMotor.CoreKit.Extensions;
 
 using JetBrains.Annotations;
 
-namespace AppMotor.Core.Exceptions;
+namespace AppMotor.CoreKit.Exceptions;
 
 /// <summary>
 /// Provides safe access to the <see cref="Exception.Data"/> property. Usually obtained through

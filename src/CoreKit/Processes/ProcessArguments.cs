@@ -3,9 +3,9 @@
 
 using System.Diagnostics;
 
-using AppMotor.Core.Utils;
+using AppMotor.CoreKit.Utils;
 
-namespace AppMotor.Core.Processes;
+namespace AppMotor.CoreKit.Processes;
 
 /// <summary>
 /// Represents the arguments for a process as a list (rather than a single string). Provides

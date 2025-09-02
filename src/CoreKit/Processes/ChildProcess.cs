@@ -4,11 +4,11 @@
 using System.ComponentModel;
 using System.Diagnostics;
 
-using AppMotor.Core.Utils;
+using AppMotor.CoreKit.Utils;
 
 using JetBrains.Annotations;
 
-namespace AppMotor.Core.Processes;
+namespace AppMotor.CoreKit.Processes;
 
 /// <summary>
 /// Convenience class to execute child processes. This class especially takes care of potential

@@ -5,7 +5,7 @@ using System.Security.Cryptography.X509Certificates;
 
 using JetBrains.Annotations;
 
-namespace AppMotor.Core.Certificates;
+namespace AppMotor.CoreKit.Certificates;
 
 /// <summary>
 /// Represents the public key of a certificate.

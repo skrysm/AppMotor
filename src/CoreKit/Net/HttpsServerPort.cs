@@ -1,12 +1,12 @@
 ﻿// SPDX-License-Identifier: MIT
 // Copyright AppMotor Framework (https://github.com/skrysm/AppMotor)
 
-using AppMotor.Core.Certificates;
-using AppMotor.Core.Utils;
+using AppMotor.CoreKit.Certificates;
+using AppMotor.CoreKit.Utils;
 
 using JetBrains.Annotations;
 
-namespace AppMotor.Core.Net;
+namespace AppMotor.CoreKit.Net;
 
 /// <summary>
 /// Represents an HTTPS server port.

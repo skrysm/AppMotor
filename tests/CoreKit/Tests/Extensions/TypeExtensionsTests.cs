@@ -5,8 +5,8 @@ using System.Collections;
 using System.Numerics;
 using System.Reflection;
 
-using AppMotor.Core.ObjectModel;
-using AppMotor.Core.Extensions;
+using AppMotor.CoreKit.Extensions;
+using AppMotor.CoreKit.ObjectModel;
 
 using JetBrains.Annotations;
 
@@ -14,10 +14,10 @@ using Shouldly;
 
 using Xunit;
 
-namespace AppMotor.Core.Tests.Extensions;
+namespace AppMotor.CoreKit.Tests.Extensions;
 
 /// <summary>
-/// Tests for <see cref="Core.Extensions.TypeExtensions"/>.
+/// Tests for <see cref="CoreKit.Extensions.TypeExtensions"/>.
 /// </summary>
 public sealed class TypeExtensionsTests
 {
@@ -93,7 +93,7 @@ public sealed class TypeExtensionsTests
     }
 
     /// <summary>
-    /// Tests that <see cref="Core.Extensions.TypeExtensions.GetDefaultValue"/> doesn't call the parameterless constructor on structs
+    /// Tests that <see cref="CoreKit.Extensions.TypeExtensions.GetDefaultValue"/> doesn't call the parameterless constructor on structs
     /// (which are allowed since some previous C# version).
     /// </summary>
     [Fact]

@@ -5,9 +5,9 @@ using System.Diagnostics.CodeAnalysis;
 using System.Globalization;
 using System.Numerics;
 
-using AppMotor.Core.Extensions;
-using AppMotor.Core.Utils;
-using AppMotor.TestCore.TestData;
+using AppMotor.CoreKit.Extensions;
+using AppMotor.CoreKit.Utils;
+using AppMotor.TestKit.TestData;
 
 using JetBrains.Annotations;
 
@@ -16,7 +16,7 @@ using Shouldly;
 using Xunit;
 using Xunit.Abstractions;
 
-namespace AppMotor.Core.Tests.Utils;
+namespace AppMotor.CoreKit.Tests.Utils;
 
 /// <summary>
 /// Tests for <see cref="NumberTypeConverter"/>.

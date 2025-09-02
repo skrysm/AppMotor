@@ -5,7 +5,7 @@ using System.IO.Abstractions;
 
 using JetBrains.Annotations;
 
-namespace AppMotor.Core.IO;
+namespace AppMotor.CoreKit.IO;
 
 /// <summary>
 /// Provides a convenience way to specify the actual file system when working with <c>System.IO.Abstractions</c>.

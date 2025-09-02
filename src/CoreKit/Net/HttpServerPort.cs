@@ -3,7 +3,7 @@
 
 using JetBrains.Annotations;
 
-namespace AppMotor.Core.Net;
+namespace AppMotor.CoreKit.Net;
 
 /// <summary>
 /// Represents an HTTP server port. For HTTPS, use <see cref="HttpsServerPort"/> instead.

@@ -1,10 +1,10 @@
-﻿using AppMotor.HttpServer.WebApiSample.Db;
-using AppMotor.HttpServer.WebApiSample.Models;
+﻿using AppMotor.HttpServerKit.Samples.WebApi.Db;
+using AppMotor.HttpServerKit.Samples.WebApi.Models;
 
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
-namespace AppMotor.HttpServer.WebApiSample.Controllers;
+namespace AppMotor.HttpServerKit.Samples.WebApi.Controllers;
 
 /// <summary>
 /// Stores todo items in an (in-memory) database.

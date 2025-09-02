@@ -3,14 +3,14 @@
 
 using System.Numerics;
 
-using AppMotor.Core.ObjectModel;
-using AppMotor.Core.Logging;
+using AppMotor.CoreKit.Logging;
+using AppMotor.CoreKit.ObjectModel;
 
 using Shouldly;
 
 using Xunit;
 
-namespace AppMotor.Core.Tests.Logging;
+namespace AppMotor.CoreKit.Tests.Logging;
 
 public sealed class LoggableValuesTests
 {

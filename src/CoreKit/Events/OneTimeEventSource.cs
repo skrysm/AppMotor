@@ -3,7 +3,7 @@
 
 using System.Diagnostics.CodeAnalysis;
 
-namespace AppMotor.Core.Events;
+namespace AppMotor.CoreKit.Events;
 
 /// <summary>
 /// An event that will only happen one time (and then never again). Primary examples of such an event

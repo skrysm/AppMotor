@@ -4,13 +4,13 @@
 using System.ComponentModel;
 using System.Diagnostics.CodeAnalysis;
 
-using AppMotor.CliApp.Terminals.Formatting;
-using AppMotor.Core.Colors;
-using AppMotor.Core.Extensions;
+using AppMotor.CliKit.Terminals.Formatting;
+using AppMotor.CoreKit.Colors;
+using AppMotor.CoreKit.Extensions;
 
 using JetBrains.Annotations;
 
-namespace AppMotor.CliApp.Terminals;
+namespace AppMotor.CliKit.Terminals;
 
 /// <summary>
 /// Replacement for <see cref="Console"/> that supports <see cref="TermText"/>.

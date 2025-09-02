@@ -3,13 +3,13 @@
 
 using System.Text;
 
-using AppMotor.CliApp.Terminals;
+using AppMotor.CliKit.Terminals;
 
 using Shouldly;
 
 using Xunit;
 
-namespace AppMotor.CliApp.Tests.Terminals;
+namespace AppMotor.CliKit.Tests.Terminals;
 
 /// <summary>
 /// Tests for <see cref="SimpleTerminalWriter"/>.

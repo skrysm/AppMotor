@@ -5,7 +5,7 @@ using System.Collections.Concurrent;
 
 using JetBrains.Annotations;
 
-namespace AppMotor.Core.ObjectModel;
+namespace AppMotor.CoreKit.ObjectModel;
 
 /// <summary>
 /// Companion class to provide static properties and events for the <see cref="TypeMarker"/> feature.

@@ -6,11 +6,11 @@ using System.Diagnostics;
 using System.Diagnostics.CodeAnalysis;
 using System.Security.Cryptography;
 
-using AppMotor.Core.Utils;
+using AppMotor.CoreKit.Utils;
 
 using JetBrains.Annotations;
 
-namespace AppMotor.Core.Certificates;
+namespace AppMotor.CoreKit.Certificates;
 
 /// <summary>
 /// Represents an OID (object identifier) for (X.509) certificates. Each component of such a certificate (like Distinguished

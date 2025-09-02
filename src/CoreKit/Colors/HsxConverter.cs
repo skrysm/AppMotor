@@ -3,11 +3,11 @@
 
 using System.Runtime.CompilerServices;
 
-using AppMotor.Core.Extensions;
+using AppMotor.CoreKit.Extensions;
 
 using JetBrains.Annotations;
 
-namespace AppMotor.Core.Colors;
+namespace AppMotor.CoreKit.Colors;
 
 internal static class HsxConverter
 {

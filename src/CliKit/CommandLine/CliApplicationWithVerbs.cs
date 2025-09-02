@@ -3,11 +3,11 @@
 
 using System.Collections.Immutable;
 
-using AppMotor.CliApp.CommandLine.Utils;
+using AppMotor.CliKit.CommandLine.Utils;
 
 using JetBrains.Annotations;
 
-namespace AppMotor.CliApp.CommandLine;
+namespace AppMotor.CliKit.CommandLine;
 
 /// <summary>
 /// Represents a command line application with automatic command line argument parsing that bundles various

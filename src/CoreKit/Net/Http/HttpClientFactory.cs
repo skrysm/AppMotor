@@ -4,9 +4,9 @@
 using System.Diagnostics.CodeAnalysis;
 using System.Security.Authentication;
 
-using AppMotor.Core.Certificates;
+using AppMotor.CoreKit.Certificates;
 
-namespace AppMotor.Core.Net.Http;
+namespace AppMotor.CoreKit.Net.Http;
 
 /// <summary>
 /// Creates instances of <see cref="HttpClient"/>. Use this class if you need something other than

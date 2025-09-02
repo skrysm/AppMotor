@@ -1,16 +1,16 @@
 ﻿// SPDX-License-Identifier: MIT
 // Copyright AppMotor Framework (https://github.com/skrysm/AppMotor)
 
-using AppMotor.Core.Logging;
-using AppMotor.Core.TestUtils;
-using AppMotor.TestCore;
+using AppMotor.CoreKit.Logging;
+using AppMotor.CoreKit.TestUtils;
+using AppMotor.TestKit;
 
 using Shouldly;
 
 using Xunit;
 using Xunit.Abstractions;
 
-namespace AppMotor.Core.Tests.Logging;
+namespace AppMotor.CoreKit.Tests.Logging;
 
 public sealed class ExtendedExceptionStringExtensionsTests : TestBase
 {

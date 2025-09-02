@@ -1,12 +1,12 @@
 ﻿// SPDX-License-Identifier: MIT
 // Copyright AppMotor Framework (https://github.com/skrysm/AppMotor)
 
-using AppMotor.CliApp.Logging;
-using AppMotor.CliApp.Terminals;
+using AppMotor.CliKit.Logging;
+using AppMotor.CliKit.Terminals;
 
 using Microsoft.Extensions.Logging;
 
-namespace AppMotor.CliApp.AppBuilding;
+namespace AppMotor.CliKit.AppBuilding;
 
 /// <summary>
 /// The logger to configure in <see cref="DefaultHostBuilderFactory"/>.

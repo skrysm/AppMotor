@@ -3,7 +3,7 @@
 
 using JetBrains.Annotations;
 
-namespace AppMotor.Core.Exceptions;
+namespace AppMotor.CoreKit.Exceptions;
 
 /// <summary>
 /// This exception is for the <c>default</c> case in <c>switch</c> blocks where all other case blocks

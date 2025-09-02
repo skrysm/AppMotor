@@ -6,7 +6,7 @@
 // SPDX-License-Identifier: MIT
 // Copyright AppMotor Framework (https://github.com/skrysm/AppMotor)
 
-namespace AppMotor.CliApp.CommandLine;
+namespace AppMotor.CliKit.CommandLine;
 
 /// <summary>
 /// Represents the main/execute method of a <see cref="CliCommand"/> (via <see cref="CliCommand.Executor"/>).

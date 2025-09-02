@@ -3,17 +3,17 @@
 
 using System.Globalization;
 
-using AppMotor.Core.DateAndTime;
-using AppMotor.Core.Extensions;
-using AppMotor.TestCore;
-using AppMotor.TestCore.TestData;
+using AppMotor.CoreKit.DateAndTime;
+using AppMotor.CoreKit.Extensions;
+using AppMotor.TestKit;
+using AppMotor.TestKit.TestData;
 
 using Shouldly;
 
 using Xunit;
 using Xunit.Abstractions;
 
-namespace AppMotor.Core.Tests.DateAndTime;
+namespace AppMotor.CoreKit.Tests.DateAndTime;
 
 /// <summary>
 /// Tests for <see cref="Iso8601Instant"/>.

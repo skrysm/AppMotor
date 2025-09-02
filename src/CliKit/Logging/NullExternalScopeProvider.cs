@@ -3,7 +3,7 @@
 
 using Microsoft.Extensions.Logging;
 
-namespace AppMotor.CliApp.Logging;
+namespace AppMotor.CliKit.Logging;
 
 /// <summary>
 /// Scope provider that does nothing.

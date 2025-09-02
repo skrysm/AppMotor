@@ -1,4 +1,4 @@
-﻿namespace AppMotor.CliApp.ProgressBarSample.DataModels;
+﻿namespace AppMotor.CliKit.Samples.ProgressBar.DataModels;
 
 internal sealed class LayerPullInfo
 {

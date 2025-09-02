@@ -3,7 +3,7 @@
 
 using JetBrains.Annotations;
 
-namespace AppMotor.Core.Net;
+namespace AppMotor.CoreKit.Net;
 
 /// <summary>
 /// Represents information about a generic server port (i.e. the information required by a socket listen operation).

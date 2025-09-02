@@ -6,8 +6,8 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Text.Json;
 
-using AppMotor.Core.Logging;
-using AppMotor.Core.Utils;
+using AppMotor.CoreKit.Logging;
+using AppMotor.CoreKit.Utils;
 
 using JetBrains.Annotations;
 
@@ -15,7 +15,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Logging.Console;
 using Microsoft.Extensions.Options;
 
-namespace AppMotor.CliApp.Logging.Formatters;
+namespace AppMotor.CliKit.Logging.Formatters;
 
 internal sealed class JsonTerminalFormatter : AbstractTerminalLogEntryFormatter<JsonConsoleFormatterOptions>
 {

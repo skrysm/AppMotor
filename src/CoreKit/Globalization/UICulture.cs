@@ -5,7 +5,7 @@ using System.Globalization;
 
 using JetBrains.Annotations;
 
-namespace AppMotor.Core.Globalization;
+namespace AppMotor.CoreKit.Globalization;
 
 /// <summary>
 /// Provides access to information about the UI culture for the application - or for the current thread, to

@@ -3,11 +3,11 @@
 
 using System.Collections.Immutable;
 
-using AppMotor.Core.Utils;
+using AppMotor.CoreKit.Utils;
 
 using JetBrains.Annotations;
 
-namespace AppMotor.Core.Events;
+namespace AppMotor.CoreKit.Events;
 
 /// <summary>
 /// The public API surface of an <see cref="EventSource"/> (accessible via <see cref="EventSource.Event"/>).

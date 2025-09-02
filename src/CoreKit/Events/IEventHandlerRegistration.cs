@@ -1,7 +1,7 @@
 ﻿// SPDX-License-Identifier: MIT
 // Copyright AppMotor Framework (https://github.com/skrysm/AppMotor)
 
-namespace AppMotor.Core.Events;
+namespace AppMotor.CoreKit.Events;
 
 /// <summary>
 /// A registration for <see cref="Event{TEventHandler}"/>. Dispose this registration

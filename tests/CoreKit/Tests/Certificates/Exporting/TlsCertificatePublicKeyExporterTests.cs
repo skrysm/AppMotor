@@ -1,14 +1,14 @@
 ﻿// SPDX-License-Identifier: MIT
 // Copyright AppMotor Framework (https://github.com/skrysm/AppMotor)
 
-using AppMotor.Core.Certificates;
-using AppMotor.Core.Exceptions;
+using AppMotor.CoreKit.Certificates;
+using AppMotor.CoreKit.Exceptions;
 
 using Shouldly;
 
 using Xunit;
 
-namespace AppMotor.Core.Tests.Certificates.Exporting;
+namespace AppMotor.CoreKit.Tests.Certificates.Exporting;
 
 public sealed class TlsCertificatePublicKeyExporterTests : TlsCertificateExporterTestBase
 {

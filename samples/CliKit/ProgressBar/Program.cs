@@ -1,9 +1,9 @@
-﻿using AppMotor.CliApp.ProgressBarSample.DataModels;
-using AppMotor.CliApp.Terminals;
+﻿using AppMotor.CliKit.Samples.ProgressBar.DataModels;
+using AppMotor.CliKit.Terminals;
 
 using JetBrains.Annotations;
 
-namespace AppMotor.CliApp.ProgressBarSample;
+namespace AppMotor.CliKit.Samples.ProgressBar;
 
 internal static class Program
 {

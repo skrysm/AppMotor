@@ -3,13 +3,13 @@
 
 using System.Diagnostics.CodeAnalysis;
 
-using AppMotor.Core.Events;
+using AppMotor.CoreKit.Events;
 
 using Shouldly;
 
 using Xunit;
 
-namespace AppMotor.Core.Tests.Events;
+namespace AppMotor.CoreKit.Tests.Events;
 
 public sealed class OneTimeEventSourceTests
 {

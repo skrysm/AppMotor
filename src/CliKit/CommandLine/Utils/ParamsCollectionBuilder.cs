@@ -3,11 +3,11 @@
 
 using System.Collections.Immutable;
 
-using AppMotor.Core.Extensions;
+using AppMotor.CoreKit.Extensions;
 
 using JetBrains.Annotations;
 
-namespace AppMotor.CliApp.CommandLine.Utils;
+namespace AppMotor.CliKit.CommandLine.Utils;
 
 internal sealed class ParamsCollectionBuilder
 {

@@ -1,14 +1,14 @@
 ﻿// SPDX-License-Identifier: MIT
 // Copyright AppMotor Framework (https://github.com/skrysm/AppMotor)
 
-using AppMotor.Core.Utils;
+using AppMotor.CoreKit.Utils;
 
 using JetBrains.Annotations;
 
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-namespace AppMotor.CliApp.AppBuilding;
+namespace AppMotor.CliKit.AppBuilding;
 
 /// <summary>
 /// Configures the log levels of an application. Instances of this class are usually used with

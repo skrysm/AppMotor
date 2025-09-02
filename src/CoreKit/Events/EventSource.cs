@@ -3,7 +3,7 @@
 
 using System.Diagnostics.CodeAnalysis;
 
-namespace AppMotor.Core.Events;
+namespace AppMotor.CoreKit.Events;
 
 /// <summary>
 /// Same as <see cref="EventSource{TEventArgs}"/> but without event args. See <see cref="EventSource{TEventArgs}"/>

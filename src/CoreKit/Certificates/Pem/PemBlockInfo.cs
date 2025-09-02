@@ -3,7 +3,7 @@
 
 using JetBrains.Annotations;
 
-namespace AppMotor.Core.Certificates.Pem;
+namespace AppMotor.CoreKit.Certificates.Pem;
 
 /// <summary>
 /// Information about a block inside of a PEM file.

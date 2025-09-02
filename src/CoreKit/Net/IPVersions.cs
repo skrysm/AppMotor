@@ -3,7 +3,7 @@
 
 using JetBrains.Annotations;
 
-namespace AppMotor.Core.Net;
+namespace AppMotor.CoreKit.Net;
 
 /// <summary>
 /// Represents the IP version (IPv4, IPv6) to use.

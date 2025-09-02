@@ -3,7 +3,7 @@
 
 using JetBrains.Annotations;
 
-namespace AppMotor.Core.ObjectModel;
+namespace AppMotor.CoreKit.ObjectModel;
 
 /// <summary>
 /// Represents a type that can create shallow clones (copies) of itself.

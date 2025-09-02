@@ -1,12 +1,12 @@
 ﻿// SPDX-License-Identifier: MIT
 // Copyright AppMotor Framework (https://github.com/skrysm/AppMotor)
 
-using AppMotor.Core.Certificates;
-using AppMotor.Core.Extensions;
+using AppMotor.CoreKit.Certificates;
+using AppMotor.CoreKit.Extensions;
 
 using Shouldly;
 
-namespace AppMotor.TestCore;
+namespace AppMotor.TestKit;
 
 /// <summary>
 /// Provides standardized tests for implemented equality members (i.e. <see cref="IEquatable{T}"/>,

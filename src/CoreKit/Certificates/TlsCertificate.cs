@@ -5,13 +5,13 @@ using System.Collections.Immutable;
 using System.IO.Abstractions;
 using System.Security.Cryptography.X509Certificates;
 
-using AppMotor.Core.Certificates.Exporting;
-using AppMotor.Core.IO;
-using AppMotor.Core.Utils;
+using AppMotor.CoreKit.Certificates.Exporting;
+using AppMotor.CoreKit.IO;
+using AppMotor.CoreKit.Utils;
 
 using JetBrains.Annotations;
 
-namespace AppMotor.Core.Certificates;
+namespace AppMotor.CoreKit.Certificates;
 
 /// <summary>
 /// A certificate used for TLS encryption (e.g. HTTPS). To create an instance of this class,

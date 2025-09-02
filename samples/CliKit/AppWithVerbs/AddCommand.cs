@@ -1,8 +1,8 @@
-﻿using AppMotor.CliApp.CommandLine;
+﻿using AppMotor.CliKit.CommandLine;
 
-using static AppMotor.CliApp.Terminals.Formatting.TermText;
+using static AppMotor.CliKit.Terminals.Formatting.TermText;
 
-namespace AppMotor.CliApp.Samples.AppWithVerbs;
+namespace AppMotor.CliKit.Samples.AppWithVerbs;
 
 internal class AddCommand : GitCommandBase
 {

@@ -6,7 +6,7 @@ using System.Runtime.CompilerServices;
 
 using JetBrains.Annotations;
 
-namespace AppMotor.CliApp.Terminals;
+namespace AppMotor.CliKit.Terminals;
 
 /// <summary>
 /// Represents the output part of a terminal. For the input side, see <see cref="ITerminalInput"/>.

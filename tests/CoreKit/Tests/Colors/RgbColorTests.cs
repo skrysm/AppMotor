@@ -4,15 +4,15 @@
 using System.Drawing;
 using System.Reflection;
 
-using AppMotor.Core.Colors;
-using AppMotor.TestCore;
-using AppMotor.TestCore.TestData;
+using AppMotor.CoreKit.Colors;
+using AppMotor.TestKit;
+using AppMotor.TestKit.TestData;
 
 using Shouldly;
 
 using Xunit;
 
-namespace AppMotor.Core.Tests.Colors;
+namespace AppMotor.CoreKit.Tests.Colors;
 
 /// <summary>
 /// Tests for <see cref="RgbColor"/>.

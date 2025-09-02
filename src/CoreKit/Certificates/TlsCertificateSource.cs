@@ -7,13 +7,13 @@ using System.Security.Cryptography;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 
-using AppMotor.Core.Certificates.Pem;
-using AppMotor.Core.Exceptions;
-using AppMotor.Core.IO;
+using AppMotor.CoreKit.Certificates.Pem;
+using AppMotor.CoreKit.Exceptions;
+using AppMotor.CoreKit.IO;
 
 using JetBrains.Annotations;
 
-namespace AppMotor.Core.Certificates;
+namespace AppMotor.CoreKit.Certificates;
 
 /// <summary>
 /// The source for a <see cref="TlsCertificate"/>.

@@ -3,7 +3,7 @@
 
 using Shouldly;
 
-namespace AppMotor.CliApp.TestUtils;
+namespace AppMotor.CliKit.TestUtils;
 
 internal static class TestApplicationExtensions
 {

@@ -5,7 +5,7 @@ using JetBrains.Annotations;
 
 using Shouldly;
 
-namespace AppMotor.TestCore.Extensions;
+namespace AppMotor.TestKit.Extensions;
 
 /// <summary>
 /// Contains extension methods for <see cref="Task"/> to throw a <see cref="TimeoutException"/>

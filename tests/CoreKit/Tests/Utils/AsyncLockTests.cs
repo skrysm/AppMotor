@@ -3,13 +3,13 @@
 
 using System.Diagnostics.CodeAnalysis;
 
-using AppMotor.Core.Utils;
+using AppMotor.CoreKit.Utils;
 
 using Shouldly;
 
 using Xunit;
 
-namespace AppMotor.Core.Tests.Utils;
+namespace AppMotor.CoreKit.Tests.Utils;
 
 public sealed class AsyncLockTests
 {

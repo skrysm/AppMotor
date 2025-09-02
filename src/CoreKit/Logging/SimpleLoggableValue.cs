@@ -1,9 +1,9 @@
 ﻿// SPDX-License-Identifier: MIT
 // Copyright AppMotor Framework (https://github.com/skrysm/AppMotor)
 
-using AppMotor.Core.ObjectModel;
+using AppMotor.CoreKit.ObjectModel;
 
-namespace AppMotor.Core.Logging;
+namespace AppMotor.CoreKit.Logging;
 
 /// <summary>
 /// Represents a simple loggable value in the sense that it's a (more or less) value

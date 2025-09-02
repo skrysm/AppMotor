@@ -1,16 +1,16 @@
 ﻿// SPDX-License-Identifier: MIT
 // Copyright AppMotor Framework (https://github.com/skrysm/AppMotor)
 
-using AppMotor.CliApp.CommandLine;
-using AppMotor.CliApp.Terminals.Formatting;
-using AppMotor.CliApp.TestUtils;
-using AppMotor.Core.Exceptions;
+using AppMotor.CliKit.CommandLine;
+using AppMotor.CliKit.Terminals.Formatting;
+using AppMotor.CliKit.TestUtils;
+using AppMotor.CoreKit.Exceptions;
 
 using Shouldly;
 
 using Xunit;
 
-namespace AppMotor.CliApp.Tests.CommandLine;
+namespace AppMotor.CliKit.Tests.CommandLine;
 
 public sealed class CliApplicationWithParamsTests
 {

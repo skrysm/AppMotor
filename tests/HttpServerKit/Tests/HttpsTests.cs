@@ -1,18 +1,17 @@
 ﻿// SPDX-License-Identifier: MIT
 // Copyright AppMotor Framework (https://github.com/skrysm/AppMotor)
 
-using AppMotor.CliApp.AppBuilding;
-using AppMotor.CliApp.CommandLine;
-using AppMotor.CliApp.HttpServer.TestUtils;
-using AppMotor.Core.Certificates;
-using AppMotor.Core.Net;
-using AppMotor.Core.Net.Http;
-using AppMotor.HttpServer;
-using AppMotor.HttpServer.Startups;
-using AppMotor.TestCore;
-using AppMotor.TestCore.AppBuilding;
-using AppMotor.TestCore.Networking;
-using AppMotor.TestCore.Utils;
+using AppMotor.CliKit.AppBuilding;
+using AppMotor.CliKit.CommandLine;
+using AppMotor.CoreKit.Certificates;
+using AppMotor.CoreKit.Net;
+using AppMotor.CoreKit.Net.Http;
+using AppMotor.HttpServerKit.Startups;
+using AppMotor.HttpServerKit.TestUtils;
+using AppMotor.TestKit;
+using AppMotor.TestKit.AppBuilding;
+using AppMotor.TestKit.Networking;
+using AppMotor.TestKit.Utils;
 
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
@@ -22,7 +21,7 @@ using Shouldly;
 using Xunit;
 using Xunit.Abstractions;
 
-namespace AppMotor.CliApp.HttpServer.Tests;
+namespace AppMotor.HttpServerKit.Tests;
 
 public sealed class HttpsTests : TestBase
 {

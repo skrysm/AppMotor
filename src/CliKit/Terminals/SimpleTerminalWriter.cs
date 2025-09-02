@@ -1,9 +1,9 @@
 ﻿// SPDX-License-Identifier: MIT
 // Copyright AppMotor Framework (https://github.com/skrysm/AppMotor)
 
-using AppMotor.CliApp.Terminals.Formatting;
+using AppMotor.CliKit.Terminals.Formatting;
 
-namespace AppMotor.CliApp.Terminals;
+namespace AppMotor.CliKit.Terminals;
 
 /// <summary>
 /// A simple implementation of <see cref="ITerminal"/> that passes the string to write

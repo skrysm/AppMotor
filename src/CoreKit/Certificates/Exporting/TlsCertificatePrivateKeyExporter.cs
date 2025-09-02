@@ -9,7 +9,7 @@ using System.Text;
 
 using JetBrains.Annotations;
 
-namespace AppMotor.Core.Certificates.Exporting;
+namespace AppMotor.CoreKit.Certificates.Exporting;
 
 /// <summary>
 /// Exports both the public key and the private key. Obtained via <see cref="TlsCertificate.ExportPublicAndPrivateKey"/>.

@@ -5,18 +5,18 @@ using System.Collections.Immutable;
 using System.CommandLine.Invocation;
 using System.Diagnostics.CodeAnalysis;
 
-using AppMotor.CliApp.AppBuilding;
-using AppMotor.CliApp.CommandLine.Utils;
-using AppMotor.CliApp.Properties;
-using AppMotor.CliApp.Terminals;
-using AppMotor.Core.Utils;
+using AppMotor.CliKit.AppBuilding;
+using AppMotor.CliKit.CommandLine.Utils;
+using AppMotor.CliKit.Properties;
+using AppMotor.CliKit.Terminals;
+using AppMotor.CoreKit.Utils;
 
 using JetBrains.Annotations;
 
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
-namespace AppMotor.CliApp.CommandLine;
+namespace AppMotor.CliKit.CommandLine;
 
 /// <summary>
 /// <para>Represents a command in a command line call; e.g. in <c>git add file.txt</c> the word "add" is the command.

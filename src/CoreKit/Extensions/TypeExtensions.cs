@@ -6,12 +6,12 @@ using System.Numerics;
 using System.Reflection;
 using System.Runtime.CompilerServices;
 
-using AppMotor.Core.ObjectModel;
-using AppMotor.Core.Utils;
+using AppMotor.CoreKit.ObjectModel;
+using AppMotor.CoreKit.Utils;
 
 using JetBrains.Annotations;
 
-namespace AppMotor.Core.Extensions;
+namespace AppMotor.CoreKit.Extensions;
 
 /// <summary>
 /// Extension methods for <see cref="Type"/>.

@@ -3,11 +3,11 @@
 
 using System.Buffers;
 
-using AppMotor.Core.Utils;
+using AppMotor.CoreKit.Utils;
 
 using JetBrains.Annotations;
 
-namespace AppMotor.Core.IO;
+namespace AppMotor.CoreKit.IO;
 
 /// <summary>
 /// Represents a read-only view on a <see cref="Stream"/>.

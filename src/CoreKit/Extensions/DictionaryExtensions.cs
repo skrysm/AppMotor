@@ -1,12 +1,12 @@
 ﻿// SPDX-License-Identifier: MIT
 // Copyright AppMotor Framework (https://github.com/skrysm/AppMotor)
 
-using AppMotor.Core.Exceptions;
-using AppMotor.Core.Utils;
+using AppMotor.CoreKit.Exceptions;
+using AppMotor.CoreKit.Utils;
 
 using JetBrains.Annotations;
 
-namespace AppMotor.Core.Extensions;
+namespace AppMotor.CoreKit.Extensions;
 
 /// <summary>
 /// Extension methods for <see cref="IDictionary{TKey,TValue}"/>.

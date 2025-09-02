@@ -1,7 +1,7 @@
 ﻿// SPDX-License-Identifier: MIT
 // Copyright AppMotor Framework (https://github.com/skrysm/AppMotor)
 
-using AppMotor.Core.Logging;
+using AppMotor.CoreKit.Logging;
 
 using JetBrains.Annotations;
 
@@ -9,7 +9,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Logging.Console;
 using Microsoft.Extensions.Options;
 
-namespace AppMotor.CliApp.Logging.Formatters;
+namespace AppMotor.CliKit.Logging.Formatters;
 
 // ReSharper disable once IdentifierTypo
 internal sealed class SystemdTerminalFormatter : AbstractTerminalLogEntryFormatter<ConsoleFormatterOptions>

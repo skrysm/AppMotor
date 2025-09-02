@@ -3,11 +3,11 @@
 
 using System.Collections;
 
-using AppMotor.Core.Collections;
+using AppMotor.CoreKit.Collections;
 
 using JetBrains.Annotations;
 
-namespace AppMotor.Core.Threading;
+namespace AppMotor.CoreKit.Threading;
 
 /// <summary>
 /// A (very simple) list of tasks that - for convenience purposes - has a "+=" operator.

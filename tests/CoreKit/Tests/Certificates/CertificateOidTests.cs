@@ -3,14 +3,14 @@
 
 using System.Security.Cryptography;
 
-using AppMotor.Core.Certificates;
-using AppMotor.TestCore;
+using AppMotor.CoreKit.Certificates;
+using AppMotor.TestKit;
 
 using Shouldly;
 
 using Xunit;
 
-namespace AppMotor.Core.Tests.Certificates;
+namespace AppMotor.CoreKit.Tests.Certificates;
 
 public sealed class CertificateOidTests
 {

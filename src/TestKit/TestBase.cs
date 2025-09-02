@@ -1,12 +1,12 @@
 ﻿// SPDX-License-Identifier: MIT
 // Copyright AppMotor Framework (https://github.com/skrysm/AppMotor)
 
-using AppMotor.Core.Utils;
-using AppMotor.TestCore.Logging;
+using AppMotor.CoreKit.Utils;
+using AppMotor.TestKit.Logging;
 
 using Xunit.Abstractions;
 
-namespace AppMotor.TestCore;
+namespace AppMotor.TestKit;
 
 /// <summary>
 /// Base class for test classes.

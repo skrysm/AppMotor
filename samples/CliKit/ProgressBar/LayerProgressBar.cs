@@ -1,8 +1,8 @@
-﻿using AppMotor.CliApp.ProgressBarSample.DataModels;
-using AppMotor.CliApp.Terminals;
-using AppMotor.Core.Extensions;
+﻿using AppMotor.CliKit.Samples.ProgressBar.DataModels;
+using AppMotor.CliKit.Terminals;
+using AppMotor.CoreKit.Extensions;
 
-namespace AppMotor.CliApp.ProgressBarSample;
+namespace AppMotor.CliKit.Samples.ProgressBar;
 
 internal sealed class LayerProgressBar
 {

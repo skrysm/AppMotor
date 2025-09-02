@@ -4,11 +4,11 @@
 using System.Net.Security;
 using System.Security.Cryptography.X509Certificates;
 
-using AppMotor.Core.Utils;
+using AppMotor.CoreKit.Utils;
 
 using JetBrains.Annotations;
 
-namespace AppMotor.Core.Net.Http;
+namespace AppMotor.CoreKit.Net.Http;
 
 /// <summary>
 /// Convenience class to support custom TLS certificates in <see cref="HttpClient"/> (or <see cref="HttpClientHandler"/>

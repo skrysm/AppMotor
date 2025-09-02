@@ -1,13 +1,13 @@
 ﻿// SPDX-License-Identifier: MIT
 // Copyright AppMotor Framework (https://github.com/skrysm/AppMotor)
 
-using AppMotor.Core.Certificates.Pem;
+using AppMotor.CoreKit.Certificates.Pem;
 
 using Shouldly;
 
 using Xunit;
 
-namespace AppMotor.Core.Tests.Certificates.Pem;
+namespace AppMotor.CoreKit.Tests.Certificates.Pem;
 
 public sealed class PemFileInfoTests
 {

@@ -3,11 +3,11 @@
 
 using System.Reflection;
 
-using AppMotor.Core.Extensions;
+using AppMotor.CoreKit.Extensions;
 
 using JetBrains.Annotations;
 
-namespace AppMotor.Core.Logging;
+namespace AppMotor.CoreKit.Logging;
 
 /// <summary>
 /// Provides information about <see cref="Exception.HResult"/>.

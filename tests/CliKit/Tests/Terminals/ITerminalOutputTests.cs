@@ -3,8 +3,8 @@
 
 using System.Globalization;
 
-using AppMotor.CliApp.Terminals;
-using AppMotor.Core.Globalization;
+using AppMotor.CliKit.Terminals;
+using AppMotor.CoreKit.Globalization;
 
 using Moq;
 
@@ -12,7 +12,7 @@ using Shouldly;
 
 using Xunit;
 
-namespace AppMotor.CliApp.Tests.Terminals;
+namespace AppMotor.CliKit.Tests.Terminals;
 
 /// <summary>
 /// Tests for <see cref="ITerminalOutput"/> and <see cref="ITerminalOutputExtensions"/>.

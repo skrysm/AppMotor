@@ -5,7 +5,7 @@ using System.ComponentModel;
 
 using JetBrains.Annotations;
 
-namespace AppMotor.Core.Exceptions;
+namespace AppMotor.CoreKit.Exceptions;
 
 /// <summary>
 /// An exception whose message can/should be displayed to the user - but not the stacktrace.

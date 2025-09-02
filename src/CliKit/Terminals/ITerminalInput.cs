@@ -3,7 +3,7 @@
 
 using JetBrains.Annotations;
 
-namespace AppMotor.CliApp.Terminals;
+namespace AppMotor.CliKit.Terminals;
 
 /// <summary>
 /// Represents the input of a terminal. For the output side, see <see cref="ITerminalOutput"/>.

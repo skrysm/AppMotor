@@ -3,11 +3,11 @@
 
 using System.Diagnostics.CodeAnalysis;
 
-using AppMotor.Core.Utils;
+using AppMotor.CoreKit.Utils;
 
 using JetBrains.Annotations;
 
-namespace AppMotor.Core.Processes;
+namespace AppMotor.CoreKit.Processes;
 
 /// <summary>
 /// Allows some more advanced options for <see cref="ChildProcess"/> to be specified.

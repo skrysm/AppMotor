@@ -1,9 +1,9 @@
 ﻿// SPDX-License-Identifier: MIT
 // Copyright AppMotor Framework (https://github.com/skrysm/AppMotor)
 
-using AppMotor.CliApp.Terminals;
-using AppMotor.CliApp.Terminals.Formatting;
-using AppMotor.Core.Logging;
+using AppMotor.CliKit.Terminals;
+using AppMotor.CliKit.Terminals.Formatting;
+using AppMotor.CoreKit.Logging;
 
 using JetBrains.Annotations;
 
@@ -11,7 +11,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Logging.Console;
 using Microsoft.Extensions.Options;
 
-namespace AppMotor.CliApp.Logging.Formatters;
+namespace AppMotor.CliKit.Logging.Formatters;
 
 internal sealed class SimpleTerminalFormatter : AbstractTerminalLogEntryFormatter<SimpleConsoleFormatterOptions>
 {

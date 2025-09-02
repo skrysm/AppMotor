@@ -7,7 +7,7 @@ using Microsoft.Extensions.Logging;
 
 using Shouldly;
 
-namespace AppMotor.TestCore.Logging;
+namespace AppMotor.TestKit.Logging;
 
 /// <summary>
 /// Provides statistics about the messages logged with the XUnit test logger (see <see cref="XUnitLoggerProviderExtensions.AddXUnitLogger"/>).

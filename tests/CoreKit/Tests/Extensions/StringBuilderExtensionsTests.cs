@@ -3,14 +3,14 @@
 
 using System.Text;
 
-using AppMotor.Core.Extensions;
-using AppMotor.Core.Utils;
+using AppMotor.CoreKit.Extensions;
+using AppMotor.CoreKit.Utils;
 
 using Shouldly;
 
 using Xunit;
 
-namespace AppMotor.Core.Tests.Extensions;
+namespace AppMotor.CoreKit.Tests.Extensions;
 
 /// <summary>
 /// Tests for <see cref="StringBuilderExtensions"/>.

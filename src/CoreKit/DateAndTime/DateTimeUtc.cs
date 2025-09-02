@@ -7,12 +7,12 @@ using System.Globalization;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
-using AppMotor.Core.ObjectModel;
-using AppMotor.Core.Extensions;
+using AppMotor.CoreKit.Extensions;
+using AppMotor.CoreKit.ObjectModel;
 
 using JetBrains.Annotations;
 
-namespace AppMotor.Core.DateAndTime;
+namespace AppMotor.CoreKit.DateAndTime;
 
 /// <summary>
 /// Like <see cref="DateTime"/> but always in UTC (i.e. <see cref="DateTimeKind.Utc"/>).

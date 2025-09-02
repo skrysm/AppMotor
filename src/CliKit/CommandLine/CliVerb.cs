@@ -4,14 +4,14 @@
 using System.Collections.Immutable;
 using System.CommandLine;
 
-using AppMotor.CliApp.CommandLine.Utils;
-using AppMotor.CliApp.Terminals;
-using AppMotor.Core.Exceptions;
-using AppMotor.Core.Utils;
+using AppMotor.CliKit.CommandLine.Utils;
+using AppMotor.CliKit.Terminals;
+using AppMotor.CoreKit.Exceptions;
+using AppMotor.CoreKit.Utils;
 
 using JetBrains.Annotations;
 
-namespace AppMotor.CliApp.CommandLine;
+namespace AppMotor.CliKit.CommandLine;
 
 /// <summary>
 /// Represents a verb in a command line (like <c>add</c> in <c>git add .</c>). Verbs can be executable (if <see cref="Command"/>

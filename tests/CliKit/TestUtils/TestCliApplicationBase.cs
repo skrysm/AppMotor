@@ -3,7 +3,7 @@
 
 using JetBrains.Annotations;
 
-namespace AppMotor.CliApp.TestUtils;
+namespace AppMotor.CliKit.TestUtils;
 
 internal abstract class TestCliApplicationBase : CliApplication, ITestApplication
 {

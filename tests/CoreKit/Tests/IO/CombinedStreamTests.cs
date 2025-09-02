@@ -1,13 +1,13 @@
 ﻿// SPDX-License-Identifier: MIT
 // Copyright AppMotor Framework (https://github.com/skrysm/AppMotor)
 
-using AppMotor.Core.IO;
+using AppMotor.CoreKit.IO;
 
 using Shouldly;
 
 using Xunit;
 
-namespace AppMotor.Core.Tests.IO;
+namespace AppMotor.CoreKit.Tests.IO;
 
 public sealed class CombinedStreamTests
 {

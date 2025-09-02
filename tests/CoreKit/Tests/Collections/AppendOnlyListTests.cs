@@ -3,14 +3,14 @@
 
 using System.Reflection;
 
-using AppMotor.Core.Collections;
-using AppMotor.Core.TestUtils;
+using AppMotor.CoreKit.Collections;
+using AppMotor.CoreKit.TestUtils;
 
 using Shouldly;
 
 using Xunit;
 
-namespace AppMotor.Core.Tests.Collections;
+namespace AppMotor.CoreKit.Tests.Collections;
 
 public sealed class AppendOnlyListTests
 {

@@ -4,9 +4,9 @@
 using System.Collections;
 using System.Collections.ObjectModel;
 
-using AppMotor.Core.Extensions;
-using AppMotor.Core.TestUtils;
-using AppMotor.TestCore;
+using AppMotor.CoreKit.Extensions;
+using AppMotor.CoreKit.TestUtils;
+using AppMotor.TestKit;
 
 using JetBrains.Annotations;
 
@@ -15,9 +15,9 @@ using Shouldly;
 using Xunit;
 using Xunit.Abstractions;
 
-using ExceptionExtensions = AppMotor.Core.Extensions.ExceptionExtensions;
+using ExceptionExtensions = AppMotor.CoreKit.Extensions.ExceptionExtensions;
 
-namespace AppMotor.Core.Tests.Extensions;
+namespace AppMotor.CoreKit.Tests.Extensions;
 
 /// <summary>
 /// Tests for <see cref="ExceptionExtensions"/>.

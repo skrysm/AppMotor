@@ -1,11 +1,11 @@
 ﻿// SPDX-License-Identifier: MIT
 // Copyright AppMotor Framework (https://github.com/skrysm/AppMotor)
 
-using AppMotor.Core.Utils;
+using AppMotor.CoreKit.Utils;
 
 using JetBrains.Annotations;
 
-namespace AppMotor.Core.Processes;
+namespace AppMotor.CoreKit.Processes;
 
 /// <summary>
 /// The result of executing a child process through <see cref="ChildProcess"/>.

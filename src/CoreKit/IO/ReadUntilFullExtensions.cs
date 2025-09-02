@@ -1,11 +1,11 @@
 ﻿// SPDX-License-Identifier: MIT
 // Copyright AppMotor Framework (https://github.com/skrysm/AppMotor)
 
-using AppMotor.Core.Utils;
+using AppMotor.CoreKit.Utils;
 
 using JetBrains.Annotations;
 
-namespace AppMotor.Core.IO;
+namespace AppMotor.CoreKit.IO;
 
 /// <summary>
 /// <c>Read()</c> extension methods for various stream implementations that guarantee the specified

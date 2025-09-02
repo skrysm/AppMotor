@@ -4,11 +4,11 @@
 using System.Net;
 using System.Security.Cryptography.X509Certificates;
 
-using AppMotor.CliApp.CommandLine;
-using AppMotor.Core.Certificates;
-using AppMotor.Core.Exceptions;
-using AppMotor.Core.Net;
-using AppMotor.HttpServer.Startups;
+using AppMotor.CliKit.CommandLine;
+using AppMotor.CoreKit.Certificates;
+using AppMotor.CoreKit.Exceptions;
+using AppMotor.CoreKit.Net;
+using AppMotor.HttpServerKit.Startups;
 
 using JetBrains.Annotations;
 
@@ -18,7 +18,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-namespace AppMotor.HttpServer;
+namespace AppMotor.HttpServerKit;
 
 /// <summary>
 /// A <see cref="CliCommand"/> for running an HTTP(S) server (Kestrel). You can use it as root

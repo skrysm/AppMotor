@@ -1,14 +1,14 @@
 ﻿// SPDX-License-Identifier: MIT
 // Copyright AppMotor Framework (https://github.com/skrysm/AppMotor)
 
-using AppMotor.CliApp.Terminals.Formatting;
-using AppMotor.Core.Colors;
+using AppMotor.CliKit.Terminals.Formatting;
+using AppMotor.CoreKit.Colors;
 
 using Shouldly;
 
 using Xunit;
 
-namespace AppMotor.CliApp.Tests.Terminals.Formatting;
+namespace AppMotor.CliKit.Tests.Terminals.Formatting;
 
 public sealed class AnsiColorStreamParserTests
 {

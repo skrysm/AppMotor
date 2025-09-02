@@ -4,11 +4,11 @@
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 
-using AppMotor.Core.Globalization;
+using AppMotor.CoreKit.Globalization;
 
 using JetBrains.Annotations;
 
-namespace AppMotor.CliApp.Terminals;
+namespace AppMotor.CliKit.Terminals;
 
 /// <summary>
 /// A writer that writes to a terminal's output stream - either stdout or stderr.

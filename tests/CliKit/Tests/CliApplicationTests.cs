@@ -3,15 +3,15 @@
 
 using System.Text;
 
-using AppMotor.CliApp.Terminals;
-using AppMotor.CliApp.TestUtils;
-using AppMotor.TestCore.Utils;
+using AppMotor.CliKit.Terminals;
+using AppMotor.CliKit.TestUtils;
+using AppMotor.TestKit.Utils;
 
 using Shouldly;
 
 using Xunit;
 
-namespace AppMotor.CliApp.Tests;
+namespace AppMotor.CliKit.Tests;
 
 /// <summary>
 /// Tests for <see cref="CliApplication"/>.

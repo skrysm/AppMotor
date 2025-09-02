@@ -3,16 +3,16 @@
 
 using System.Globalization;
 
-using AppMotor.Core.Extensions;
-using AppMotor.Core.Globalization;
-using AppMotor.TestCore;
+using AppMotor.CoreKit.Extensions;
+using AppMotor.CoreKit.Globalization;
+using AppMotor.TestKit;
 
 using Shouldly;
 
 using Xunit;
 using Xunit.Abstractions;
 
-namespace AppMotor.Core.Tests.Extensions;
+namespace AppMotor.CoreKit.Tests.Extensions;
 
 public sealed class InvariantCultureExtensionsTests : TestBase
 {

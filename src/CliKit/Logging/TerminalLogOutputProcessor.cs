@@ -4,11 +4,11 @@
 using System.Collections.Concurrent;
 using System.Diagnostics;
 
-using AppMotor.CliApp.Terminals;
+using AppMotor.CliKit.Terminals;
 
 using Microsoft.Extensions.Logging.Console;
 
-namespace AppMotor.CliApp.Logging;
+namespace AppMotor.CliKit.Logging;
 
 /// <summary>
 /// Provides a queue that log entries can be pushed to - as well as an output thread

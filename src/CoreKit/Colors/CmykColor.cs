@@ -1,11 +1,11 @@
 ﻿// SPDX-License-Identifier: MIT
 // Copyright AppMotor Framework (https://github.com/skrysm/AppMotor)
 
-using AppMotor.Core.Extensions;
+using AppMotor.CoreKit.Extensions;
 
 using JetBrains.Annotations;
 
-namespace AppMotor.Core.Colors;
+namespace AppMotor.CoreKit.Colors;
 
 /// <summary>
 /// Represents a color in the CMYK (cyan, magenta, yellow, black) color model.

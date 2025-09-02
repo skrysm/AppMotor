@@ -1,14 +1,14 @@
 ﻿// SPDX-License-Identifier: MIT
 // Copyright AppMotor Framework (https://github.com/skrysm/AppMotor)
 
-using AppMotor.CliApp.AppBuilding;
-using AppMotor.TestCore.Logging;
+using AppMotor.CliKit.AppBuilding;
+using AppMotor.TestKit.Logging;
 
 using Microsoft.Extensions.Hosting;
 
 using Xunit.Abstractions;
 
-namespace AppMotor.TestCore.AppBuilding;
+namespace AppMotor.TestKit.AppBuilding;
 
 /// <summary>
 /// A variation of <see cref="DefaultHostBuilderFactory"/> for use in XUnit tests. Redirects all logging to XUnit's

@@ -1,18 +1,18 @@
 ﻿// SPDX-License-Identifier: MIT
 // Copyright AppMotor Framework (https://github.com/skrysm/AppMotor)
 
-using AppMotor.CliApp.CommandLine;
-using AppMotor.CliApp.CommandLine.Utils;
-using AppMotor.CliApp.Properties;
-using AppMotor.CliApp.Terminals;
-using AppMotor.CliApp.Terminals.Formatting;
-using AppMotor.Core.Exceptions;
-using AppMotor.Core.Logging;
-using AppMotor.Core.Utils;
+using AppMotor.CliKit.CommandLine;
+using AppMotor.CliKit.CommandLine.Utils;
+using AppMotor.CliKit.Properties;
+using AppMotor.CliKit.Terminals;
+using AppMotor.CliKit.Terminals.Formatting;
+using AppMotor.CoreKit.Exceptions;
+using AppMotor.CoreKit.Logging;
+using AppMotor.CoreKit.Utils;
 
 using JetBrains.Annotations;
 
-namespace AppMotor.CliApp;
+namespace AppMotor.CliKit;
 
 /// <summary>
 /// Base class for .NET console applications. Provides basic exception handling (via <see cref="OnUnhandledException"/>),

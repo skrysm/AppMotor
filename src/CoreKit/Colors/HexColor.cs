@@ -4,9 +4,9 @@
 using System.Globalization;
 using System.Text;
 
-using AppMotor.Core.Utils;
+using AppMotor.CoreKit.Utils;
 
-namespace AppMotor.Core.Colors;
+namespace AppMotor.CoreKit.Colors;
 
 /// <summary>
 /// A color in HTML/CSS/Internet hex notation; e.g. <c>#FFAACC</c>. Supports

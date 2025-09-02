@@ -1,13 +1,13 @@
 ﻿// SPDX-License-Identifier: MIT
 // Copyright AppMotor Framework (https://github.com/skrysm/AppMotor)
 
-using AppMotor.CliApp.Terminals.Formatting;
+using AppMotor.CliKit.Terminals.Formatting;
 
 using Shouldly;
 
 using Xunit;
 
-namespace AppMotor.CliApp.Tests.Terminals.Formatting;
+namespace AppMotor.CliKit.Tests.Terminals.Formatting;
 
 /// <summary>
 /// Tests for <see cref="AnsiEscapeSequence"/>.

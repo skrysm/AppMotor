@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace AppMotor.HttpServer.Startups;
+namespace AppMotor.HttpServerKit.Startups;
 
 /// <summary>
 /// Represents a startup class for this ASP.NET Core application.

@@ -6,7 +6,7 @@
 // SPDX-License-Identifier: MIT
 // Copyright AppMotor Framework (https://github.com/skrysm/AppMotor)
 
-namespace AppMotor.CliApp;
+namespace AppMotor.CliKit;
 
 /// <summary>
 /// Represents the main/execute method of a <see cref="CliApplication"/> (via <see cref="CliApplication.MainExecutor"/>).

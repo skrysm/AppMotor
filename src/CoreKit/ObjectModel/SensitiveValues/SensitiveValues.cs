@@ -3,14 +3,14 @@
 
 using System.Security;
 
-using AppMotor.Core.Extensions;
-using AppMotor.Core.Utils;
+using AppMotor.CoreKit.Extensions;
+using AppMotor.CoreKit.Utils;
 
 using JetBrains.Annotations;
 
 using NotNullOnExitAttribute = System.Diagnostics.CodeAnalysis.NotNullAttribute;
 
-namespace AppMotor.Core.ObjectModel;
+namespace AppMotor.CoreKit.ObjectModel;
 
 /// <summary>
 /// Contains methods related to sensitive values. See <see cref="ISensitiveValue"/>

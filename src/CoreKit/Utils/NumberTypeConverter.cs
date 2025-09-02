@@ -4,12 +4,12 @@
 using System.Collections.Concurrent;
 using System.Numerics;
 
-using AppMotor.Core.Exceptions;
-using AppMotor.Core.Extensions;
+using AppMotor.CoreKit.Exceptions;
+using AppMotor.CoreKit.Extensions;
 
 using JetBrains.Annotations;
 
-namespace AppMotor.Core.Utils;
+namespace AppMotor.CoreKit.Utils;
 
 /// <summary>
 /// Allows you to convert numbers from one type into another number type - without generics.

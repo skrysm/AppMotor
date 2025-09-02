@@ -1,5 +1,5 @@
-﻿using AppMotor.CliApp.CommandLine;
-using AppMotor.CliApp.Samples.AppWithVerbs;
+﻿using AppMotor.CliKit.CommandLine;
+using AppMotor.CliKit.Samples.AppWithVerbs;
 
 var app = new CliApplicationWithVerbs()
 {

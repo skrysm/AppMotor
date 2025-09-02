@@ -3,7 +3,7 @@
 
 using JetBrains.Annotations;
 
-namespace AppMotor.Core.Utils;
+namespace AppMotor.CoreKit.Utils;
 
 /// <summary>
 /// Contains the various line terminator types. Use <see cref="LineTerminatorsExtensions.AsString"/> to

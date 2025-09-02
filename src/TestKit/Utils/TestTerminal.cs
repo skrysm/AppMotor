@@ -3,10 +3,10 @@
 
 using System.Text;
 
-using AppMotor.CliApp;
-using AppMotor.CliApp.Terminals;
+using AppMotor.CliKit;
+using AppMotor.CliKit.Terminals;
 
-namespace AppMotor.TestCore.Utils;
+namespace AppMotor.TestKit.Utils;
 
 /// <summary>
 /// Provides an implementation of <see cref="ITerminal"/> that can be used as terminal for

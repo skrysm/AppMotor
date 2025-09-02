@@ -1,12 +1,12 @@
 ﻿// SPDX-License-Identifier: MIT
 // Copyright AppMotor Framework (https://github.com/skrysm/AppMotor)
 
-using AppMotor.CliApp.AppBuilding;
-using AppMotor.CliApp.CommandLine;
-using AppMotor.CliApp.TestUtils;
-using AppMotor.TestCore;
-using AppMotor.TestCore.AppBuilding;
-using AppMotor.TestCore.Logging;
+using AppMotor.CliKit.AppBuilding;
+using AppMotor.CliKit.CommandLine;
+using AppMotor.CliKit.TestUtils;
+using AppMotor.TestKit;
+using AppMotor.TestKit.AppBuilding;
+using AppMotor.TestKit.Logging;
 
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -18,7 +18,7 @@ using Shouldly;
 using Xunit;
 using Xunit.Abstractions;
 
-namespace AppMotor.CliApp.Tests.AppBuilding;
+namespace AppMotor.CliKit.Tests.AppBuilding;
 
 /// <summary>
 /// Tests for <see cref="LogLevelConfiguration"/>.

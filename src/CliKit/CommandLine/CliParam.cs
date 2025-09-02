@@ -5,15 +5,15 @@ using System.Collections;
 using System.CommandLine;
 using System.CommandLine.Parsing;
 
-using AppMotor.CliApp.CommandLine.Utils;
-using AppMotor.Core.ObjectModel;
-using AppMotor.Core.Exceptions;
-using AppMotor.Core.Extensions;
-using AppMotor.Core.Utils;
+using AppMotor.CliKit.CommandLine.Utils;
+using AppMotor.CoreKit.Exceptions;
+using AppMotor.CoreKit.Extensions;
+using AppMotor.CoreKit.ObjectModel;
+using AppMotor.CoreKit.Utils;
 
 using JetBrains.Annotations;
 
-namespace AppMotor.CliApp.CommandLine;
+namespace AppMotor.CliKit.CommandLine;
 
 /// <summary>
 /// Represents a command line parameter - either named or positional. See <see cref="CliParamBase.ParameterType"/>,

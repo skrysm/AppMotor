@@ -4,13 +4,13 @@
 using System.Collections;
 using System.Collections.ObjectModel;
 
-using AppMotor.Core.Exceptions;
+using AppMotor.CoreKit.Exceptions;
 
 using Shouldly;
 
 using Xunit;
 
-namespace AppMotor.Core.Tests.Exceptions;
+namespace AppMotor.CoreKit.Tests.Exceptions;
 
 public sealed class ExceptionDataAccessorTests
 {

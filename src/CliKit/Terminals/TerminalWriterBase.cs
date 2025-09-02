@@ -3,11 +3,11 @@
 
 using System.Diagnostics.CodeAnalysis;
 
-using AppMotor.CliApp.Terminals.Formatting;
-using AppMotor.Core.Colors;
-using AppMotor.Core.Globalization;
+using AppMotor.CliKit.Terminals.Formatting;
+using AppMotor.CoreKit.Colors;
+using AppMotor.CoreKit.Globalization;
 
-namespace AppMotor.CliApp.Terminals;
+namespace AppMotor.CliKit.Terminals;
 
 /// <summary>
 /// Abstract base implementation for <see cref="ITerminalWriter"/> - i.e. makes implementing <see cref="ITerminalWriter"/>

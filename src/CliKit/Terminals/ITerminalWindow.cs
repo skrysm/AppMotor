@@ -5,7 +5,7 @@ using System.ComponentModel;
 
 using JetBrains.Annotations;
 
-namespace AppMotor.CliApp.Terminals;
+namespace AppMotor.CliKit.Terminals;
 
 /// <summary>
 /// Represents a terminal that allows the user to interact with the terminal window itself.

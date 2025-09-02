@@ -4,12 +4,12 @@
 using System.Globalization;
 using System.Text;
 
-using AppMotor.Core.Extensions;
-using AppMotor.Core.Utils;
+using AppMotor.CoreKit.Extensions;
+using AppMotor.CoreKit.Utils;
 
 using JetBrains.Annotations;
 
-namespace AppMotor.Core.Logging;
+namespace AppMotor.CoreKit.Logging;
 
 /// <summary>
 /// Provides the exception extension method <see cref="ToStringExtended"/>.

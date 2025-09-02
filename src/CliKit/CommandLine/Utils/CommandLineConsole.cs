@@ -5,9 +5,9 @@ using System.CommandLine;
 using System.CommandLine.IO;
 using System.Diagnostics.CodeAnalysis;
 
-using AppMotor.CliApp.Terminals;
+using AppMotor.CliKit.Terminals;
 
-namespace AppMotor.CliApp.CommandLine.Utils;
+namespace AppMotor.CliKit.CommandLine.Utils;
 
 internal sealed class CommandLineConsole : IConsole
 {

@@ -1,7 +1,7 @@
-﻿using AppMotor.CliApp.CommandLine;
-using AppMotor.Core.Exceptions;
+﻿using AppMotor.CliKit.CommandLine;
+using AppMotor.CoreKit.Exceptions;
 
-namespace AppMotor.CliApp.Samples.AppWithParams;
+namespace AppMotor.CliKit.Samples.AppWithParams;
 
 internal sealed class Program : CliApplicationWithParams
 {

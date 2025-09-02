@@ -6,11 +6,11 @@ using System.CommandLine.Builder;
 using System.CommandLine.Invocation;
 using System.CommandLine.Parsing;
 
-using AppMotor.CliApp.Terminals;
+using AppMotor.CliKit.Terminals;
 
 using JetBrains.Annotations;
 
-namespace AppMotor.CliApp.CommandLine.Utils;
+namespace AppMotor.CliKit.CommandLine.Utils;
 
 internal static class RootCommandInvoker
 {

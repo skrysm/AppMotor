@@ -1,7 +1,7 @@
 ﻿// SPDX-License-Identifier: MIT
 // Copyright AppMotor Framework (https://github.com/skrysm/AppMotor)
 
-using AppMotor.Core.Utils;
+using AppMotor.CoreKit.Utils;
 
 using JetBrains.Annotations;
 
@@ -9,7 +9,7 @@ using Moq;
 
 using Xunit;
 
-namespace AppMotor.Core.Tests.Utils;
+namespace AppMotor.CoreKit.Tests.Utils;
 
 public sealed class DisposeHelperTests
 {

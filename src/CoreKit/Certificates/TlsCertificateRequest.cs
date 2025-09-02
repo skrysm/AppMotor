@@ -4,11 +4,11 @@
 using System.Security.Cryptography;
 using System.Security.Cryptography.X509Certificates;
 
-using AppMotor.Core.Utils;
+using AppMotor.CoreKit.Utils;
 
 using JetBrains.Annotations;
 
-namespace AppMotor.Core.Certificates;
+namespace AppMotor.CoreKit.Certificates;
 
 /// <summary>
 /// Represents a certificate request (i.e. a request to be signed by a CA to get a certificate).

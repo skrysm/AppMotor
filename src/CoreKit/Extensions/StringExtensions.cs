@@ -3,12 +3,12 @@
 
 using System.ComponentModel;
 
-using AppMotor.Core.Globalization;
-using AppMotor.Core.Utils;
+using AppMotor.CoreKit.Globalization;
+using AppMotor.CoreKit.Utils;
 
 using JetBrains.Annotations;
 
-namespace AppMotor.Core.Extensions;
+namespace AppMotor.CoreKit.Extensions;
 
 /// <summary>
 /// Various extension methods related to strings.

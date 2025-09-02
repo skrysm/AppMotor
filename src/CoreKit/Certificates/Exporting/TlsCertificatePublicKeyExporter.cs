@@ -4,11 +4,11 @@
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 
-using AppMotor.Core.Exceptions;
+using AppMotor.CoreKit.Exceptions;
 
 using JetBrains.Annotations;
 
-namespace AppMotor.Core.Certificates.Exporting;
+namespace AppMotor.CoreKit.Certificates.Exporting;
 
 /// <summary>
 /// Exports the public key (but not the private key). Obtained via <see cref="TlsCertificate.ExportPublicKey"/>.

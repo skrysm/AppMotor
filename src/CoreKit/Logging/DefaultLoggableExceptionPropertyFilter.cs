@@ -3,9 +3,9 @@
 
 using System.Reflection;
 
-using AppMotor.Core.Utils;
+using AppMotor.CoreKit.Utils;
 
-namespace AppMotor.Core.Logging;
+namespace AppMotor.CoreKit.Logging;
 
 /// <summary>
 /// The property filter used by <see cref="ExtendedExceptionStringExtensions.ToStringExtended"/>.

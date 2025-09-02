@@ -5,11 +5,11 @@ using System.Diagnostics;
 using System.Diagnostics.CodeAnalysis;
 using System.Runtime.InteropServices;
 
-using AppMotor.CliApp.Properties;
-using AppMotor.CliApp.Terminals;
-using AppMotor.Core.Extensions;
+using AppMotor.CliKit.Properties;
+using AppMotor.CliKit.Terminals;
+using AppMotor.CoreKit.Extensions;
 
-namespace AppMotor.CliApp.CommandLine.Utils;
+namespace AppMotor.CliKit.CommandLine.Utils;
 
 /// <summary>
 /// Utils to interact with <see cref="Debugger"/> - but make it compatible for unit tests.

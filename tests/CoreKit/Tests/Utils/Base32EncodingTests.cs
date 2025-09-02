@@ -3,14 +3,14 @@
 
 using System.Text;
 
-using AppMotor.Core.IO;
-using AppMotor.Core.Utils;
+using AppMotor.CoreKit.IO;
+using AppMotor.CoreKit.Utils;
 
 using Shouldly;
 
 using Xunit;
 
-namespace AppMotor.Core.Tests.Utils;
+namespace AppMotor.CoreKit.Tests.Utils;
 
 public sealed class Base32EncodingTests
 {

@@ -3,9 +3,9 @@
 
 using System.Diagnostics;
 
-using AppMotor.TestCore.Extensions;
+using AppMotor.TestKit.Extensions;
 
-namespace AppMotor.TestCore.Utils;
+namespace AppMotor.TestKit.Utils;
 
 /// <summary>
 /// Helper class for handling timeouts in tests.

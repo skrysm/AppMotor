@@ -4,12 +4,12 @@
 using System.IO.Abstractions;
 using System.Text;
 
-using AppMotor.Core.DateAndTime;
-using AppMotor.Core.Utils;
+using AppMotor.CoreKit.DateAndTime;
+using AppMotor.CoreKit.Utils;
 
 using JetBrains.Annotations;
 
-namespace AppMotor.Core.IO;
+namespace AppMotor.CoreKit.IO;
 
 /// <summary>
 /// Represents the path to a file.

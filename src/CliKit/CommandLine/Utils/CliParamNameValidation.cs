@@ -1,14 +1,14 @@
 ﻿// SPDX-License-Identifier: MIT
 // Copyright AppMotor Framework (https://github.com/skrysm/AppMotor)
 
-using AppMotor.Core.Exceptions;
-using AppMotor.Core.Utils;
+using AppMotor.CoreKit.Exceptions;
+using AppMotor.CoreKit.Utils;
 
 using JetBrains.Annotations;
 
 using NotNullOnExitAttribute = System.Diagnostics.CodeAnalysis.NotNullAttribute;
 
-namespace AppMotor.CliApp.CommandLine.Utils;
+namespace AppMotor.CliKit.CommandLine.Utils;
 
 /// <summary>
 /// Provides validation methods for parameter names (as used in <see cref="CliParam{T}"/>).

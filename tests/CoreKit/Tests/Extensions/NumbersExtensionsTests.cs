@@ -3,13 +3,13 @@
 
 using System.Globalization;
 
-using AppMotor.Core.Extensions;
+using AppMotor.CoreKit.Extensions;
 
 using Shouldly;
 
 using Xunit;
 
-namespace AppMotor.Core.Tests.Extensions;
+namespace AppMotor.CoreKit.Tests.Extensions;
 
 /// <summary>
 /// Tests for <see cref="NumbersExtensions"/>.

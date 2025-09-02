@@ -3,12 +3,12 @@
 
 using System.Reflection;
 
-using AppMotor.Core.Extensions;
-using AppMotor.Core.Utils;
+using AppMotor.CoreKit.Extensions;
+using AppMotor.CoreKit.Utils;
 
 using JetBrains.Annotations;
 
-namespace AppMotor.CliApp.CommandLine.Utils;
+namespace AppMotor.CliKit.CommandLine.Utils;
 
 /// <summary>
 /// Provides utility methods for <see cref="CliParam{T}"/> - mainly <see cref="GetAllParamsFor(object)"/>.

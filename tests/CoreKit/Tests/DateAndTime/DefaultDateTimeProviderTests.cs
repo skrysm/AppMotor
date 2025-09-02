@@ -1,15 +1,15 @@
 ﻿// SPDX-License-Identifier: MIT
 // Copyright AppMotor Framework (https://github.com/skrysm/AppMotor)
 
-using AppMotor.Core.DateAndTime;
-using AppMotor.TestCore;
-using AppMotor.TestCore.Shouldly;
+using AppMotor.CoreKit.DateAndTime;
+using AppMotor.TestKit;
+using AppMotor.TestKit.Shouldly;
 
 using Shouldly;
 
 using Xunit;
 
-namespace AppMotor.Core.Tests.DateAndTime;
+namespace AppMotor.CoreKit.Tests.DateAndTime;
 
 public sealed class DefaultDateTimeProviderTests
 {

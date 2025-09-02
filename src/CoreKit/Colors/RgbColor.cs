@@ -3,7 +3,7 @@
 
 using System.Drawing;
 
-namespace AppMotor.Core.Colors;
+namespace AppMotor.CoreKit.Colors;
 
 /// <summary>
 /// Like <see cref="Color"/> but with proper equality (i.e. <c>RgbColor.Red</c> is actually equal to <c>new RgbColor(255, 0, 0)</c>).

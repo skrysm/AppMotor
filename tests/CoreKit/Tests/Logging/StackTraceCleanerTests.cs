@@ -1,14 +1,14 @@
 ﻿// SPDX-License-Identifier: MIT
 // Copyright AppMotor Framework (https://github.com/skrysm/AppMotor)
 
-using AppMotor.Core.Extensions;
-using AppMotor.Core.Logging;
+using AppMotor.CoreKit.Extensions;
+using AppMotor.CoreKit.Logging;
 
 using Shouldly;
 
 using Xunit;
 
-namespace AppMotor.Core.Tests.Logging;
+namespace AppMotor.CoreKit.Tests.Logging;
 
 /// <summary>
 /// Tests for <see cref="StackTraceCleaner"/>.

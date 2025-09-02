@@ -5,7 +5,7 @@ using System.Collections;
 
 using JetBrains.Annotations;
 
-namespace AppMotor.Core.Utils;
+namespace AppMotor.CoreKit.Utils;
 
 /// <summary>
 /// Simplifies implementation of <see cref="IEqualityComparer{T}"/> for reference types by already implementing

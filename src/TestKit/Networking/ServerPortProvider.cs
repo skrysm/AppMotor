@@ -5,7 +5,7 @@ using System.Diagnostics.CodeAnalysis;
 
 using JetBrains.Annotations;
 
-namespace AppMotor.TestCore.Networking;
+namespace AppMotor.TestKit.Networking;
 
 /// <summary>
 /// Provides each test with its own port. This is necessary because tests

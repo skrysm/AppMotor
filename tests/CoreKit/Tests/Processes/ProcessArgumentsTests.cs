@@ -3,13 +3,13 @@
 
 using System.Diagnostics;
 
-using AppMotor.Core.Processes;
+using AppMotor.CoreKit.Processes;
 
 using Shouldly;
 
 using Xunit;
 
-namespace AppMotor.Core.Tests.Processes;
+namespace AppMotor.CoreKit.Tests.Processes;
 
 /// <summary>
 /// Tests for <see cref="ProcessArguments"/>.

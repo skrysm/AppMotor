@@ -5,15 +5,15 @@ using System.CommandLine;
 using System.CommandLine.Binding;
 using System.CommandLine.Builder;
 
-using AppMotor.CliApp.CommandLine;
-using AppMotor.CliApp.TestUtils;
-using AppMotor.Core.Exceptions;
+using AppMotor.CliKit.CommandLine;
+using AppMotor.CliKit.TestUtils;
+using AppMotor.CoreKit.Exceptions;
 
 using Shouldly;
 
 using Xunit;
 
-namespace AppMotor.CliApp.Tests.CommandLine;
+namespace AppMotor.CliKit.Tests.CommandLine;
 
 public sealed class CliParamTests
 {

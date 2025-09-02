@@ -1,13 +1,13 @@
 ﻿// SPDX-License-Identifier: MIT
 // Copyright AppMotor Framework (https://github.com/skrysm/AppMotor)
 
-using AppMotor.CliApp.Terminals.Formatting;
+using AppMotor.CliKit.Terminals.Formatting;
 
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Logging.Abstractions;
 using Microsoft.Extensions.Logging.Console;
 
-namespace AppMotor.CliApp.Logging.Formatters;
+namespace AppMotor.CliKit.Logging.Formatters;
 
 /// <summary>
 /// Defines the format for a <see cref="LogEntry{TState}"/> to be logged. Note that the log message

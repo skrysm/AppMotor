@@ -4,7 +4,7 @@
 using System.Formats.Asn1;
 using System.Security.Cryptography.X509Certificates;
 
-namespace AppMotor.Core.Certificates;
+namespace AppMotor.CoreKit.Certificates;
 
 /// <summary>
 /// Helper method for handling the "subject alternative names" TLS certificate extension.

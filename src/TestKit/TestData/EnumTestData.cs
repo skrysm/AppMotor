@@ -1,9 +1,9 @@
 ﻿// SPDX-License-Identifier: MIT
 // Copyright AppMotor Framework (https://github.com/skrysm/AppMotor)
 
-using AppMotor.Core.Utils;
+using AppMotor.CoreKit.Utils;
 
-namespace AppMotor.TestCore.TestData;
+namespace AppMotor.TestKit.TestData;
 
 /// <summary>
 /// Provides all members/values of an enum as test data to be used as <c>[ClassData(typeof(EnumTestData&lt;MyEnum&gt;))]</c>.

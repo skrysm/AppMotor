@@ -3,12 +3,12 @@
 
 using System.Runtime.ExceptionServices;
 
-using AppMotor.Core.Exceptions;
-using AppMotor.Core.Utils;
+using AppMotor.CoreKit.Exceptions;
+using AppMotor.CoreKit.Utils;
 
 using JetBrains.Annotations;
 
-namespace AppMotor.Core.Extensions;
+namespace AppMotor.CoreKit.Extensions;
 
 /// <summary>
 /// Extension methods for <see cref="Exception"/>.

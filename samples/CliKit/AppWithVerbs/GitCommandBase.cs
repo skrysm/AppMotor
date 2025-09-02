@@ -1,6 +1,6 @@
-﻿using AppMotor.CliApp.CommandLine;
+﻿using AppMotor.CliKit.CommandLine;
 
-namespace AppMotor.CliApp.Samples.AppWithVerbs;
+namespace AppMotor.CliKit.Samples.AppWithVerbs;
 
 internal abstract class GitCommandBase : CliCommand
 {

@@ -5,7 +5,7 @@ using Microsoft.Extensions.Logging;
 
 using Xunit.Abstractions;
 
-namespace AppMotor.TestCore.Logging;
+namespace AppMotor.TestKit.Logging;
 
 /// <summary>
 /// Logger provider for <see cref="XUnitLogger"/>.

@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
-namespace AppMotor.HttpServer.Startups;
+namespace AppMotor.HttpServerKit.Startups;
 
 /// <summary>
 /// Startup class for this ASP.NET Core web api application. The idea behind this class is to make bootstrapping

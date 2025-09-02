@@ -3,7 +3,7 @@
 
 using JetBrains.Annotations;
 
-namespace AppMotor.CliApp.Terminals.Formatting;
+namespace AppMotor.CliKit.Terminals.Formatting;
 
 /// <summary>
 /// Converts between <see cref="ConsoleColor"/>s and their ANSI color codes.

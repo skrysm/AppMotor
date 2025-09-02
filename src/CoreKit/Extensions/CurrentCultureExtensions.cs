@@ -4,11 +4,11 @@
 using System.Globalization;
 using System.Text;
 
-using AppMotor.Core.Globalization;
+using AppMotor.CoreKit.Globalization;
 
 using JetBrains.Annotations;
 
-namespace AppMotor.Core.Extensions;
+namespace AppMotor.CoreKit.Extensions;
 
 /// <summary>
 /// Extension methods that format data with the current UI culture (<see cref="UICulture.FormatsAndSorting"/>).

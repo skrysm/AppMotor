@@ -3,7 +3,7 @@
 
 using System.Text;
 
-namespace AppMotor.CliApp.Terminals.Formatting;
+namespace AppMotor.CliKit.Terminals.Formatting;
 
 /// <summary>
 /// A parser for strings with ANSI escape sequences (see <see cref="AnsiEscapeSequence"/>).

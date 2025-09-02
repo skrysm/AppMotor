@@ -1,11 +1,11 @@
 ﻿using System.Drawing;
 using System.Text;
 
-using AppMotor.CliApp;
-using AppMotor.CliApp.Terminals;
-using AppMotor.Core.Colors;
+using AppMotor.CliKit;
+using AppMotor.CliKit.Terminals;
+using AppMotor.CoreKit.Colors;
 
-using static AppMotor.CliApp.Terminals.Formatting.TermText;
+using static AppMotor.CliKit.Terminals.Formatting.TermText;
 
 // NOTE: This example is adapted from: https://github.com/chalk/chalk/blob/main/readme.md
 return CliApplication.Run(() =>

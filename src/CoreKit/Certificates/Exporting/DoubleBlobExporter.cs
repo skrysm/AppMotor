@@ -3,11 +3,11 @@
 
 using System.IO.Abstractions;
 
-using AppMotor.Core.IO;
+using AppMotor.CoreKit.IO;
 
 using JetBrains.Annotations;
 
-namespace AppMotor.Core.Certificates.Exporting;
+namespace AppMotor.CoreKit.Certificates.Exporting;
 
 /// <summary>
 /// Exports two certificate blobs: the private key and the public key.

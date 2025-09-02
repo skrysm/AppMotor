@@ -5,7 +5,7 @@ using System.Diagnostics.CodeAnalysis;
 
 using JetBrains.Annotations;
 
-namespace AppMotor.NetStandardCompat.Extensions;
+namespace AppMotor.NetStandardCompatKit.Extensions;
 
 /// <summary>
 /// Extension methods for <c>string</c>.

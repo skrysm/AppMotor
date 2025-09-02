@@ -3,9 +3,9 @@
 
 using System.Security.Cryptography;
 
-using AppMotor.Core.Utils;
+using AppMotor.CoreKit.Utils;
 
-namespace AppMotor.Core.Certificates;
+namespace AppMotor.CoreKit.Certificates;
 
 /// <summary>
 /// Equality comparer for <see cref="AsnEncodedData"/>.

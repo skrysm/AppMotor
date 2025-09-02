@@ -1,14 +1,14 @@
 ﻿// SPDX-License-Identifier: MIT
 // Copyright AppMotor Framework (https://github.com/skrysm/AppMotor)
 
-using AppMotor.HttpServer.Startups;
+using AppMotor.HttpServerKit.Startups;
 
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace AppMotor.CliApp.HttpServer.TestUtils;
+namespace AppMotor.HttpServerKit.TestUtils;
 
 internal sealed class SimplePingStartup : IAspNetStartup
 {

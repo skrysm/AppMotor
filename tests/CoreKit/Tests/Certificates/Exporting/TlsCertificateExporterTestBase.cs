@@ -3,12 +3,12 @@
 
 using System.Text;
 
-using AppMotor.Core.Certificates;
-using AppMotor.Core.Exceptions;
+using AppMotor.CoreKit.Certificates;
+using AppMotor.CoreKit.Exceptions;
 
 using Shouldly;
 
-namespace AppMotor.Core.Tests.Certificates.Exporting;
+namespace AppMotor.CoreKit.Tests.Certificates.Exporting;
 
 public abstract class TlsCertificateExporterTestBase
 {

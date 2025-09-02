@@ -4,11 +4,11 @@
 using System.Globalization;
 using System.Runtime.CompilerServices;
 
-using AppMotor.Core.Colors;
+using AppMotor.CoreKit.Colors;
 
 using JetBrains.Annotations;
 
-namespace AppMotor.CliApp.Terminals.Formatting;
+namespace AppMotor.CliKit.Terminals.Formatting;
 
 /// <summary>
 /// An <see cref="AnsiStreamParser"/> that converts all color sequences (text color and background color)

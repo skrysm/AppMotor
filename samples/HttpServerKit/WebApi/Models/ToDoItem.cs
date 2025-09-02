@@ -1,6 +1,6 @@
 ﻿using JetBrains.Annotations;
 
-namespace AppMotor.HttpServer.WebApiSample.Models;
+namespace AppMotor.HttpServerKit.Samples.WebApi.Models;
 
 [UsedImplicitly(ImplicitUseTargetFlags.Members)]
 public sealed class TodoItem

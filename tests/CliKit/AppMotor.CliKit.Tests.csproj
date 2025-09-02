@@ -3,7 +3,7 @@
   <Import Project="$(ProjectCommonsDirectory)Project.Tests.props" />
 
   <PropertyGroup>
-    <RootNamespace>AppMotor.CliApp</RootNamespace>
+    <RootNamespace>AppMotor.CliKit</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>

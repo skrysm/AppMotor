@@ -1,9 +1,9 @@
 ﻿// SPDX-License-Identifier: MIT
 // Copyright AppMotor Framework (https://github.com/skrysm/AppMotor)
 
-using AppMotor.Core.Exceptions;
-using AppMotor.Core.Extensions;
-using AppMotor.Core.Logging;
+using AppMotor.CoreKit.Exceptions;
+using AppMotor.CoreKit.Extensions;
+using AppMotor.CoreKit.Logging;
 
 using JetBrains.Annotations;
 
@@ -11,7 +11,7 @@ using Microsoft.Extensions.Logging;
 
 using Xunit.Abstractions;
 
-namespace AppMotor.TestCore.Logging;
+namespace AppMotor.TestKit.Logging;
 
 /// <summary>
 /// Implements <see cref="ILogger"/> and writes output to XUnit's <see cref="ITestOutputHelper"/>.

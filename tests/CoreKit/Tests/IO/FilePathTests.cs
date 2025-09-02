@@ -3,7 +3,7 @@
 
 using System.IO.Abstractions;
 
-using AppMotor.Core.IO;
+using AppMotor.CoreKit.IO;
 
 using Moq;
 
@@ -11,7 +11,7 @@ using Shouldly;
 
 using Xunit;
 
-namespace AppMotor.Core.Tests.IO;
+namespace AppMotor.CoreKit.Tests.IO;
 
 public sealed class FilePathTests
 {

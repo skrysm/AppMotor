@@ -3,7 +3,7 @@
 
 using JetBrains.Annotations;
 
-namespace AppMotor.Core.Exceptions;
+namespace AppMotor.CoreKit.Exceptions;
 
 /// <summary>
 /// Equivalent to <see cref="ArgumentOutOfRangeException"/> - just for values that are not arguments/parameters.

@@ -3,11 +3,11 @@
 
 using System.Text;
 
-using AppMotor.Core.Extensions;
+using AppMotor.CoreKit.Extensions;
 
 using JetBrains.Annotations;
 
-namespace AppMotor.Core.DateAndTime;
+namespace AppMotor.CoreKit.DateAndTime;
 
 /// <summary>
 /// Represents data of an ISO-8601 date/time (i.e. date/time strings à la "2024-05-30T20:11:21Z").

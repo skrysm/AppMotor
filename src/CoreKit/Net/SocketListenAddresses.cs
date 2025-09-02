@@ -3,7 +3,7 @@
 
 using JetBrains.Annotations;
 
-namespace AppMotor.Core.Net;
+namespace AppMotor.CoreKit.Net;
 
 /// <summary>
 /// The address a socket (server) can listen on (i.e. from where to accept connections).
