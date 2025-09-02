@@ -59,14 +59,12 @@ public sealed class TlsCertificateSourceTests
         cert.ExportPublicAndPrivateKey().ExportPrivateKey().ShouldBe(unencryptedCert.ExportPublicAndPrivateKey().ExportPrivateKey());
     }
 
+    /// <summary>
+    /// Tests the PEM files in PKCS#1 are not supported.
+    /// </summary>
     [Fact]
     public void Test_ImportPem_EncryptedPrivateKey_Pkcs1()
     {
-        using var unencryptedCert = new TlsCertificate(
-            TlsCertificateSource.FromFile($"{TEST_CERT_FILES_BASE_PATH}/cert.pfx"),
-            allowPrivateKeyExport: true
-        );
-
         // Test
         var source = TlsCertificateSource.FromFile($"{TEST_CERT_FILES_BASE_PATH}/cert.pem", $"{TEST_CERT_FILES_BASE_PATH}/key_encrypted_pkcs1.pem");
         var ex = Should.Throw<NotSupportedException>(() => new TlsCertificate(source, "P@ssw0rd"));
