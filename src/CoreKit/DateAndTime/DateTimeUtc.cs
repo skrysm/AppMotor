@@ -93,6 +93,16 @@ public readonly struct DateTimeUtc : IEquatable<DateTimeUtc>, IComparable<DateTi
     /// </summary>
     public int Millisecond => this._underlyingDateTime.Millisecond;
 
+    /// <summary>
+    /// The microseconds component, expressed as a value between 0 and 999.
+    /// </summary>
+    public int Microsecond => this._underlyingDateTime.Microsecond;
+
+    /// <summary>
+    /// The nanoseconds component, expressed as a value between 0 and 900 (in increments of 100 nanoseconds).
+    /// </summary>
+    public int Nanosecond => this._underlyingDateTime.Nanosecond;
+
     /// <inheritdoc cref="DateTime.Ticks"/>
     public long Ticks => this._underlyingDateTime.Ticks;
 

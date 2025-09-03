@@ -95,6 +95,8 @@ public sealed class DateTimeUtcTests
         dateTimeUtc.Minute.ShouldBe(now.Minute);
         dateTimeUtc.Second.ShouldBe(now.Second);
         dateTimeUtc.Millisecond.ShouldBe(now.Millisecond);
+        dateTimeUtc.Microsecond.ShouldBe(now.Microsecond);
+        dateTimeUtc.Nanosecond.ShouldBe(now.Nanosecond);
 
         dateTimeUtc.Ticks.ShouldBe(now.Ticks);
     }
@@ -163,6 +165,30 @@ public sealed class DateTimeUtcTests
         var today = DateTime.Today;
         var dateTimeUtc = new DateTimeUtc(today.Year, today.Month, today.Day, 4, 5, 6);
         dateTimeUtc.DayOfYear.ShouldBe(today.DayOfYear);
+    }
+
+    [Fact]
+    public void Test_Microsecond()
+    {
+        // Setup
+        var baseTime = new DateTimeUtc(2025, 9, 3, 12, 0, 0);
+
+        // Test
+        (baseTime + TimeSpan.FromTicks(20)).Microsecond.ShouldBe(2);
+        (baseTime + TimeSpan.FromTicks(310)).Microsecond.ShouldBe(31);
+        (baseTime + TimeSpan.FromTicks(9990)).Microsecond.ShouldBe(999);
+    }
+
+    [Fact]
+    public void Test_Nanosecond()
+    {
+        // Setup
+        var baseTime = new DateTimeUtc(2025, 9, 3, 12, 0, 0);
+
+        // Test
+        (baseTime + TimeSpan.FromTicks(1)).Nanosecond.ShouldBe(100);
+        (baseTime + TimeSpan.FromTicks(5)).Nanosecond.ShouldBe(500);
+        (baseTime + TimeSpan.FromTicks(9)).Nanosecond.ShouldBe(900);
     }
 
     [Fact]
