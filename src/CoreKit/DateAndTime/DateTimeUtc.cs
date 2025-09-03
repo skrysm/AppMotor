@@ -43,47 +43,53 @@ public readonly struct DateTimeUtc : IEquatable<DateTimeUtc>, IComparable<DateTi
     public TimeOnly TimeOfDay => TimeOnly.FromDateTime(this._underlyingDateTime);
 
     /// <summary>
-    /// The year component of this instance.
+    /// The year component.
     /// </summary>
     public int Year => this._underlyingDateTime.Year;
 
     /// <summary>
-    /// The month component of this instance.
+    /// The month component.
     /// </summary>
     public int Month => this._underlyingDateTime.Month;
 
     /// <summary>
-    /// The day (of the month) component of this instance.
+    /// The day (of the month) component.
     /// </summary>
+    /// <seealso cref="DayOfWeek"/>
+    /// <seealso cref="DayOfYear"/>
     public int Day => this._underlyingDateTime.Day;
 
     /// <summary>
-    /// The day of the week of this instance.
+    /// The day of the week represented by this instance.
     /// </summary>
+    /// <seealso cref="Day"/>
+    /// <seealso cref="DayOfYear"/>
     public DayOfWeek DayOfWeek => this._underlyingDateTime.DayOfWeek;
 
     /// <summary>
-    /// The day of the year of this instance.
+    /// The day of the year represented by this instance.
     /// </summary>
+    /// <seealso cref="Day"/>
+    /// <seealso cref="DayOfWeek"/>
     public int DayOfYear => this._underlyingDateTime.DayOfYear;
 
     /// <summary>
-    /// The hour component (0 - 23) of this instance.
+    /// The hour component, expressed as a value between 0 and 23.
     /// </summary>
     public int Hour => this._underlyingDateTime.Hour;
 
     /// <summary>
-    /// The minute component (0 - 59) of this instance.
+    /// The minute component, expressed as a value between 0 and 59.
     /// </summary>
     public int Minute => this._underlyingDateTime.Minute;
 
     /// <summary>
-    /// The second component (0 - 59) of this instance.
+    /// The second component, expressed as a value between 0 and 59.
     /// </summary>
     public int Second => this._underlyingDateTime.Second;
 
     /// <summary>
-    /// The millisecond component (0 - 999) of this instance.
+    /// The millisecond component, expressed as a value between 0 and 999.
     /// </summary>
     public int Millisecond => this._underlyingDateTime.Millisecond;
 
