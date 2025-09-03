@@ -103,6 +103,12 @@ public readonly struct DateTimeUtc : IEquatable<DateTimeUtc>, IComparable<DateTi
     /// </summary>
     public int Nanosecond => this._underlyingDateTime.Nanosecond;
 
+    /// <summary>
+    /// Whether this instance has fractional seconds. For example, in the ISO 8601 format <c>2025-09-03T12:34:56.7891234Z</c>,
+    /// the <c>.7891234</c> portion represents the fractional seconds.
+    /// </summary>
+    public bool HasFractionalSeconds => this.Ticks % TimeSpan.TicksPerSecond != 0;
+
     /// <inheritdoc cref="DateTime.Ticks"/>
     public long Ticks => this._underlyingDateTime.Ticks;
 

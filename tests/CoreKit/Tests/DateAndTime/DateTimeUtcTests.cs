@@ -192,6 +192,36 @@ public sealed class DateTimeUtcTests
     }
 
     [Fact]
+    public void Test_HasFractionalSeconds_False()
+    {
+        // Setup
+        var time = new DateTimeUtc(2025, 9, 3, 12, 31, 15);
+
+        // Test
+        time.HasFractionalSeconds.ShouldBe(false);
+    }
+
+    [Theory]
+    [InlineData(1)]
+    [InlineData(5)]
+    [InlineData(9)]
+    [InlineData(1_0)]
+    [InlineData(1_1)]
+    [InlineData(999_0)]
+    [InlineData(5_000_0)]
+    [InlineData(60_010_0)]
+    [InlineData(123_000_3)]
+    [InlineData(44_012_7)]
+    public void Test_HasFractionalSeconds_True(int ticksToAdd)
+    {
+        // Setup
+        var time = new DateTimeUtc(2025, 9, 3, 12, 31, 15) + TimeSpan.FromTicks(ticksToAdd);
+
+        // Test
+        time.HasFractionalSeconds.ShouldBe(true);
+    }
+
+    [Fact]
     public void Test_AddMonths()
     {
         var now = new DateTimeUtc(2021, 7, 1, 4, 5, 6);
