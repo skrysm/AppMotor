@@ -1,74 +1,46 @@
 ﻿#
-# GitHub Actions workflow: Builds and tests the code in this repository.
+# Builds and tests the code in this repository.
 #
-# For more details on workflows, see README.md.
-#
-# NOTES:
-#
-# * We don't use CodeQL because it takes, at the time of writing, 3 minutes to run which is
+# NOTE: We don't use CodeQL because it takes, at the time of writing, 3 minutes to run which is
 #   3x the time of the "build-and-test" job. Since we already have the Microsoft Code Analysis
-#   enabled, I don't expect CodeQL to offer much advantages (especially compared to the time it
-#   takes to execute).
+#   enabled, I don't expect CodeQL to offer any additional insight (especially when compared to
+#   the  time it takes to execute)
 #
-
 name: Continuous Integration
 
-# When to run this workflow
-#
-# See: https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows
-# See: https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#on
-#
-# TIP: Don't use "schedule" triggers as this will cause the workflow to be disabled after 60 days of inactivity
-#   (and afterward the workflow must be manually reenabled).
 on:
-  # Trigger the workflow on push to the main branch.
   push:
     branches:
       - main
-  # Trigger the workflow for any pull requests.
   pull_request:
-  # Allow manual run of this workflow (https://docs.github.com/en/actions/using-workflows/manually-running-a-workflow)
-  workflow_dispatch:
+  workflow_dispatch:  # manual execution
 
 # Permissions for GITHUB_TOKEN for this workflow.
-#
-# See: https://docs.github.com/en/actions/security-guides/automatic-token-authentication#permissions-for-the-github_token
-#
-# NOTE: Because we run with minimal permissions, we use "@vX" (instead of "@hash") for non-GitHub steps below.
-#   Usually you would use "@hash" as a security measure to pin a specific version. However, since we run with
-#   minimal permissions here, malicious code can't do much harm (most likely). For more details, see:
-#   https://blog.gitguardian.com/github-actions-security-cheat-sheet/#use-specific-action-version-tags
+# NOTES ON PERMiSSIONS: https://manski.net/articles/github/actions/cheat-sheet#security-considerations
+# NOTES ON SECRETS: https://docs.github.com/en/actions/how-tos/write-workflows/choose-what-workflows-do/use-secrets#using-secrets-in-a-workflow
 permissions:
   contents: read
 
 env:
   DOTNET_VERSION: '9.0'
 
-# NOTE: Jobs run in parallel by default.
-# https://docs.github.com/en/actions/using-jobs/using-jobs-in-a-workflow
+# NOTE: Jobs run in parallel by default (unless "needs" is defined).
 jobs:
 
   #
   # Build & Test job
   #
   build-and-test:
-
-    # Name of the job
     name: Build & Test
-
-    # Set the type of machine to run on
-    # See: https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#jobsjob_idruns-on
     runs-on: ubuntu-latest
 
     steps:
-
       ###########################################################################
       #
       # Setup Steps
       #
       ###########################################################################
 
-      # See: https://github.com/marketplace/actions/checkout
       - name: Clone Git repository
         uses: actions/checkout@v5
         with:
@@ -76,17 +48,17 @@ jobs:
           submodules: true
 
       # This creates ${{ steps.short-sha.outputs.sha }} to be used below.
-      # See: https://github.com/marketplace/actions/short-sha
       - name: Determine Git short commit hash
         id: short-sha
-        uses: benjlevesque/short-sha@599815c8ee942a9616c92bcfb4f947a3b670ab0b # version 3.0
+        uses: benjlevesque/short-sha@599815c8ee942a9616c92bcfb4f947a3b670ab0b  # version 3.0
 
-      # See: https://github.com/marketplace/actions/setup-net-core-sdk
+      # NOTE: While GitHub-hosted runners come with .NET preinstalled, they ship with the latest LTS version -
+      #   which may not be the version we need. So we explicitly setup .NET here
       - name: Setup .NET build environment
         uses: actions/setup-dotnet@v4
         with:
-          # NOTE: Apparently only the 3rd component can be "x"; i.e. "5.x" is not supported.
-          dotnet-version: '${{ env.DOTNET_VERSION }}.x'
+          dotnet-version: '${{ env.DOTNET_VERSION }}'  # required parameter
+
 
       ###########################################################################
       #
@@ -112,13 +84,13 @@ jobs:
           # Tells tests that they're running in a (potentially slow) CI environment.
           RUNS_IN_CI: true
 
+
       ###########################################################################
       #
       # Archive Steps
       #
       ###########################################################################
 
-      # See: https://github.com/marketplace/actions/upload-a-build-artifact
       - name: Upload test results
         uses: actions/upload-artifact@v4
         # Run this step even if "run_tests" has failed (but not if any other previous step has failed - which would
@@ -126,19 +98,10 @@ jobs:
         # See: https://docs.github.com/en/actions/learn-github-actions/expressions#failure
         if: success() || steps.run_tests.conclusion == 'failure'
         with:
-          # NOTE: To make the downloads of the test results easier to use (i.e. when downloading test results
-          #   from different runs), we'll add an id to the name.
-          #
-          #   We don't just use the sha because this workflow also runs on a schedule - which means that different
-          #   runs would again create files with the same name (e.g. two consecutive scheduled runs while the
-          #   repo hasn't changed in the meantime).
-          #
-          #   Instead we use 'github.run_number' because this gives us the same number that's also shown in the
-          #   ui - like 27 for run #27 ('github.run_id' on the other hand gives us some "random" big number like
-          #   1152888876 - which is less useful). For more details, see:
-          #   https://docs.github.com/en/actions/reference/context-and-expression-syntax-for-github-actions#github-context
-          #
-          # NOTE: We put the "run_number" first so that the result zip file can be sorted by name.
+          # NOTES:
+          #   * To make the downloads of the test results easier to use (i.e. when downloading test results
+          #     from different runs), we'll add the run number to the name.
+          #   * The name is used by the test reported step in ci.yaml.
           name: 'test-results-#${{ github.run_number }}-${{ steps.short-sha.outputs.sha }}-${{ runner.os }}'
           path: '**/*.trx'
           if-no-files-found: error
@@ -150,25 +113,18 @@ jobs:
   # NOTE: This is a separate job (from 'build-and-test') because it needs special write permissions.
   #
   test-report:
-
-    # Name of the job
     name: Test Report
+    runs-on: ubuntu-latest
 
     needs: build-and-test
-
-    # Set the type of machine to run on
-    # See: https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#jobsjob_idruns-on
-    runs-on: ubuntu-latest
 
     permissions:
       actions: read
       checks: write
 
     steps:
-      # See: https://github.com/marketplace/actions/test-reporter
       - name: Create test report
-        # For pinned versions, see: https://blog.gitguardian.com/github-actions-security-cheat-sheet/#use-specific-action-version-tags
-        uses: dorny/test-reporter@dc3a92680fcc15842eef52e8c4606ea7ce6bd3f3 # version 2.1.1
+        uses: dorny/test-reporter@dc3a92680fcc15842eef52e8c4606ea7ce6bd3f3  # version 2.1.1
         with:
           # NOTE: We add the 'github.run_number' to the name so that we can easier identify the
           #   test report if they pile up due to bug https://github.com/dorny/test-reporter/issues/67.
@@ -195,16 +151,11 @@ jobs:
   # NOTE: This is a separate job (from 'build-and-test') because it needs special write permissions.
   #
   documentation:
-
-    # Name of the job
     name: Publish Documentation
+    runs-on: ubuntu-latest
 
     # Only run this on the 'main' branch.
     if: github.ref == 'refs/heads/main'
-
-    # Set the type of machine to run on
-    # See: https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#jobsjob_idruns-on
-    runs-on: ubuntu-latest
 
     permissions:
       # This job needs permissions to push changes to the "retype" branch. Thus, it needs "write" permission.
@@ -218,12 +169,12 @@ jobs:
       #
       ###########################################################################
 
-      # See: https://github.com/marketplace/actions/checkout
       - name: Clone Git repository
         uses: actions/checkout@v5
         with:
           lfs: true
           submodules: false # not needed
+
 
       ###########################################################################
       #
@@ -231,12 +182,10 @@ jobs:
       #
       ###########################################################################
 
-      # See: https://github.com/retypeapp/action-build
       - name: Build HTML files
         # For pinned versions, see: https://blog.gitguardian.com/github-actions-security-cheat-sheet/#use-specific-action-version-tags
         uses: retypeapp/action-build@c6b1e770fa9194e384f1adf970afead0db550858 # version 3.11.0
 
-      # See: https://github.com/retypeapp/action-github-pages
       - name: Publish HTML files to GitHub Pages
         # For pinned versions, see: https://blog.gitguardian.com/github-actions-security-cheat-sheet/#use-specific-action-version-tags
         uses: retypeapp/action-github-pages@5a952a4f53fc7366288db464ec120f755e9f1303 # version 3.6.0
