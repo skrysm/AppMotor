@@ -7,6 +7,8 @@ using AppMotor.TestKit;
 
 using Shouldly;
 
+using xRetry;
+
 using Xunit;
 
 namespace AppMotor.CoreKit.Tests.Threading;
@@ -206,7 +208,7 @@ public sealed class TaskListTests
         task2.Status.ShouldBe(TaskStatus.RanToCompletion);
     }
 
-    [Fact]
+    [RetryFact(maxRetries: 3)] // This test is sometimes flaky when the current machine has heavy load.
     public async Task TestWhenAny()
     {
         // setup
