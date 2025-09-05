@@ -208,7 +208,7 @@ public sealed class TaskListTests
         task2.Status.ShouldBe(TaskStatus.RanToCompletion);
     }
 
-    [RetryFact(maxRetries: 3)] // This test is sometimes flaky when the current machine has heavy load.
+    [RetryFact(maxRetries: 3, delayBetweenRetriesMs: 1_000)] // This test is sometimes flaky when the current machine has heavy load.
     public async Task TestWhenAny()
     {
         // setup
