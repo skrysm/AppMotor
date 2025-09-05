@@ -82,6 +82,13 @@ jobs:
           # Tells tests that they're running in a (potentially slow) CI environment.
           RUNS_IN_CI: true
 
+      - name: Upload NuGet packages (as .zip file)
+        uses: actions/upload-artifact@v4
+        with:
+          name: 'nuget-packages'
+          path: 'build-packages/*.nupkg'
+          if-no-files-found: error
+
 
       ###########################################################################
       #
