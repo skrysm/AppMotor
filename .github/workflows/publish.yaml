@@ -50,7 +50,7 @@ jobs:
           #
           # NuGet prod environment
           #
-          PUSH_URI: 'https://api.nugettest.org/'
+          PUSH_URI: 'https://api.nuget.org/'
           API_KEY: "${{ secrets.NUGET_API_KEY }}"  # https://www.nuget.org/account/apikeys
 
           #
