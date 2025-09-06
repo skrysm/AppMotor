@@ -3,6 +3,10 @@
 -->
 <Project>
 
+  <!--
+    New NuGet packages are published via GitHub Actions: https://github.com/skrysm/AppMotor/actions/workflows/publish.yaml
+  -->
+
   <!-- See also: https://docs.microsoft.com/en-us/nuget/create-packages/prerelease-packages -->
   <PropertyGroup Label="Versions">
     <AppMotorCoreVersion>9.0.0</AppMotorCoreVersion>
