@@ -7,7 +7,7 @@ using AppMotor.TestKit;
 
 using Shouldly;
 
-using xRetry;
+using xRetry.v3;
 
 using Xunit;
 

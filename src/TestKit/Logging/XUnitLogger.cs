@@ -9,7 +9,7 @@ using JetBrains.Annotations;
 
 using Microsoft.Extensions.Logging;
 
-using Xunit.Abstractions;
+using Xunit;
 
 namespace AppMotor.TestKit.Logging;
 

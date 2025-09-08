@@ -14,7 +14,7 @@ using JetBrains.Annotations;
 using Shouldly;
 
 using Xunit;
-using Xunit.Abstractions;
+using Xunit.Sdk;
 
 namespace AppMotor.CoreKit.Tests.Utils;
 
@@ -242,8 +242,8 @@ public sealed class NumberTypeConverterTests
         /// <inheritdoc />
         public void Deserialize(IXunitSerializationInfo info)
         {
-            this.SourceType = info.GetValue<Type>(nameof(this.SourceType));
-            this.TargetType = info.GetValue<Type>(nameof(this.TargetType));
+            this.SourceType = info.GetValue<Type>(nameof(this.SourceType))!;
+            this.TargetType = info.GetValue<Type>(nameof(this.TargetType))!;
         }
 
         /// <inheritdoc />

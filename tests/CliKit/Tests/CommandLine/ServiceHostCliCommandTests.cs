@@ -16,7 +16,6 @@ using Microsoft.Extensions.Logging;
 using Shouldly;
 
 using Xunit;
-using Xunit.Abstractions;
 
 namespace AppMotor.CliKit.Tests.CommandLine;
 
@@ -37,7 +36,7 @@ public sealed class ServiceHostCliCommandTests : TestBase
         var command = new ServiceHostTestCommand(this.TestConsole);
 
         // Test
-        await Test_Stop(command, command.Stop);
+        await Test_Stop(command, command.Stop, TestContext.Current.CancellationToken);
     }
 
     [Fact]
@@ -55,7 +54,7 @@ public sealed class ServiceHostCliCommandTests : TestBase
     private static async Task Test_Stop(ServiceHostTestCommand command, Action stopAction, CancellationToken cancellationToken = default)
     {
         // The number of seconds to wait for the stopping event not to happen to "deduce"
-        // that it would not fire on its own. (This test is not 100% reliable but it's better
+        // that it would not fire on its own. (This test is not 100% reliable, but it's better
         // than nothing.)
         const double MAX_WAIT_SECONDS_FOR_CONFIRMATION = 1.2;
 
@@ -133,11 +132,11 @@ public sealed class ServiceHostCliCommandTests : TestBase
         // ReSharper disable once AccessToDisposedClosure
         command.LifetimeEvents.Started.RegisterEventHandler(() => startedEvent.Set()).ShouldNotBeNull();
 
-        var appTask = testApp.RunAsync();
+        var appTask = testApp.RunAsync(TestContext.Current.CancellationToken);
 
         command.LifetimeEvents.CancellationToken.IsCancellationRequested.ShouldBe(false);
 
-        startedEvent.Wait(TimeSpan.FromSeconds(10)).ShouldBe(true);
+        startedEvent.Wait(TimeSpan.FromSeconds(10), TestContext.Current.CancellationToken).ShouldBe(true);
 
         var loggerStatistics = command.ServicesAsPublic.GetRequiredService<TestLoggerStatistics>();
 

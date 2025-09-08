@@ -13,7 +13,6 @@ using JetBrains.Annotations;
 using Shouldly;
 
 using Xunit;
-using Xunit.Abstractions;
 
 using ExceptionExtensions = AppMotor.CoreKit.Extensions.ExceptionExtensions;
 

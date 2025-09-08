@@ -6,7 +6,7 @@ using AppMotor.TestKit.Logging;
 
 using Microsoft.Extensions.Hosting;
 
-using Xunit.Abstractions;
+using Xunit;
 
 namespace AppMotor.TestKit.AppBuilding;
 

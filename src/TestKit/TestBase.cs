@@ -4,7 +4,7 @@
 using AppMotor.CoreKit.Utils;
 using AppMotor.TestKit.Logging;
 
-using Xunit.Abstractions;
+using Xunit;
 
 namespace AppMotor.TestKit;
 

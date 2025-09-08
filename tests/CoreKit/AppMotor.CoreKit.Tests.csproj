@@ -9,7 +9,6 @@
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     <PackageReference Include="TestableIO.System.IO.Abstractions.TestingHelpers" Version="22.0.15" />
-    <PackageReference Include="xRetry" Version="1.9.0" />
   </ItemGroup>
 
   <ItemGroup>
