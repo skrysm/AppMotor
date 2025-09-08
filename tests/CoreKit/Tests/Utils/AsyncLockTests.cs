@@ -11,6 +11,7 @@ using Xunit;
 
 namespace AppMotor.CoreKit.Tests.Utils;
 
+[SuppressMessage("Usage", "xUnit1051")] // Calls to methods which accept CancellationToken should use TestContext.Current.CancellationToken
 public sealed class AsyncLockTests
 {
     [Fact]

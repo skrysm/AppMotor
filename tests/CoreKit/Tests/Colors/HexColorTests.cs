@@ -9,7 +9,6 @@ using AppMotor.TestKit;
 using Shouldly;
 
 using Xunit;
-using Xunit.Abstractions;
 
 namespace AppMotor.CoreKit.Tests.Colors;
 

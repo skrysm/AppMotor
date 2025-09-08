@@ -46,10 +46,10 @@ public sealed class TerminalLogOutputProcessorTests
         outputProcessor.EnqueueMessage("Test1", logAsError: false);
         outputProcessor.EnqueueMessage("Test2", logAsError: false);
 
-        writingFirstLogMessageEvent.Wait();
+        writingFirstLogMessageEvent.Wait(TestContext.Current.CancellationToken);
 
         // NOTE: Dispose() waits for the background thread to terminate. Thus, we have to call it on a different thread.
-        var disposeTask = Task.Run(() => outputProcessor.Dispose());
+        var disposeTask = Task.Run(() => outputProcessor.Dispose(), TestContext.Current.CancellationToken);
 
         Thread.Sleep(50); // give it time to call "CompleteAdding()"
 

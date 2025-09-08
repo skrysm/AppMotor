@@ -19,7 +19,6 @@ using Microsoft.Extensions.Hosting;
 using Shouldly;
 
 using Xunit;
-using Xunit.Abstractions;
 
 namespace AppMotor.HttpServerKit.Tests;
 
@@ -46,12 +45,12 @@ public sealed class HttpsTests : TestBase
         using (var httpClient = HttpClientFactory.CreateHttpClient(serverCertificate: testCertificate))
         {
             // ReSharper disable once MethodSupportsCancellation
-            var response = await httpClient.GetAsync($"https://{SERVER_HOSTNAME}:{testPort}/api/ping");
+            var response = await httpClient.GetAsync($"https://{SERVER_HOSTNAME}:{testPort}/api/ping", TestContext.Current.CancellationToken);
 
             response.EnsureSuccessStatusCode();
 
             // ReSharper disable once MethodSupportsCancellation
-            var responseString = await response.Content.ReadAsStringAsync();
+            var responseString = await response.Content.ReadAsStringAsync(TestContext.Current.CancellationToken);
 
             responseString.ShouldBe("Hello World!");
         }

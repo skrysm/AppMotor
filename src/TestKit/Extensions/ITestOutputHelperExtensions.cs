@@ -3,7 +3,7 @@
 
 using JetBrains.Annotations;
 
-using Xunit.Abstractions;
+using Xunit;
 
 namespace AppMotor.TestKit.Extensions;
 

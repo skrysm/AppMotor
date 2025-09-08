@@ -49,7 +49,7 @@ public sealed class TerminalLoggerTests
 
         IHost host = hostBuilder.Build();
 
-        await host.StartAsync();
+        await host.StartAsync(TestContext.Current.CancellationToken);
 
         var logger = host.Services.GetRequiredService<ILogger<TerminalLoggerTests>>();
 
@@ -60,12 +60,12 @@ public sealed class TerminalLoggerTests
         var startDate = DateTimeUtc.Now;
         while (testTerminal.CurrentOutput.Length == 0)
         {
-            await Task.Delay(50);
+            await Task.Delay(50, TestContext.Current.CancellationToken);
             (DateTimeUtc.Now - startDate).ShouldBeLessThan(TimeSpan.FromSeconds(2), "No log output found.");
         }
 
         // Cleanup
-        await host.StopAsync();
+        await host.StopAsync(TestContext.Current.CancellationToken);
 
         // Verify
         Should.CompleteIn(

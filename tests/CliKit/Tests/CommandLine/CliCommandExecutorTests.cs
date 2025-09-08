@@ -6,6 +6,8 @@
 // SPDX-License-Identifier: MIT
 // Copyright AppMotor Framework (https://github.com/skrysm/AppMotor)
 
+using System.Diagnostics.CodeAnalysis;
+
 using AppMotor.CliKit.CommandLine;
 using AppMotor.CliKit.TestUtils;
 
@@ -18,6 +20,7 @@ namespace AppMotor.CliKit.Tests.CommandLine;
 /// <summary>
 /// Tests <see cref="CliCommandExecutor"/>.
 /// </summary>
+[SuppressMessage("Usage", "xUnit1051")] // Calls to methods which accept CancellationToken should use TestContext.Current.CancellationToken
 public sealed class CliCommandExecutorTests
 {
     private const string COMMAND_NAME = "test";

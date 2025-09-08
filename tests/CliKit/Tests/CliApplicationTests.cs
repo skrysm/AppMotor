@@ -1,6 +1,7 @@
 ﻿// SPDX-License-Identifier: MIT
 // Copyright AppMotor Framework (https://github.com/skrysm/AppMotor)
 
+using System.Diagnostics.CodeAnalysis;
 using System.Text;
 
 using AppMotor.CliKit.Terminals;
@@ -119,6 +120,7 @@ public sealed class CliApplicationTests
     }
 
     [Fact]
+    [SuppressMessage("Usage", "xUnit1051")] // Calls to methods which accept CancellationToken should use TestContext.Current.CancellationToken
     public void Test_Run_Args()
     {
         // Setup
@@ -179,6 +181,7 @@ public sealed class CliApplicationTests
     }
 
     [Fact]
+    [SuppressMessage("Usage", "xUnit1051")] // Calls to methods which accept CancellationToken should use TestContext.Current.CancellationToken
     public async Task Test_RunAsync_Args()
     {
         // Setup
@@ -239,6 +242,7 @@ public sealed class CliApplicationTests
     }
 
     [Fact]
+    [SuppressMessage("Usage", "xUnit1051")] // Calls to methods which accept CancellationToken should use TestContext.Current.CancellationToken
     public void Test_WaitForKey()
     {
         // Setup
