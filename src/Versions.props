@@ -13,7 +13,7 @@
     <CliKitVersion>9.0.1</CliKitVersion>
     <HttpServerKitVersion>9.0.1</HttpServerKitVersion>
 
-    <TestKitVersion>9.0.1</TestKitVersion>
+    <TestKitVersion>9.1.0</TestKitVersion>
 
     <NetStandardCompatKitVersion>0.2.2</NetStandardCompatKitVersion>
   </PropertyGroup>
