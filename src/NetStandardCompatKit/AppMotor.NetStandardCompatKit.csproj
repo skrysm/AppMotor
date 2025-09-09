@@ -10,7 +10,7 @@
 
     <LangVersion>latest</LangVersion>
 
-    <Version>$(AppMotorNetStandardCompatVersion)</Version>
+    <Version>$(NetStandardCompatKitVersion)</Version>
 
     <Description>Compatibility package for using modern C# features with .NET Standard 2.0 compatible projects.</Description>
 

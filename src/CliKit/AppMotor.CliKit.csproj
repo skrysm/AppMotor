@@ -6,7 +6,7 @@
   <Import Project="../Versions.props" />
 
   <PropertyGroup>
-    <Version>$(AppMotorCliAppVersion)</Version>
+    <Version>$(CliKitVersion)</Version>
 
     <Description>APIs for building command line apps with the AppMotor framework.</Description>
 

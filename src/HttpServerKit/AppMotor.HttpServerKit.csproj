@@ -8,7 +8,7 @@
   <PropertyGroup>
     <OutputType>Library</OutputType>
 
-    <Version>$(AppMotorHttpServerVersion)</Version>
+    <Version>$(HttpServerKitVersion)</Version>
 
     <Description>APIs for running a HTTP(S) server (Kestrel).</Description>
 

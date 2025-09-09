@@ -6,7 +6,7 @@
   <Import Project="../Versions.props" />
 
   <PropertyGroup>
-    <Version>$(AppMotorCoreVersion)</Version>
+    <Version>$(CoreKitVersion)</Version>
 
     <Description>The core APIs for the AppMotor framework.</Description>
 

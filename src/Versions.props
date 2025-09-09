@@ -9,12 +9,13 @@
 
   <!-- See also: https://docs.microsoft.com/en-us/nuget/create-packages/prerelease-packages -->
   <PropertyGroup Label="Versions">
-    <AppMotorCoreVersion>9.0.1</AppMotorCoreVersion>
-    <AppMotorCliAppVersion>9.0.1</AppMotorCliAppVersion>
-    <AppMotorHttpServerVersion>9.0.1</AppMotorHttpServerVersion>
-    <AppMotorTestCoreVersion>9.0.1</AppMotorTestCoreVersion>
+    <CoreKitVersion>9.0.1</CoreKitVersion>
+    <CliKitVersion>9.0.1</CliKitVersion>
+    <HttpServerKitVersion>9.0.1</HttpServerKitVersion>
 
-    <AppMotorNetStandardCompatVersion>0.2.2</AppMotorNetStandardCompatVersion>
+    <TestKitVersion>9.0.1</TestKitVersion>
+
+    <NetStandardCompatKitVersion>0.2.2</NetStandardCompatKitVersion>
   </PropertyGroup>
 
 </Project>

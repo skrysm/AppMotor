@@ -6,7 +6,7 @@
   <Import Project="../Versions.props" />
 
   <PropertyGroup>
-    <Version>$(AppMotorTestCoreVersion)</Version>
+    <Version>$(TestKitVersion)</Version>
 
     <Description>Sharable test helper APIs.</Description>
 
