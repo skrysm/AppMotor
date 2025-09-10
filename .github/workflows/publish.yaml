@@ -8,7 +8,7 @@ on:
   workflow_dispatch:
 
 # Permissions for GITHUB_TOKEN for this workflow.
-# NOTES ON PERMiSSIONS: https://manski.net/articles/github/actions/cheat-sheet#security-considerations
+# NOTES ON PERMISSIONS: https://manski.net/articles/github/actions/cheat-sheet#security-considerations
 # NOTES ON SECRETS: https://docs.github.com/en/actions/how-tos/write-workflows/choose-what-workflows-do/use-secrets#using-secrets-in-a-workflow
 permissions:
   contents: read
