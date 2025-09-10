@@ -1,0 +1,61 @@
+#
+# Publishes the documentation of this repository.
+#
+name: Publish Documentation
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:  # manual execution
+
+# Permissions for GITHUB_TOKEN for this workflow.
+# NOTES ON PERMISSIONS: https://manski.net/articles/github/actions/cheat-sheet#security-considerations
+# NOTES ON SECRETS: https://docs.github.com/en/actions/how-tos/write-workflows/choose-what-workflows-do/use-secrets#using-secrets-in-a-workflow
+permissions:
+  contents: read
+
+# NOTE: Jobs run in parallel by default (unless "needs" is defined).
+jobs:
+
+  documentation:
+    name: Publish Documentation
+    runs-on: ubuntu-latest
+
+    permissions:
+      # This job needs permissions to push changes to the "retype" branch. Thus, it needs "write" permission.
+      contents: write
+
+    steps:
+
+      ###########################################################################
+      #
+      # Setup Steps
+      #
+      ###########################################################################
+
+      - name: Clone Git repository
+        uses: actions/checkout@v5
+        with:
+          lfs: true
+          submodules: false # not needed
+
+
+      ###########################################################################
+      #
+      # Build Steps
+      #
+      ###########################################################################
+
+      - name: Build HTML files
+        # For pinned versions, see: https://blog.gitguardian.com/github-actions-security-cheat-sheet/#use-specific-action-version-tags
+        uses: retypeapp/action-build@c6b1e770fa9194e384f1adf970afead0db550858 # version 3.11.0
+
+      - name: Publish HTML files to GitHub Pages
+        # For pinned versions, see: https://blog.gitguardian.com/github-actions-security-cheat-sheet/#use-specific-action-version-tags
+        uses: retypeapp/action-github-pages@5a952a4f53fc7366288db464ec120f755e9f1303 # version 3.6.0
+        with:
+          # The branch where the results are stored
+          branch: retype
+          # Update the "retype" branch (instead of creating a new branch)
+          update-branch: true
