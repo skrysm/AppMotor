@@ -6,7 +6,7 @@
 #   enabled, I don't expect CodeQL to offer any additional insight (especially when compared to
 #   the  time it takes to execute).
 #
-name: Build & Test
+name: Build & Test (Reusable Workflow)
 
 on:
   workflow_call:

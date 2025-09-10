@@ -24,7 +24,7 @@ jobs:
   #
   build-and-test:
     name: Build & Test
-    uses: ./.github/workflows/build-and-test.yaml
+    uses: ./.github/workflows/__build-and-test.yaml
 
   #
   # Create action test report
