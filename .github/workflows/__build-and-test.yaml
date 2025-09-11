@@ -1,4 +1,4 @@
-#
+﻿#
 # Builds and tests the code in this repository.
 #
 # NOTE: We don't use CodeQL because it takes, at the time of writing, 3 minutes to run which is
@@ -33,6 +33,7 @@ jobs:
       run_tests_conclusion: ${{ steps.run_tests.conclusion }}
 
     steps:
+
       ###########################################################################
       #
       # Setup Steps

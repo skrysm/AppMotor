@@ -60,9 +60,7 @@ indent_size = 2
 [*.{bat,cmd}]
 end_of_line = crlf
 
-
-#################################################################################
-
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 #
 # C# files
@@ -133,3 +131,9 @@ end_of_line = crlf
 # ReSharper creates .DotSettings files with BOM.
 charset = utf-8-bom
 indent_style = tab
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+#
+# Repository custom settings
+#
