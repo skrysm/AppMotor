@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://skrysmanski.github.io/AppMotor/sitemap.xml.gz
+Sitemap: https://skrysm.github.io/AppMotor/sitemap.xml.gz
