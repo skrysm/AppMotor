@@ -5,7 +5,7 @@
 #
 input: src/
 output: .retype
-url: https://skrysmanski.github.io/AppMotor/
+url: https://skrysm.github.io/AppMotor/
 
 branding:
   title: AppMotor
@@ -15,18 +15,18 @@ meta:
   title: " | AppMotor"
 
 edit:
-  repo: github.com/skrysmanski/AppMotor/edit
+  repo: github.com/skrysm/AppMotor/edit
   base: /src/
 
 links:
-  - text: AppMotor.CliApp
-    link: AppMotor.CliApp
+  - text: CliKit
+    link: CliKit
     icon: terminal
-  - text: AppMotor.HttpServer
-    link: AppMotor.HttpServer
+  - text: HttpServerKit
+    link: HttpServerKit
     icon: server
   - text: GitHub
-    link: https://github.com/skrysmanski/AppMotor/
+    link: https://github.com/skrysm/AppMotor/
     icon: mark-github
     target: blank
 
