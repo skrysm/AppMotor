@@ -48,7 +48,7 @@ The simplest form of using `CliApplication` is like this (in your `Program.cs`):
 ```c#
 return CliApplication.Run(() =>
 {
-    Terminal.WriteLine("Hello, World!")
+    Terminal.WriteLine("Hello, World!");
 });
 ```
 
@@ -58,7 +58,7 @@ There's also an async version:
 return CliApplication.RunAsync(async () =>
 {
     await Task.Delay(10);
-    Terminal.WriteLine("Hello, World!")
+    Terminal.WriteLine("Hello, World!");
 });
 ```
 
@@ -73,7 +73,7 @@ public sealed class Program : CliApplication
 
     private void Execute()
     {
-        this.Terminal.WriteLine("Hello, World!")
+        this.Terminal.WriteLine("Hello, World!");
     }
 }
 ```
