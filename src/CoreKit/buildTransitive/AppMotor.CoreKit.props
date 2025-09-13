@@ -1,0 +1,12 @@
+﻿<Project>
+
+  <ItemGroup Label="Project Default Namespace" Condition=" '$(CreateDefaultNamespaceAttribute)' != 'false' ">
+    <!-- Store the $(RootNamespace) property in an appropriate assembly attribute so that this value is available at runtime.
+         NOTE: In the UI this is actually called "Default namespace". So we'll use this wording instead of "root namespace".
+    -->
+    <AssemblyAttribute Include="AppMotor.CoreKit.DefaultNamespaceAttribute">
+      <_Parameter1>$(RootNamespace)</_Parameter1>
+    </AssemblyAttribute>
+  </ItemGroup>
+
+</Project>

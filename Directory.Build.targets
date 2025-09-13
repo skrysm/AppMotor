@@ -10,4 +10,9 @@
 
   <Import Project="$(MSBuildThisFileDirectory)_ProjectCommons/Common.Directory.Build.targets" />
 
+  <!-- This file is normally included when CoreKit is referenced as NuGet package. But since we don't do this
+       in this solution, we'll reference the file here directly.
+  -->
+  <Import Project="$(MSBuildThisFileDirectory)src/CoreKit/buildTransitive/AppMotor.CoreKit.props" />
+
 </Project>

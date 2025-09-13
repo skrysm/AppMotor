@@ -20,4 +20,23 @@
     <PackageReference Include="TestableIO.System.IO.Abstractions.Wrappers" Version="22.0.15" />
   </ItemGroup>
 
+  <ItemGroup Label="NugetPackageContents">
+
+    <!-- IMPORTANT: Must set "Pack" "True" to be included in the NuGet package.
+         IMPORTANT 2: The folder "buildTransitive" (inside a NuGet package) is special. Any .target or .props file in
+            this folder is automatically imported in each project (file) that references the NuGet package - directly
+            or indirectly.
+            See: https://learn.microsoft.com/en-us/nuget/concepts/msbuild-props-and-targets
+         IMPORTANT 3: The "PackagePath" must be specified explicitely; without it the file would end up
+            in the wrong folder (contentFiles\any\netstandard2.0\build\).
+    -->
+    <None Include="buildTransitive\*.*" Pack="True" PackagePath="buildTransitive\" />
+    <!-- This is required so that changes to files in the "buildTransitive" folder mark the project as "dirty" in Visual Studio.
+         Without this, even when the files in the "build" folder changed, Visual Studio would still think the project
+         is up-to-date and not build it.
+    -->
+    <UpToDateCheckInput Include="buildTransitive\*.*" />
+
+  </ItemGroup>
+
 </Project>

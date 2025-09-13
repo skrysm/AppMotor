@@ -16,6 +16,9 @@
 
     <!-- This allows a developer to temporarily disable the requirements for documentation more easily during development. -->
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
+
+    <!-- We don't reference CoreKit and thus don't have the required attribute. -->
+    <CreateDefaultNamespaceAttribute>false</CreateDefaultNamespaceAttribute>
   </PropertyGroup>
 
   <ItemGroup>
