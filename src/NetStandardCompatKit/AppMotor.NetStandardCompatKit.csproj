@@ -15,7 +15,7 @@
     <Description>Compatibility package for using modern C# features with .NET Standard 2.0 compatible projects.</Description>
 
     <!-- This allows a developer to temporarily disable the requirements for documentation more easily during development. -->
-    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <EnforceFullDocumentation>true</EnforceFullDocumentation>
 
     <!-- We don't reference CoreKit and thus don't have the required attribute. -->
     <CreateDefaultNamespaceAttribute>false</CreateDefaultNamespaceAttribute>

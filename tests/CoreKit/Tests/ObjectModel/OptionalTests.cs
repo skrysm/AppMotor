@@ -125,7 +125,7 @@ public sealed class OptionalTests
     }
 
     /// <summary>
-    /// Test for <see cref="IEquatable{T}.Equals(T?)"/> for <see cref="Optional{T}"/> with reference types.
+    /// Test for <see cref="IEquatable{T}.Equals(T)"/> for <see cref="Optional{T}"/> with reference types.
     /// </summary>
     [Fact]
     public void Test_Equals_Typed_RefType()
@@ -143,7 +143,7 @@ public sealed class OptionalTests
     }
 
     /// <summary>
-    /// Test for <see cref="IEquatable{T}.Equals(T?)"/> for <see cref="Optional{T}"/> with value types.
+    /// Test for <see cref="IEquatable{T}.Equals(T)"/> for <see cref="Optional{T}"/> with value types.
     /// </summary>
     [Fact]
     public void Test_Equals_Typed_ValueType()
@@ -161,7 +161,7 @@ public sealed class OptionalTests
     }
 
     /// <summary>
-    /// Test for <see cref="IEquatable{T}.Equals(T?)"/> for <c>T</c> with value types.
+    /// Test for <see cref="IEquatable{T}.Equals(T)"/> for <c>T</c> with value types.
     /// </summary>
     [Fact]
     public void TestEquals_UnderlyingType_RefType()
@@ -177,7 +177,7 @@ public sealed class OptionalTests
     }
 
     /// <summary>
-    /// Test for <see cref="IEquatable{T}.Equals(T?)"/> for <c>T</c> with value types.
+    /// Test for <see cref="IEquatable{T}.Equals(T)"/> for <c>T</c> with value types.
     /// </summary>
     [Fact]
     public void TestEquals_UnderlyingType_ValueType()

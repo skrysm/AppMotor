@@ -13,7 +13,7 @@
     <Description>APIs for running a HTTP(S) server (Kestrel).</Description>
 
     <!-- This allows a developer to temporarily disable the requirements for documentation more easily during development. -->
-    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <EnforceFullDocumentation>true</EnforceFullDocumentation>
   </PropertyGroup>
 
   <ItemGroup>
