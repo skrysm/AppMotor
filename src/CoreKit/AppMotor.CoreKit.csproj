@@ -31,11 +31,6 @@
             in the wrong folder (contentFiles\any\netstandard2.0\build\).
     -->
     <None Include="buildTransitive\*.*" Pack="True" PackagePath="buildTransitive\" />
-    <!-- This is required so that changes to files in the "buildTransitive" folder mark the project as "dirty" in Visual Studio.
-         Without this, even when the files in the "build" folder changed, Visual Studio would still think the project
-         is up-to-date and not build it.
-    -->
-    <UpToDateCheckInput Include="buildTransitive\*.*" />
 
   </ItemGroup>
 
