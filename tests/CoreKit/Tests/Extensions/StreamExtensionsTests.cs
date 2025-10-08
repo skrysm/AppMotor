@@ -89,6 +89,47 @@ public sealed class StreamExtensionsTests
         contents.ShouldBe(File.ReadAllText(testFileInfo.FullName, Encoding.UTF8));
     }
 
+    [Fact]
+    public void Test_ReadAsLines()
+    {
+        // Setup
+        var testFileInfo = new FileInfo("TestData/StreamReadTest.txt");
+        testFileInfo.Exists.ShouldBe(true);
+
+        using var fileStream = testFileInfo.OpenRead();
+
+        // Test
+        var contents = fileStream.ReadAsLines(Encoding.UTF8).ToArray();
+
+        // Verify
+        contents.ShouldBe(File.ReadAllLines(testFileInfo.FullName, Encoding.UTF8));
+    }
+
+    [Fact]
+    public async Task Test_ReadAsLinesAsync()
+    {
+        // Setup
+        var testFileInfo = new FileInfo("TestData/StreamReadTest.txt");
+        testFileInfo.Exists.ShouldBe(true);
+
+        // ReSharper disable once MethodHasAsyncOverload
+        var expectedLines = File.ReadAllLines(testFileInfo.FullName, Encoding.UTF8);
+
+        await using var fileStream = testFileInfo.OpenRead();
+
+        int curLine = 0;
+
+        // Test
+        await foreach (var line in fileStream.ReadAsLinesAsync(Encoding.UTF8, TestContext.Current.CancellationToken))
+        {
+            line.ShouldBe(expectedLines[curLine]);
+            curLine++;
+        }
+
+        // Verify
+        curLine.ShouldBe(expectedLines.Length);
+    }
+
     private sealed class NonSeekableFileStream : FileStream
     {
         /// <inheritdoc />

@@ -1,6 +1,7 @@
 ﻿// SPDX-License-Identifier: MIT
 // Copyright AppMotor Framework (https://github.com/skrysm/AppMotor)
 
+using System.Runtime.CompilerServices;
 using System.Text;
 
 using AppMotor.CoreKit.Exceptions;
@@ -200,5 +201,65 @@ public static class StreamExtensions
         using var reader = new StreamReader(stream, encoding, leaveOpen: true);
 
         return await reader.ReadToEndAsync(cancellationToken).ConfigureAwait(false);
+    }
+
+    /// <summary>
+    /// Reads the whole stream as individual lines.
+    /// </summary>
+    /// <remarks>
+    /// Make sure not to read unbound, untrusted data - or this operation may result in a
+    /// <see cref="OutOfMemoryException"/>.
+    /// </remarks>
+    /// <exception cref="InvalidOperationException">Thrown if this stream can't be read.</exception>
+    [MustUseReturnValue]
+    public static IEnumerable<string> ReadAsLines(this Stream stream, Encoding encoding)
+    {
+        if (!stream.CanRead)
+        {
+            throw new InvalidOperationException("This stream can't be read.");
+        }
+
+        using var reader = new StreamReader(stream, encoding, leaveOpen: true);
+
+        while (true)
+        {
+            var line = reader.ReadLine();
+            if (line is null)
+            {
+                break;
+            }
+
+            yield return line;
+        }
+    }
+
+    /// <summary>
+    /// Reads the whole stream as individual lines.
+    /// </summary>
+    /// <remarks>
+    /// Make sure not to read unbound, untrusted data - or this operation may result in a
+    /// <see cref="OutOfMemoryException"/>.
+    /// </remarks>
+    /// <exception cref="InvalidOperationException">Thrown if this stream can't be read.</exception>
+    [MustUseReturnValue]
+    public static async IAsyncEnumerable<string> ReadAsLinesAsync(this Stream stream, Encoding encoding, [EnumeratorCancellation] CancellationToken cancellationToken = default)
+    {
+        if (!stream.CanRead)
+        {
+            throw new InvalidOperationException("This stream can't be read.");
+        }
+
+        using var reader = new StreamReader(stream, encoding, leaveOpen: true);
+
+        while (true)
+        {
+            var line = await reader.ReadLineAsync(cancellationToken).ConfigureAwait(false);
+            if (line is null)
+            {
+                break;
+            }
+
+            yield return line;
+        }
     }
 }
