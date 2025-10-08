@@ -1,6 +1,8 @@
 ﻿// SPDX-License-Identifier: MIT
 // Copyright AppMotor Framework (https://github.com/skrysm/AppMotor)
 
+using System.Text;
+
 using AppMotor.CoreKit.Exceptions;
 
 using JetBrains.Annotations;
@@ -156,5 +158,47 @@ public static class StreamExtensions
         }
 
         return (int)remainingLength;
+    }
+
+    /// <summary>
+    /// Reads the whole stream as a string.
+    /// </summary>
+    /// <remarks>
+    /// Make sure not to read unbound, untrusted data - or this operation may result in a
+    /// <see cref="OutOfMemoryException"/>.
+    /// </remarks>
+    /// <exception cref="InvalidOperationException">Thrown if this stream can't be read.</exception>
+    [MustUseReturnValue]
+    public static string ReadAsString(this Stream stream, Encoding encoding)
+    {
+        if (!stream.CanRead)
+        {
+            throw new InvalidOperationException("This stream can't be read.");
+        }
+
+        using var reader = new StreamReader(stream, encoding, leaveOpen: true);
+
+        return reader.ReadToEnd();
+    }
+
+    /// <summary>
+    /// Reads the whole stream as a string.
+    /// </summary>
+    /// <remarks>
+    /// Make sure not to read unbound, untrusted data - or this operation may result in a
+    /// <see cref="OutOfMemoryException"/>.
+    /// </remarks>
+    /// <exception cref="InvalidOperationException">Thrown if this stream can't be read.</exception>
+    [MustUseReturnValue]
+    public static async Task<string> ReadAsStringAsync(this Stream stream, Encoding encoding, CancellationToken cancellationToken = default)
+    {
+        if (!stream.CanRead)
+        {
+            throw new InvalidOperationException("This stream can't be read.");
+        }
+
+        using var reader = new StreamReader(stream, encoding, leaveOpen: true);
+
+        return await reader.ReadToEndAsync(cancellationToken).ConfigureAwait(false);
     }
 }

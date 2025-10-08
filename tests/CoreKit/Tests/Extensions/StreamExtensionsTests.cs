@@ -1,6 +1,8 @@
 ﻿// SPDX-License-Identifier: MIT
 // Copyright AppMotor Framework (https://github.com/skrysm/AppMotor)
 
+using System.Text;
+
 using AppMotor.CoreKit.Extensions;
 
 using Shouldly;
@@ -52,6 +54,39 @@ public sealed class StreamExtensionsTests
         // Verify
         bytes.Length.ShouldBe((int)testFileInfo.Length);
         bytes.ShouldBe(await File.ReadAllBytesAsync(testFileInfo.FullName, TestContext.Current.CancellationToken));
+    }
+
+    [Fact]
+    public void Test_ReadAsString()
+    {
+        // Setup
+        var testFileInfo = new FileInfo("TestData/StreamReadTest.txt");
+        testFileInfo.Exists.ShouldBe(true);
+
+        using var fileStream = testFileInfo.OpenRead();
+
+        // Test
+        var contents = fileStream.ReadAsString(Encoding.UTF8);
+
+        // Verify
+        contents.ShouldBe(File.ReadAllText(testFileInfo.FullName, Encoding.UTF8));
+    }
+
+    [Fact]
+    public async Task Test_ReadAsStringAsync()
+    {
+        // Setup
+        var testFileInfo = new FileInfo("TestData/StreamReadTest.txt");
+        testFileInfo.Exists.ShouldBe(true);
+
+        await using var fileStream = testFileInfo.OpenRead();
+
+        // Test
+        var contents = await fileStream.ReadAsStringAsync(Encoding.UTF8, TestContext.Current.CancellationToken);
+
+        // Verify
+        // ReSharper disable once MethodHasAsyncOverload
+        contents.ShouldBe(File.ReadAllText(testFileInfo.FullName, Encoding.UTF8));
     }
 
     private sealed class NonSeekableFileStream : FileStream
