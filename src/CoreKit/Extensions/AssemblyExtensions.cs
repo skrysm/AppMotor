@@ -3,6 +3,8 @@
 
 using System.Reflection;
 
+using AppMotor.CoreKit.Utils;
+
 using JetBrains.Annotations;
 
 namespace AppMotor.CoreKit.Extensions;
@@ -34,5 +36,14 @@ public static class AssemblyExtensions
         }
 
         return attribute.NamespaceName;
+    }
+
+    /// <summary>
+    /// Returns an "accessor" to the embedded resources of this assembly.
+    /// </summary>
+    [MustUseReturnValue]
+    public static AssemblyEmbeddedResources GetEmbeddedResources(this Assembly assembly)
+    {
+        return new AssemblyEmbeddedResources(assembly);
     }
 }
