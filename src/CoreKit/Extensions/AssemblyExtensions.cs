@@ -3,6 +3,7 @@
 
 using System.Reflection;
 
+using AppMotor.CoreKit.Exceptions;
 using AppMotor.CoreKit.Utils;
 
 using JetBrains.Annotations;
@@ -14,6 +15,16 @@ namespace AppMotor.CoreKit.Extensions;
 /// </summary>
 public static class AssemblyExtensions
 {
+    /// <summary>
+    /// Returns the simple name for this assembly. This is usually, but not necessarily, the file
+    /// name of the manifest file of the assembly, minus its extension.
+    /// </summary>
+    [MustUseReturnValue]
+    public static string GetSimpleName(this Assembly assembly)
+    {
+        return assembly.GetName().Name ?? throw new UnexpectedBehaviorException($"Simple name is not available for assembly '{assembly}'.");
+    }
+
     /// <summary>
     /// Returns the default namespace for the specified assembly.
     /// </summary>

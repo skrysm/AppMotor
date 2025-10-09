@@ -5,6 +5,8 @@ using System.Diagnostics.CodeAnalysis;
 using System.Reflection;
 using System.Resources;
 
+using AppMotor.CoreKit.Extensions;
+
 using JetBrains.Annotations;
 
 namespace AppMotor.CoreKit.Utils;
@@ -65,7 +67,7 @@ public readonly struct AssemblyEmbeddedResources
     public Stream GetRequiredResource(string resourceName)
     {
         return GetResource(resourceName)
-            ?? throw new MissingManifestResourceException($"The embedded resource '{resourceName}' was not found in assembly '{this._assembly.GetName().Name}'.");
+            ?? throw new MissingManifestResourceException($"The embedded resource '{resourceName}' was not found in assembly '{this._assembly.GetSimpleName()}'.");
     }
 
     /// <summary>
@@ -81,6 +83,6 @@ public readonly struct AssemblyEmbeddedResources
         Validate.ArgumentWithName(nameof(type)).IsNotNull(type);
 
         return GetResource(type, resourceName)
-            ?? throw new MissingManifestResourceException($"The embedded resource '{type.Namespace}.{resourceName}' was not found in assembly '{this._assembly.GetName().Name}'.");
+            ?? throw new MissingManifestResourceException($"The embedded resource '{type.Namespace}.{resourceName}' was not found in assembly '{this._assembly.GetSimpleName()}'.");
     }
 }
