@@ -27,6 +27,16 @@ public static class AssemblyExtensions
     }
 
     /// <summary>
+    /// Just a "helper" method to make it easier to locate the actual path property: <see cref="Assembly.Location"/>
+    /// </summary>
+    [Obsolete("Use Assembly.Location instead.")]
+    [PublicAPI, MustUseReturnValue]
+    public static string GetPath(this Assembly assembly)
+    {
+        return assembly.Location;
+    }
+
+    /// <summary>
     /// Returns the default namespace for the specified assembly.
     /// </summary>
     /// <remarks>
