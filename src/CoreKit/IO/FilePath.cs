@@ -16,7 +16,7 @@ namespace AppMotor.CoreKit.IO;
 /// </summary>
 /// <remarks>
 /// The difference to <see cref="FileInfo"/> is that this type does not need <see cref="Path.GetFullPath(string)"/> to work.
-/// Instead it just represents a string that's supposed to be a file path. Also, it's implicitly convertible from <c>string</c>
+/// Instead, it just represents a string that's supposed to be a file path. Also, it's implicitly convertible from <c>string</c>
 /// (and <see cref="FileInfo"/>) and supports <see cref="IFileSystem"/> in its methods.
 /// </remarks>
 /// <seealso cref="DirectoryPath"/>
