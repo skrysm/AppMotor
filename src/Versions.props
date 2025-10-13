@@ -9,7 +9,7 @@
 
   <!-- See also: https://docs.microsoft.com/en-us/nuget/create-packages/prerelease-packages -->
   <PropertyGroup Label="Versions">
-    <CoreKitVersion>9.0.5</CoreKitVersion>
+    <CoreKitVersion>9.0.6</CoreKitVersion>
     <CliKitVersion>9.0.2</CliKitVersion>
     <HttpServerKitVersion>9.0.2</HttpServerKitVersion>
 
