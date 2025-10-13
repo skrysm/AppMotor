@@ -12,7 +12,7 @@ public static class DirectoryInfoExtensions
 {
     /// <summary>
     /// Returns a <see cref="FileInfo"/> object for the specified <paramref name="fileName"/>
-    /// within this folder.
+    /// within this folder. Note that the file doesn't need to exist.
     /// </summary>
     /// <remarks>
     /// This method uses <see cref="Path.Combine(string, string)"/> - so the resulting <see cref="FileInfo"/>
@@ -26,7 +26,7 @@ public static class DirectoryInfoExtensions
 
     /// <summary>
     /// Returns a <see cref="DirectoryInfo"/> object for the specified <paramref name="dirName"/>
-    /// within this folder.
+    /// within this folder. Note that the directory doesn't need to exist.
     /// </summary>
     /// <remarks>
     /// This method uses <see cref="Path.Combine(string, string)"/> - so the resulting <see cref="DirectoryInfo"/>
