@@ -18,7 +18,7 @@ public static class DirectoryInfoExtensions
     /// This method uses <see cref="Path.Combine(string, string)"/> - so the resulting <see cref="FileInfo"/>
     /// may not actually be inside this folder but just relative to it.
     /// </remarks>
-    [PublicAPI, MustUseReturnValue]
+    [MustUseReturnValue]
     public static FileInfo GetFile(this DirectoryInfo dir, string fileName)
     {
         return new FileInfo(Path.Combine(dir.FullName, fileName));

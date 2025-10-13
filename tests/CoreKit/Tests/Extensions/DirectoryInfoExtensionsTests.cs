@@ -15,6 +15,21 @@ namespace AppMotor.CoreKit.Tests.Extensions;
 public sealed class DirectoryInfoExtensionsTests
 {
     [Fact]
+    public void Test_GetFile()
+    {
+        // Setup
+        var parent = new DirectoryInfo(Path.GetTempPath());
+
+        // Test
+        FileInfo child = parent.GetFile("my-sub-dir");
+
+        // Verify
+        child.ShouldNotBeNull();
+        child.Name.ShouldBe("my-sub-dir");
+        child.FullName.ShouldBe(Path.Combine(Path.GetTempPath(), "my-sub-dir"));
+    }
+
+    [Fact]
     public void Test_GetDirectory()
     {
         // Setup
