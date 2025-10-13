@@ -23,4 +23,18 @@ public static class DirectoryInfoExtensions
     {
         return new FileInfo(Path.Combine(dir.FullName, fileName));
     }
+
+    /// <summary>
+    /// Returns a <see cref="DirectoryInfo"/> object for the specified <paramref name="dirName"/>
+    /// within this folder.
+    /// </summary>
+    /// <remarks>
+    /// This method uses <see cref="Path.Combine(string, string)"/> - so the resulting <see cref="DirectoryInfo"/>
+    /// may not actually be inside this folder but just relative to it.
+    /// </remarks>
+    [MustUseReturnValue]
+    public static DirectoryInfo GetDirectory(this DirectoryInfo dir, string dirName)
+    {
+        return new DirectoryInfo(Path.Combine(dir.FullName, dirName));
+    }
 }
